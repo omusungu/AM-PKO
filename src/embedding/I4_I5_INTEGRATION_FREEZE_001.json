@@ -1,0 +1,15 @@
+{
+  "checkpoint_id": "I4_I5_INTEGRATION_FREEZE_001",
+  "status": "FROZEN_VALIDATED",
+  "scope": [
+    "I-4 EmbeddingStore",
+    "T-3 VectorRecord",
+    "T-4 payload validation",
+    "VectorRecord mapper",
+    "I-5 EmbeddingService integration"
+  ],
+  "validation_record": "src/embedding/store/I4_I5_POST_FILTER_VALIDATION_001.json",
+  "regression": "FINAL_I4_SEARCH_REGRESSION: PASS",
+  "pipeline": "KnowledgeRecord \u2192 I-2 \u2192 I-5 \u2192 I-3 \u2192 VectorRecord Mapper \u2192 I-4 \u2192 Search",
+  "production_model_selected": false
+}

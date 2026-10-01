@@ -1,0 +1,61 @@
+{
+  "experiment_id": "EXP-4B5-001",
+  "validation_type": "post_normalization_vector_reuse_validation",
+  "status": "VALIDATED_REUSE_EXISTING_VECTORS",
+  "validated_at": "2026-09-30",
+  "decision": "DO_NOT_REGENERATE_EMBEDDINGS",
+  "checks": {
+    "canonical_corpus_schema": "PASS",
+    "nested_field_structure": "PASS",
+    "ontology_values": "PASS",
+    "record_ids_unique_and_sequential": "PASS",
+    "corpus_backup_integrity": "PASS",
+    "embedding_relevant_content_preserved": "PASS",
+    "M-000001_embedding_identity_and_order": "PASS",
+    "M-000002_embedding_identity_and_order": "PASS",
+    "M-000003_embedding_identity_and_order": "PASS",
+    "embedding_dimensions": "PASS",
+    "documented_model_sha256_checksums": "PASS",
+    "evaluation_artifacts": "PASS",
+    "corpus_embedding_latency_records": "PASS"
+  },
+  "corpus": {
+    "records": 25,
+    "id_range": "K-000001..K-000025",
+    "embedding_dimension": 1024
+  },
+  "embedding_artifacts": {
+    "M-000001": {
+      "records": 25,
+      "dimension": 1024,
+      "latency_records": 25
+    },
+    "M-000002": {
+      "records": 25,
+      "dimension": 1024,
+      "latency_records": 25
+    },
+    "M-000003": {
+      "records": 25,
+      "dimension": 1024,
+      "latency_records": 25
+    }
+  },
+  "normalization": {
+    "records_normalized": 20,
+    "backup": "corpus.json.bak",
+    "substantive_embedding_relevant_fields_changed": false
+  },
+  "provenance": {
+    "model_files_checksum_verified": true,
+    "existing_vectors_regenerated": false
+  },
+  "notes": [
+    "corpus.json was normalized from legacy field names to the canonical schema.",
+    "The normalization changed schema representation only; substantive embedding-relevant content was preserved.",
+    "Existing corpus embeddings match the current corpus record identity and ordering.",
+    "All three documented model files match their frozen SHA-256 checksums.",
+    "M-000002 and M-000003 use leaner legacy artifact metadata formats than M-000001.",
+    "Existing vectors are therefore retained without regeneration."
+  ]
+}

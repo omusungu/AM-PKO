@@ -1,0 +1,102 @@
+[
+  {
+    "id": "Q-000001",
+    "query": "What helps maintain a stable welding arc and consistent bead?"
+  },
+  {
+    "id": "Q-000002",
+    "query": "How can I detect frame movement before completing the tack sequence?"
+  },
+  {
+    "id": "Q-000003",
+    "query": "What temporary method might help resist movement during frame welding?"
+  },
+  {
+    "id": "Q-000004",
+    "query": "What should I do after welding before accepting a joint?"
+  },
+  {
+    "id": "Q-000005",
+    "query": "How can excessive restraint contribute to cracking in a welded joint?"
+  },
+  {
+    "id": "Q-000006",
+    "query": "How can I check whether a rectangular steel frame is square?"
+  },
+  {
+    "id": "Q-000007",
+    "query": "What welding sequence can help distribute heat in a steel frame?"
+  },
+  {
+    "id": "Q-000008",
+    "query": "How could photographs help with documenting weld inspection?"
+  },
+  {
+    "id": "Q-000009",
+    "query": "What should I verify before cutting steel for fabrication?"
+  },
+  {
+    "id": "Q-000010",
+    "query": "What environmental or material conditions can contribute to weld porosity?"
+  },
+  {
+    "id": "Q-000011",
+    "query": "Why does AM-PKO separate knowledge type from domain?"
+  },
+  {
+    "id": "Q-000012",
+    "query": "What kind of practical knowledge may be difficult to capture in formal references?"
+  },
+  {
+    "id": "Q-000013",
+    "query": "How might explicit relationships between knowledge records improve retrieval?"
+  },
+  {
+    "id": "Q-000014",
+    "query": "What stages does the AM-PKO knowledge pipeline use?"
+  },
+  {
+    "id": "Q-000015",
+    "query": "Why should embedding evaluation consider both retrieval quality and runtime cost?"
+  },
+  {
+    "id": "Q-000016",
+    "query": "What should be considered when calculating a fabrication quotation?"
+  },
+  {
+    "id": "Q-000017",
+    "query": "How can written agreements reduce misunderstandings on fabrication projects?"
+  },
+  {
+    "id": "Q-000018",
+    "query": "How could web development skills complement welding income?"
+  },
+  {
+    "id": "Q-000019",
+    "query": "What information should a welding and fabrication business include in its service marketing?"
+  },
+  {
+    "id": "Q-000020",
+    "query": "What should be reviewed when a fabrication project develops a payment dispute?"
+  },
+  {
+    "id": "Q-000021",
+    "query": "What controls can help reduce welding distortion?"
+  },
+  {
+    "id": "Q-000022",
+    "query": "What practical technique can reduce pulling in a long steel frame?"
+  },
+  {
+    "id": "Q-000023",
+    "query": "What should I check before welding a fabricated steel frame?"
+  },
+  {
+    "id": "Q-000024",
+    "query": "What could cause porosity in a fillet weld?"
+  },
+  {
+    "id": "Q-000025",
+    "query": "How might temperature monitoring help control heat during welding?"
+  }
+]

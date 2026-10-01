@@ -1,0 +1,39 @@
+[
+  {
+    "id": "M-000001",
+    "family": "BGE-M3",
+    "model": "BAAI BGE-M3",
+    "status": "CANDIDATE"
+  },
+  {
+    "id": "M-000002",
+    "family": "E5",
+    "model": "intfloat multilingual-e5-large",
+    "status": "CANDIDATE",
+    "gguf_repository": "soichisumi/multilingual-e5-large-Q8_0-GGUF",
+    "gguf_file": "multilingual-e5-large-q8_0.gguf",
+    "quantization": "Q8_0",
+    "file_size_bytes": 603097600,
+    "embedding_dimension": 1024,
+    "input_protocol": {
+      "query_prefix": "query: ",
+      "document_prefix": "passage: "
+    },
+    "pooling": "mean",
+    "normalization": 2,
+    "local_file": "multilingual-e5-large-q8_0-complete.gguf",
+    "runtime": "llama.cpp",
+    "runtime_version": "0.5.0",
+    "platform": "Android aarch64",
+    "model_sha256": "6fc086a43fa9f9a766ee664312ecf2f301ff24c89f866c64936e5b4c5099b3be",
+    "context_size": 512,
+    "threads": 8,
+    "validation_status": "VALIDATED_CANDIDATE"
+  },
+  {
+    "id": "M-000003",
+    "family": "Qwen",
+    "model": "Qwen3-Embedding",
+    "status": "CANDIDATE"
+  }
+]

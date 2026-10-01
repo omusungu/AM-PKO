@@ -1,0 +1,418 @@
+{
+  "graph_id": "CONTRACT_GRAPH_V0_1",
+  "graph_version": "0.1",
+  "status": "DRAFT_DERIVED",
+  "generated_at": "2026-10-01T08:30:29.493226+00:00",
+  "repository_root": "AM-PKO",
+  "authority": {
+    "rule": "Underlying repository contract artifacts remain authoritative.",
+    "graph_role": "Derived machine-readable provenance and dependency representation."
+  },
+  "evidence_classes": [
+    "DIRECTLY_EVIDENCED",
+    "EVIDENCE_DERIVED",
+    "RECONSTRUCTED"
+  ],
+  "contracts": [
+    {
+      "contract_id": "I-2",
+      "contract_type": "interface",
+      "name": "EmbeddingDocumentGenerator",
+      "version": "0.1",
+      "status": "FROZEN_VALIDATED",
+      "evidence_class": "DIRECTLY_EVIDENCED",
+      "freeze_artifact": "src/embedding/I-2_FREEZE_MANIFEST.md",
+      "implementation_artifacts": [
+        "src/embedding/document_interface.py"
+      ],
+      "evidence_artifacts": [
+        "src/embedding/I-2_FREEZE_MANIFEST.md"
+      ],
+      "downstream_invalidation": [
+        "T-2",
+        "I-3",
+        "I-5",
+        "vectors generated under an affected embedding_spec_version"
+      ]
+    },
+    {
+      "contract_id": "I-3",
+      "contract_type": "interface",
+      "name": "EmbeddingModel",
+      "version": "0.1",
+      "status": "FROZEN_VALIDATED",
+      "evidence_class": "DIRECTLY_EVIDENCED",
+      "freeze_artifact": "src/embedding/I-3_FREEZE_MANIFEST.md",
+      "implementation_artifacts": [
+        "src/embedding/model_interface.py",
+        "src/embedding/adapters/base.py",
+        "src/embedding/adapters/llama_cpp/adapter.py"
+      ],
+      "evidence_artifacts": [
+        "src/embedding/I-3_FREEZE_MANIFEST.md"
+      ],
+      "downstream_invalidation": [
+        "I-5",
+        "embedding-service implementations"
+      ]
+    },
+    {
+      "contract_id": "I-4",
+      "contract_type": "interface",
+      "name": "EmbeddingStore",
+      "version": "0.2",
+      "status": "FROZEN_VALIDATED",
+      "evidence_class": "DIRECTLY_EVIDENCED",
+      "freeze_artifact": "src/embedding/store/I-4_FREEZE_MANIFEST.md",
+      "implementation_artifacts": [
+        "src/embedding/store/interface.py",
+        "src/embedding/store/memory.py",
+        "src/embedding/store/match.py",
+        "src/embedding/store/payload.py"
+      ],
+      "evidence_artifacts": [
+        "src/embedding/store/I-4_FREEZE_MANIFEST.md",
+        "src/embedding/I-4_T-6_SCORE_TRANSPORT_DECISION_001.md",
+        "src/embedding/VECTOR_STORE_MATCH_CONTRACT_001.md"
+      ],
+      "downstream_invalidation": [
+        "I-6",
+        "T-6"
+      ]
+    },
+    {
+      "contract_id": "I-5",
+      "contract_type": "interface",
+      "name": "EmbeddingService",
+      "version": "0.1",
+      "status": "FROZEN_VALIDATED",
+      "evidence_class": "DIRECTLY_EVIDENCED",
+      "freeze_artifact": "src/embedding/I-5_FREEZE_MANIFEST.md",
+      "implementation_artifacts": [
+        "src/embedding/service_interface.py",
+        "src/embedding/services/reference.py"
+      ],
+      "evidence_artifacts": [
+        "src/embedding/I-5_FREEZE_MANIFEST.md"
+      ],
+      "downstream_invalidation": [
+        "embedding execution using the I-5 service boundary"
+      ]
+    },
+    {
+      "contract_id": "I-6",
+      "contract_type": "interface",
+      "name": "RetrievalService",
+      "version": "0.2",
+      "status": "FROZEN_VALIDATED",
+      "evidence_class": "RECONSTRUCTED",
+      "freeze_artifact": "src/embedding/I-6_FREEZE_MANIFEST.md",
+      "implementation_artifacts": [
+        "src/embedding/retrieval_service.py",
+        "src/embedding/query_embedder_interface.py",
+        "src/embedding/query_embedder.py"
+      ],
+      "evidence_artifacts": [
+        "src/embedding/I-6_FREEZE_MANIFEST.md",
+        "src/embedding/I-6_RETRIEVAL_SERVICE_DESIGN_001.md",
+        "src/embedding/I-6_QUERY_EMBEDDER_DESIGN_001.md",
+        "src/embedding/RETRIEVAL_CONTRACT_RECONSTRUCTION_001.md"
+      ],
+      "downstream_invalidation": [
+        "T-6",
+        "runtime retrieval consumers"
+      ]
+    },
+    {
+      "contract_id": "T-5",
+      "contract_type": "type",
+      "name": "QueryRequest",
+      "version": "0.2",
+      "status": "FROZEN_VALIDATED",
+      "evidence_class": "RECONSTRUCTED",
+      "freeze_artifact": "src/embedding/T-5_FREEZE_MANIFEST.md",
+      "implementation_artifacts": [
+        "src/embedding/retrieval_interface.py"
+      ],
+      "evidence_artifacts": [
+        "src/embedding/T-5_FREEZE_MANIFEST.md",
+        "src/embedding/T-5_QUERY_REQUEST_DESIGN_001.md",
+        "src/embedding/T-5_QUERY_REQUEST_VALIDATION_001.json"
+      ],
+      "downstream_invalidation": [
+        "I-6"
+      ]
+    },
+    {
+      "contract_id": "T-6",
+      "contract_type": "type",
+      "name": "RankedResult",
+      "version": "0.2",
+      "status": "FROZEN_VALIDATED",
+      "evidence_class": "RECONSTRUCTED",
+      "freeze_artifact": "src/embedding/T-6_FREEZE_MANIFEST.md",
+      "implementation_artifacts": [
+        "src/embedding/retrieval_result.py"
+      ],
+      "evidence_artifacts": [
+        "src/embedding/T-6_FREEZE_MANIFEST.md",
+        "src/embedding/T-6_RANKED_RESULT_DESIGN_001.md",
+        "src/embedding/T-6_RANKED_RESULT_VALIDATION_001.json"
+      ],
+      "downstream_invalidation": [
+        "retrieval consumers",
+        "T-7 evaluation inputs",
+        "T-7"
+      ]
+    },
+    {
+      "contract_id": "T-7",
+      "contract_type": "type",
+      "name": "EvaluationRun",
+      "version": "0.2",
+      "status": "FROZEN_VALIDATED",
+      "evidence_class": "EVIDENCE_DERIVED",
+      "freeze_artifact": "src/embedding/T-7_FREEZE_MANIFEST.md",
+      "implementation_artifacts": [
+        "src/embedding/evaluation_interface.py"
+      ],
+      "evidence_artifacts": [
+        "src/embedding/T-7_FREEZE_MANIFEST.md",
+        "src/embedding/T-7_EVALUATION_RUN_DESIGN_001.md",
+        "src/embedding/T-7_EVALUATION_RUN_VALIDATION_001.json",
+        "experiments/embedding/EXP-4B5-001/M-000001_evaluation.json",
+        "experiments/embedding/EXP-4B5-001/M-000002_evaluation.json",
+        "experiments/embedding/EXP-4B5-001/M-000003_evaluation.json"
+      ],
+      "downstream_invalidation": [
+        "evaluation artifacts derived under an affected T-7 contract"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "CG-R001",
+      "source": "I-2",
+      "relationship_type": "PRODUCES",
+      "target": "T-2",
+      "evidence_artifacts": [
+        "src/embedding/I-2_FREEZE_MANIFEST.md"
+      ]
+    },
+    {
+      "relationship_id": "CG-R002",
+      "source": "I-3",
+      "relationship_type": "CONSUMES",
+      "target": "T-2",
+      "evidence_artifacts": [
+        "src/embedding/I-2_FREEZE_MANIFEST.md",
+        "src/embedding/I-3_FREEZE_MANIFEST.md"
+      ]
+    },
+    {
+      "relationship_id": "CG-R003",
+      "source": "I-5",
+      "relationship_type": "DEPENDS_ON",
+      "target": "I-3",
+      "evidence_artifacts": [
+        "src/embedding/I-5_FREEZE_MANIFEST.md"
+      ]
+    },
+    {
+      "relationship_id": "CG-R004",
+      "source": "I-4",
+      "relationship_type": "PRODUCES",
+      "target": "VectorStoreMatch",
+      "evidence_artifacts": [
+        "src/embedding/store/I-4_FREEZE_MANIFEST.md",
+        "src/embedding/VECTOR_STORE_MATCH_CONTRACT_001.md"
+      ]
+    },
+    {
+      "relationship_id": "CG-R005",
+      "source": "I-6",
+      "relationship_type": "CONSUMES",
+      "target": "T-5",
+      "evidence_artifacts": [
+        "src/embedding/T-5_FREEZE_MANIFEST.md",
+        "src/embedding/I-6_FREEZE_MANIFEST.md"
+      ]
+    },
+    {
+      "relationship_id": "CG-R006",
+      "source": "I-6",
+      "relationship_type": "DEPENDS_ON",
+      "target": "I-4",
+      "evidence_artifacts": [
+        "src/embedding/I-6_FREEZE_MANIFEST.md"
+      ]
+    },
+    {
+      "relationship_id": "CG-R007",
+      "source": "I-6",
+      "relationship_type": "PRODUCES",
+      "target": "T-6",
+      "evidence_artifacts": [
+        "src/embedding/I-6_FREEZE_MANIFEST.md",
+        "src/embedding/T-6_FREEZE_MANIFEST.md"
+      ]
+    },
+    {
+      "relationship_id": "CG-R008",
+      "source": "T-6",
+      "relationship_type": "COMPATIBLE_WITH",
+      "target": "I-4",
+      "evidence_artifacts": [
+        "src/embedding/T-6_FREEZE_MANIFEST.md"
+      ]
+    },
+    {
+      "relationship_id": "CG-R009",
+      "source": "T-6",
+      "relationship_type": "COMPATIBLE_WITH",
+      "target": "I-6",
+      "evidence_artifacts": [
+        "src/embedding/T-6_FREEZE_MANIFEST.md"
+      ]
+    },
+    {
+      "relationship_id": "CG-R010",
+      "source": "T-7",
+      "relationship_type": "DEPENDS_ON",
+      "target": "T-6",
+      "evidence_artifacts": [
+        "src/embedding/T-7_FREEZE_MANIFEST.md",
+        "src/embedding/T-7_EVALUATION_RUN_DESIGN_001.md"
+      ]
+    },
+    {
+      "relationship_id": "CG-R011",
+      "source": "I-4",
+      "relationship_type": "EVOLVED_FROM",
+      "target": "I-4@0.1",
+      "evidence_artifacts": [
+        "src/embedding/store/I-4_FREEZE_MANIFEST.md",
+        "src/embedding/I-4_T-6_SCORE_TRANSPORT_DECISION_001.md"
+      ]
+    },
+    {
+      "relationship_id": "CG-R012",
+      "source": "I-4",
+      "relationship_type": "PROTECTS",
+      "target": "T-4",
+      "evidence_artifacts": [
+        "src/embedding/store/I-4_FREEZE_MANIFEST.md"
+      ]
+    },
+    {
+      "relationship_id": "CG-R013",
+      "source": "I-4",
+      "relationship_type": "CONSUMES",
+      "target": "T-3",
+      "evidence_artifacts": [
+        "src/embedding/store/interface.py",
+        "src/embedding/store/I-4_FREEZE_MANIFEST.md"
+      ]
+    },
+    {
+      "relationship_id": "CG-R014",
+      "source": "I-4",
+      "relationship_type": "PROTECTS",
+      "target": "T-4",
+      "evidence_artifacts": [
+        "src/embedding/store/payload.py",
+        "src/embedding/I-4_T-6_SCORE_TRANSPORT_DECISION_001.md",
+        "src/embedding/I-6_FREEZE_MANIFEST.md"
+      ]
+    },
+    {
+      "relationship_id": "CG-R015",
+      "source": "I-4",
+      "relationship_type": "PRODUCES",
+      "target": "VectorStoreMatch",
+      "evidence_artifacts": [
+        "src/embedding/store/match.py",
+        "src/embedding/store/interface.py",
+        "src/embedding/VECTOR_STORE_MATCH_CONTRACT_001.md"
+      ]
+    },
+    {
+      "relationship_id": "CG-R016",
+      "source": "I-6",
+      "relationship_type": "CONSUMES",
+      "target": "VectorStoreMatch",
+      "evidence_artifacts": [
+        "src/embedding/I-6_FREEZE_MANIFEST.md",
+        "src/embedding/VECTOR_STORE_MATCH_CONTRACT_001.md"
+      ]
+    },
+    {
+      "relationship_id": "CG-R017",
+      "source": "I-6",
+      "relationship_type": "CONSUMES",
+      "target": "QueryEmbedder",
+      "evidence_artifacts": [
+        "src/embedding/query_embedder_interface.py",
+        "src/embedding/I-6_QUERY_EMBEDDER_DESIGN_001.md",
+        "src/embedding/I-6_FREEZE_MANIFEST.md"
+      ]
+    }
+  ],
+  "supporting_nodes": [
+    {
+      "node_id": "T-3",
+      "node_class": "SUPPORTING_BOUNDARY",
+      "name": "VectorRecord",
+      "status": "DOCUMENTED_SUPPORTING_BOUNDARY",
+      "evidence_class": "DIRECTLY_EVIDENCED",
+      "source_artifacts": [
+        "src/embedding/store/interface.py",
+        "src/embedding/store/payload.py",
+        "src/embedding/store/I-4_FREEZE_MANIFEST.md"
+      ],
+      "purpose": "Canonical vector record consumed and stored by I-4."
+    },
+    {
+      "node_id": "T-4",
+      "node_class": "SUPPORTING_BOUNDARY",
+      "name": "VectorRecord payload",
+      "status": "DOCUMENTED_SUPPORTING_BOUNDARY",
+      "evidence_class": "DIRECTLY_EVIDENCED",
+      "source_artifacts": [
+        "src/embedding/store/payload.py",
+        "src/embedding/store/I-4_FREEZE_MANIFEST.md",
+        "src/embedding/I-4_T-6_SCORE_TRANSPORT_DECISION_001.md"
+      ],
+      "purpose": "Canonical metadata payload associated with T-3 and protected from retrieval-specific score contamination."
+    },
+    {
+      "node_id": "VectorStoreMatch",
+      "node_class": "SUPPORTING_BOUNDARY",
+      "name": "VectorStoreMatch",
+      "status": "DOCUMENTED_SUPPORTING_BOUNDARY",
+      "evidence_class": "DIRECTLY_EVIDENCED",
+      "source_artifacts": [
+        "src/embedding/store/match.py",
+        "src/embedding/store/interface.py",
+        "src/embedding/I-4_T-6_SCORE_TRANSPORT_DECISION_001.md",
+        "src/embedding/VECTOR_STORE_MATCH_CONTRACT_001.md",
+        "src/embedding/I-6_FREEZE_MANIFEST.md"
+      ],
+      "purpose": "Transient I-4 retrieval boundary carrying a VectorRecord together with the retrieval score before I-6 maps the result to T-6."
+    },
+    {
+      "node_id": "QueryEmbedder",
+      "node_class": "SUPPORTING_BOUNDARY",
+      "name": "QueryEmbedder",
+      "status": "DOCUMENTED_SUPPORTING_BOUNDARY",
+      "evidence_class": "DIRECTLY_EVIDENCED",
+      "source_artifacts": [
+        "src/embedding/query_embedder_interface.py",
+        "src/embedding/query_embedder.py",
+        "src/embedding/I-6_QUERY_EMBEDDER_DESIGN_001.md",
+        "src/embedding/I-6_FREEZE_MANIFEST.md"
+      ],
+      "purpose": "I-6 query-embedding capability boundary that allows retrieval orchestration to obtain a query vector without modifying the frozen I-3 model interface."
+    }
+  ]
+}

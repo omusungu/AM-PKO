@@ -1,0 +1,48 @@
+{
+  "experiment_id": "EXP-4B5-002",
+  "source_experiment": "EXP-4B5-001",
+  "benchmark_type": "RETRIEVAL_LATENCY",
+  "method": {
+    "similarity": "cosine",
+    "search_type": "brute_force",
+    "top_k": 5,
+    "warmup_passes": 3,
+    "timed_repetitions_per_query": 10
+  },
+  "models": [
+    {
+      "model_id": "M-000001",
+      "model_name": "BGE-M3",
+      "mean_retrieval_latency_ms": 0.291400752,
+      "median_retrieval_latency_ms": 0.289173,
+      "minimum_ms": 0.248962,
+      "maximum_ms": 0.395,
+      "ranking_matches": 25,
+      "queries_checked": 25,
+      "all_rankings_match": true
+    },
+    {
+      "model_id": "M-000002",
+      "model_name": "E5",
+      "mean_retrieval_latency_ms": 0.291354264,
+      "median_retrieval_latency_ms": 0.290231,
+      "minimum_ms": 0.246923,
+      "maximum_ms": 0.458192,
+      "ranking_matches": 25,
+      "queries_checked": 25,
+      "all_rankings_match": true
+    },
+    {
+      "model_id": "M-000003",
+      "model_name": "Qwen3-Embedding",
+      "mean_retrieval_latency_ms": 0.238977696,
+      "median_retrieval_latency_ms": 0.2349425,
+      "minimum_ms": 0.230269,
+      "maximum_ms": 0.289884,
+      "ranking_matches": 25,
+      "queries_checked": 25,
+      "all_rankings_match": true
+    }
+  ],
+  "status": "COMPLETED"
+}

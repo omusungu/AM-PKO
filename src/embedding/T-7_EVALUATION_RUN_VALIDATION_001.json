@@ -1,0 +1,61 @@
+{
+  "validation_id": "T-7_EVALUATION_RUN_VALIDATION_001",
+  "contract": "T-7",
+  "artifact": "src/embedding/evaluation_interface.py",
+  "design_artifact": "src/embedding/T-7_EVALUATION_RUN_DESIGN_001.md",
+  "status": "FROZEN_VALIDATED",
+  "contract_version": "0.2",
+  "checks": {
+    "frozen_dataclass": true,
+    "field_order": [
+      "evaluation_id",
+      "experiment_id",
+      "model_id",
+      "model_family",
+      "judgment_scale",
+      "per_query",
+      "metrics"
+    ],
+    "evaluation_identity_preserved": true,
+    "per_query_data_preserved": true,
+    "aggregate_metrics_preserved": true,
+    "immutable": true,
+    "python_compile": true,
+    "runtime_behavior": true
+  },
+  "architectural_constraints": {
+    "performs_embedding": false,
+    "performs_vector_search": false,
+    "performs_runtime_ranking": false,
+    "mutates_knowledge_records": false,
+    "traverses_relationship_graph": false,
+    "performs_rag_synthesis": false,
+    "selects_production_model": false,
+    "modifies_frozen_i2_i3_i4_i5_contracts": false
+  },
+  "freeze_status": "FROZEN",
+  "evidence_reconciliation": {
+    "directly_evidenced_fields": [
+      "experiment_id",
+      "model_id",
+      "per_query",
+      "metrics"
+    ],
+    "evidence_derived_fields": [
+      "model_family",
+      "judgment_scale"
+    ],
+    "reconstructed_field": "evaluation_id",
+    "historical_schema_variation_recorded": true,
+    "source_experiment": "EXP-4B5-001"
+  },
+  "reconciliation_basis": "Validation remains based on the reconstructed T-7 contract. Historical evaluation artifacts are schema-variable; canonical fields are explicitly distinguished as direct, evidence-derived, or reconstructed. No frozen upstream contract is modified.",
+  "freeze_manifest": "src/embedding/T-7_FREEZE_MANIFEST.md",
+  "final_freeze_gate": {
+    "gate": "T-7_FINAL_POST_MANIFEST_FREEZE_GATE",
+    "status": "PASS",
+    "checks_passed": 50,
+    "checks_failed": 0,
+    "model_family_evidence_correction": "M-000003 authoritative family is Qwen"
+  }
+}

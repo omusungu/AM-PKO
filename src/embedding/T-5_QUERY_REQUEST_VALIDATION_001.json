@@ -1,0 +1,33 @@
+{
+  "validation_id": "T-5_QUERY_REQUEST_VALIDATION_001",
+  "contract": "T-5",
+  "artifact": "src/embedding/retrieval_interface.py",
+  "status": "FROZEN_VALIDATED",
+  "contract_version": "0.2",
+  "checks": {
+    "dataclass_frozen": true,
+    "field_order": [
+      "query",
+      "k",
+      "filters",
+      "include_excluded"
+    ],
+    "query_type_validation": true,
+    "query_nonempty_validation": true,
+    "k_integer_validation": true,
+    "k_positive_validation": true,
+    "filters_mapping_validation": true,
+    "include_excluded_boolean_validation": true,
+    "python_compile": true
+  },
+  "architectural_constraints": {
+    "embedding_generation": false,
+    "vector_search": false,
+    "ranking": false,
+    "graph_traversal": false,
+    "rag_synthesis": false,
+    "knowledge_record_mutation": false,
+    "frozen_i2_i3_i4_i5_contracts_modified": false
+  },
+  "freeze_status": "FROZEN"
+}

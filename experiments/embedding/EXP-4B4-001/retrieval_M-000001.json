@@ -1,0 +1,165 @@
+{
+  "experiment_id": "EXP-4B4-001",
+  "model_id": "M-000001",
+  "model": "BAAI BGE-M3",
+  "metric": "cosine_similarity",
+  "corpus_count": 5,
+  "query_count": 5,
+  "results": [
+    {
+      "query_id": "Q-000001",
+      "retrieval_ms": 3.6448,
+      "ranking": [
+        {
+          "rank": 1,
+          "record_id": "K-000004",
+          "cosine_similarity": 0.81084683
+        },
+        {
+          "rank": 2,
+          "record_id": "K-000002",
+          "cosine_similarity": 0.80343434
+        },
+        {
+          "rank": 3,
+          "record_id": "K-000001",
+          "cosine_similarity": 0.80305628
+        },
+        {
+          "rank": 4,
+          "record_id": "K-000003",
+          "cosine_similarity": 0.76660593
+        },
+        {
+          "rank": 5,
+          "record_id": "K-000005",
+          "cosine_similarity": 0.75953963
+        }
+      ]
+    },
+    {
+      "query_id": "Q-000002",
+      "retrieval_ms": 3.5214,
+      "ranking": [
+        {
+          "rank": 1,
+          "record_id": "K-000002",
+          "cosine_similarity": 0.79613248
+        },
+        {
+          "rank": 2,
+          "record_id": "K-000001",
+          "cosine_similarity": 0.76303834
+        },
+        {
+          "rank": 3,
+          "record_id": "K-000003",
+          "cosine_similarity": 0.75592267
+        },
+        {
+          "rank": 4,
+          "record_id": "K-000005",
+          "cosine_similarity": 0.74145075
+        },
+        {
+          "rank": 5,
+          "record_id": "K-000004",
+          "cosine_similarity": 0.7282512
+        }
+      ]
+    },
+    {
+      "query_id": "Q-000003",
+      "retrieval_ms": 3.5135,
+      "ranking": [
+        {
+          "rank": 1,
+          "record_id": "K-000002",
+          "cosine_similarity": 0.84196801
+        },
+        {
+          "rank": 2,
+          "record_id": "K-000004",
+          "cosine_similarity": 0.84011982
+        },
+        {
+          "rank": 3,
+          "record_id": "K-000001",
+          "cosine_similarity": 0.83560799
+        },
+        {
+          "rank": 4,
+          "record_id": "K-000005",
+          "cosine_similarity": 0.75117721
+        },
+        {
+          "rank": 5,
+          "record_id": "K-000003",
+          "cosine_similarity": 0.74091248
+        }
+      ]
+    },
+    {
+      "query_id": "Q-000004",
+      "retrieval_ms": 3.5234,
+      "ranking": [
+        {
+          "rank": 1,
+          "record_id": "K-000005",
+          "cosine_similarity": 0.84181454
+        },
+        {
+          "rank": 2,
+          "record_id": "K-000001",
+          "cosine_similarity": 0.76718316
+        },
+        {
+          "rank": 3,
+          "record_id": "K-000004",
+          "cosine_similarity": 0.74825031
+        },
+        {
+          "rank": 4,
+          "record_id": "K-000002",
+          "cosine_similarity": 0.74268914
+        },
+        {
+          "rank": 5,
+          "record_id": "K-000003",
+          "cosine_similarity": 0.7169586
+        }
+      ]
+    },
+    {
+      "query_id": "Q-000005",
+      "retrieval_ms": 3.4832,
+      "ranking": [
+        {
+          "rank": 1,
+          "record_id": "K-000004",
+          "cosine_similarity": 0.81565026
+        },
+        {
+          "rank": 2,
+          "record_id": "K-000003",
+          "cosine_similarity": 0.81462441
+        },
+        {
+          "rank": 3,
+          "record_id": "K-000002",
+          "cosine_similarity": 0.7866778
+        },
+        {
+          "rank": 4,
+          "record_id": "K-000001",
+          "cosine_similarity": 0.77767713
+        },
+        {
+          "rank": 5,
+          "record_id": "K-000005",
+          "cosine_similarity": 0.69449923
+        }
+      ]
+    }
+  ]
+}

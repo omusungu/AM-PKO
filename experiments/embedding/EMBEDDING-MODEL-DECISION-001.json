@@ -1,0 +1,42 @@
+{
+  "decision_id": "EMBEDDING-MODEL-DECISION-001",
+  "decision_type": "PRODUCTION_EMBEDDING_MODEL_SELECTION",
+  "status": "FROZEN_NOT_DECIDED",
+  "framework_id": "EMBEDDING-MODEL-SELECTION-001",
+  "evidence": {
+    "experiments": [
+      "EXP-4B4-001",
+      "EXP-4B5-001",
+      "EXP-4B5-002",
+      "EXP-4B5-CONSOLIDATED-001"
+    ],
+    "additional_evidence_required": []
+  },
+  "candidates": [
+    "M-000001",
+    "M-000002",
+    "M-000003"
+  ],
+  "assessment": {
+    "M-000001": "NOT_ASSESSED",
+    "M-000002": "NOT_ASSESSED",
+    "M-000003": "NOT_ASSESSED"
+  },
+  "constraints_check": {
+    "interface_contract": "NOT_ASSESSED",
+    "model_identity_reproducibility": "NOT_ASSESSED",
+    "embedding_protocol_compatibility": "NOT_ASSESSED",
+    "deployment_environment": "NOT_ASSESSED",
+    "adapter_regression": "NOT_ASSESSED"
+  },
+  "decision": {
+    "selected_model": null,
+    "selection_basis": null,
+    "decision_rationale": null
+  },
+  "approval": {
+    "required": true,
+    "approved": false
+  },
+  "notes": "This record is intentionally undecided. It provides an auditable place for a future production-selection decision and must not alter the frozen experiment evidence."
+}

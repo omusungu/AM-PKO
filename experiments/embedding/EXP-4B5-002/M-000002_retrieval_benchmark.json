@@ -1,0 +1,804 @@
+{
+  "experiment_id": "EXP-4B5-002",
+  "source_experiment": "EXP-4B5-001",
+  "model_id": "M-000002",
+  "model_name": "E5",
+  "method": {
+    "similarity": "cosine",
+    "search_type": "brute_force",
+    "corpus_size": 25,
+    "query_count": 25,
+    "embedding_dimension": 1024,
+    "top_k": 5,
+    "warmup_passes": 3,
+    "timed_repetitions_per_query": 10
+  },
+  "ranking_verification": {
+    "queries_checked": 25,
+    "top_k_rankings_matching": 25,
+    "all_rankings_match": true
+  },
+  "latency_ms": {
+    "mean_of_query_means": 0.291354264,
+    "median_of_query_medians": 0.290231,
+    "minimum": 0.246923,
+    "maximum": 0.458192
+  },
+  "per_query": [
+    {
+      "query_id": "Q-000001",
+      "repetitions": 10,
+      "mean_latency_ms": 0.2890347,
+      "median_latency_ms": 0.28757699999999997,
+      "min_latency_ms": 0.2555,
+      "max_latency_ms": 0.334693,
+      "top_k": [
+        {
+          "record_id": "K-000006",
+          "similarity": 0.9174861907958984
+        },
+        {
+          "record_id": "K-000009",
+          "similarity": 0.8409435749053955
+        },
+        {
+          "record_id": "K-000003",
+          "similarity": 0.8230319619178772
+        },
+        {
+          "record_id": "K-000008",
+          "similarity": 0.8217960000038147
+        },
+        {
+          "record_id": "K-000012",
+          "similarity": 0.8190750479698181
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000002",
+      "repetitions": 10,
+      "mean_latency_ms": 0.2970732,
+      "median_latency_ms": 0.290231,
+      "min_latency_ms": 0.247924,
+      "max_latency_ms": 0.365615,
+      "top_k": [
+        {
+          "record_id": "K-000007",
+          "similarity": 0.8897316455841064
+        },
+        {
+          "record_id": "K-000002",
+          "similarity": 0.8494975566864014
+        },
+        {
+          "record_id": "K-000003",
+          "similarity": 0.843070924282074
+        },
+        {
+          "record_id": "K-000009",
+          "similarity": 0.8195777535438538
+        },
+        {
+          "record_id": "K-000008",
+          "similarity": 0.819562554359436
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000003",
+      "repetitions": 10,
+      "mean_latency_ms": 0.2867231,
+      "median_latency_ms": 0.290346,
+      "min_latency_ms": 0.246923,
+      "max_latency_ms": 0.360385,
+      "top_k": [
+        {
+          "record_id": "K-000008",
+          "similarity": 0.9110676050186157
+        },
+        {
+          "record_id": "K-000012",
+          "similarity": 0.8344606161117554
+        },
+        {
+          "record_id": "K-000001",
+          "similarity": 0.8299092054367065
+        },
+        {
+          "record_id": "K-000010",
+          "similarity": 0.8290221691131592
+        },
+        {
+          "record_id": "K-000003",
+          "similarity": 0.8191558122634888
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000004",
+      "repetitions": 10,
+      "mean_latency_ms": 0.285396,
+      "median_latency_ms": 0.28546150000000003,
+      "min_latency_ms": 0.252884,
+      "max_latency_ms": 0.3355,
+      "top_k": [
+        {
+          "record_id": "K-000009",
+          "similarity": 0.8932983875274658
+        },
+        {
+          "record_id": "K-000004",
+          "similarity": 0.8883638381958008
+        },
+        {
+          "record_id": "K-000002",
+          "similarity": 0.8515459299087524
+        },
+        {
+          "record_id": "K-000010",
+          "similarity": 0.8329112529754639
+        },
+        {
+          "record_id": "K-000015",
+          "similarity": 0.8286540508270264
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000005",
+      "repetitions": 10,
+      "mean_latency_ms": 0.2917077,
+      "median_latency_ms": 0.29044250000000005,
+      "min_latency_ms": 0.258692,
+      "max_latency_ms": 0.336346,
+      "top_k": [
+        {
+          "record_id": "K-000010",
+          "similarity": 0.9126529693603516
+        },
+        {
+          "record_id": "K-000001",
+          "similarity": 0.8477254509925842
+        },
+        {
+          "record_id": "K-000015",
+          "similarity": 0.841558575630188
+        },
+        {
+          "record_id": "K-000003",
+          "similarity": 0.834701418876648
+        },
+        {
+          "record_id": "K-000008",
+          "similarity": 0.8314422369003296
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000006",
+      "repetitions": 10,
+      "mean_latency_ms": 0.29615389999999997,
+      "median_latency_ms": 0.270923,
+      "min_latency_ms": 0.257692,
+      "max_latency_ms": 0.4045,
+      "top_k": [
+        {
+          "record_id": "K-000011",
+          "similarity": 0.9152774214744568
+        },
+        {
+          "record_id": "K-000002",
+          "similarity": 0.8310888409614563
+        },
+        {
+          "record_id": "K-000007",
+          "similarity": 0.8278073072433472
+        },
+        {
+          "record_id": "K-000014",
+          "similarity": 0.8269607424736023
+        },
+        {
+          "record_id": "K-000004",
+          "similarity": 0.8256478309631348
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000007",
+      "repetitions": 10,
+      "mean_latency_ms": 0.2909268,
+      "median_latency_ms": 0.2890195,
+      "min_latency_ms": 0.2535,
+      "max_latency_ms": 0.363192,
+      "top_k": [
+        {
+          "record_id": "K-000012",
+          "similarity": 0.8817159533500671
+        },
+        {
+          "record_id": "K-000001",
+          "similarity": 0.8406829237937927
+        },
+        {
+          "record_id": "K-000002",
+          "similarity": 0.8191778659820557
+        },
+        {
+          "record_id": "K-000010",
+          "similarity": 0.800108790397644
+        },
+        {
+          "record_id": "K-000008",
+          "similarity": 0.7967053055763245
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000008",
+      "repetitions": 10,
+      "mean_latency_ms": 0.2915768,
+      "median_latency_ms": 0.2937695,
+      "min_latency_ms": 0.256731,
+      "max_latency_ms": 0.359615,
+      "top_k": [
+        {
+          "record_id": "K-000013",
+          "similarity": 0.9101371169090271
+        },
+        {
+          "record_id": "K-000004",
+          "similarity": 0.8299466967582703
+        },
+        {
+          "record_id": "K-000009",
+          "similarity": 0.8118394613265991
+        },
+        {
+          "record_id": "K-000015",
+          "similarity": 0.8103870749473572
+        },
+        {
+          "record_id": "K-000005",
+          "similarity": 0.809415876865387
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000009",
+      "repetitions": 10,
+      "mean_latency_ms": 0.2965769,
+      "median_latency_ms": 0.2991925,
+      "min_latency_ms": 0.257846,
+      "max_latency_ms": 0.386654,
+      "top_k": [
+        {
+          "record_id": "K-000014",
+          "similarity": 0.8970133066177368
+        },
+        {
+          "record_id": "K-000004",
+          "similarity": 0.8616527318954468
+        },
+        {
+          "record_id": "K-000021",
+          "similarity": 0.8516637682914734
+        },
+        {
+          "record_id": "K-000009",
+          "similarity": 0.8444202542304993
+        },
+        {
+          "record_id": "K-000011",
+          "similarity": 0.8301382660865784
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000010",
+      "repetitions": 10,
+      "mean_latency_ms": 0.2956923,
+      "median_latency_ms": 0.29707649999999997,
+      "min_latency_ms": 0.262308,
+      "max_latency_ms": 0.336577,
+      "top_k": [
+        {
+          "record_id": "K-000015",
+          "similarity": 0.9030061960220337
+        },
+        {
+          "record_id": "K-000005",
+          "similarity": 0.8648887872695923
+        },
+        {
+          "record_id": "K-000010",
+          "similarity": 0.8044185638427734
+        },
+        {
+          "record_id": "K-000001",
+          "similarity": 0.7984355092048645
+        },
+        {
+          "record_id": "K-000012",
+          "similarity": 0.7943612933158875
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000011",
+      "repetitions": 10,
+      "mean_latency_ms": 0.28854609999999997,
+      "median_latency_ms": 0.2825765,
+      "min_latency_ms": 0.249923,
+      "max_latency_ms": 0.342731,
+      "top_k": [
+        {
+          "record_id": "K-000016",
+          "similarity": 0.9262377619743347
+        },
+        {
+          "record_id": "K-000019",
+          "similarity": 0.8510593771934509
+        },
+        {
+          "record_id": "K-000018",
+          "similarity": 0.8399329781532288
+        },
+        {
+          "record_id": "K-000017",
+          "similarity": 0.7615900039672852
+        },
+        {
+          "record_id": "K-000007",
+          "similarity": 0.7590494155883789
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000012",
+      "repetitions": 10,
+      "mean_latency_ms": 0.2883423,
+      "median_latency_ms": 0.291019,
+      "min_latency_ms": 0.259808,
+      "max_latency_ms": 0.332154,
+      "top_k": [
+        {
+          "record_id": "K-000017",
+          "similarity": 0.8328438401222229
+        },
+        {
+          "record_id": "K-000018",
+          "similarity": 0.79548180103302
+        },
+        {
+          "record_id": "K-000022",
+          "similarity": 0.7648010849952698
+        },
+        {
+          "record_id": "K-000019",
+          "similarity": 0.7495886087417603
+        },
+        {
+          "record_id": "K-000011",
+          "similarity": 0.7412136793136597
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000013",
+      "repetitions": 10,
+      "mean_latency_ms": 0.2844385,
+      "median_latency_ms": 0.2691535,
+      "min_latency_ms": 0.255,
+      "max_latency_ms": 0.3415,
+      "top_k": [
+        {
+          "record_id": "K-000018",
+          "similarity": 0.8948445320129395
+        },
+        {
+          "record_id": "K-000020",
+          "similarity": 0.7799192070960999
+        },
+        {
+          "record_id": "K-000016",
+          "similarity": 0.778830885887146
+        },
+        {
+          "record_id": "K-000019",
+          "similarity": 0.771994948387146
+        },
+        {
+          "record_id": "K-000022",
+          "similarity": 0.7702502012252808
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000014",
+      "repetitions": 10,
+      "mean_latency_ms": 0.2910959,
+      "median_latency_ms": 0.28238450000000004,
+      "min_latency_ms": 0.251692,
+      "max_latency_ms": 0.383346,
+      "top_k": [
+        {
+          "record_id": "K-000019",
+          "similarity": 0.892011821269989
+        },
+        {
+          "record_id": "K-000016",
+          "similarity": 0.8586529493331909
+        },
+        {
+          "record_id": "K-000018",
+          "similarity": 0.8076075315475464
+        },
+        {
+          "record_id": "K-000007",
+          "similarity": 0.7370721101760864
+        },
+        {
+          "record_id": "K-000020",
+          "similarity": 0.7367181181907654
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000015",
+      "repetitions": 10,
+      "mean_latency_ms": 0.29152290000000003,
+      "median_latency_ms": 0.292558,
+      "min_latency_ms": 0.252192,
+      "max_latency_ms": 0.376808,
+      "top_k": [
+        {
+          "record_id": "K-000020",
+          "similarity": 0.9184696674346924
+        },
+        {
+          "record_id": "K-000018",
+          "similarity": 0.7874875068664551
+        },
+        {
+          "record_id": "K-000007",
+          "similarity": 0.767333984375
+        },
+        {
+          "record_id": "K-000013",
+          "similarity": 0.7658239603042603
+        },
+        {
+          "record_id": "K-000022",
+          "similarity": 0.7629255056381226
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000016",
+      "repetitions": 10,
+      "mean_latency_ms": 0.2939385,
+      "median_latency_ms": 0.2997695,
+      "min_latency_ms": 0.259077,
+      "max_latency_ms": 0.325692,
+      "top_k": [
+        {
+          "record_id": "K-000021",
+          "similarity": 0.8687928318977356
+        },
+        {
+          "record_id": "K-000025",
+          "similarity": 0.8137348890304565
+        },
+        {
+          "record_id": "K-000014",
+          "similarity": 0.8077884912490845
+        },
+        {
+          "record_id": "K-000022",
+          "similarity": 0.8061233758926392
+        },
+        {
+          "record_id": "K-000020",
+          "similarity": 0.7776293158531189
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000017",
+      "repetitions": 10,
+      "mean_latency_ms": 0.287073,
+      "median_latency_ms": 0.290269,
+      "min_latency_ms": 0.251654,
+      "max_latency_ms": 0.329423,
+      "top_k": [
+        {
+          "record_id": "K-000022",
+          "similarity": 0.9112311005592346
+        },
+        {
+          "record_id": "K-000025",
+          "similarity": 0.8578758239746094
+        },
+        {
+          "record_id": "K-000014",
+          "similarity": 0.8148952722549438
+        },
+        {
+          "record_id": "K-000021",
+          "similarity": 0.8110117316246033
+        },
+        {
+          "record_id": "K-000001",
+          "similarity": 0.7968164682388306
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000018",
+      "repetitions": 10,
+      "mean_latency_ms": 0.30104980000000003,
+      "median_latency_ms": 0.280288,
+      "min_latency_ms": 0.252653,
+      "max_latency_ms": 0.458192,
+      "top_k": [
+        {
+          "record_id": "K-000023",
+          "similarity": 0.8900350332260132
+        },
+        {
+          "record_id": "K-000024",
+          "similarity": 0.8140038847923279
+        },
+        {
+          "record_id": "K-000012",
+          "similarity": 0.8080743551254272
+        },
+        {
+          "record_id": "K-000010",
+          "similarity": 0.7996511459350586
+        },
+        {
+          "record_id": "K-000006",
+          "similarity": 0.7988952398300171
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000019",
+      "repetitions": 10,
+      "mean_latency_ms": 0.301027,
+      "median_latency_ms": 0.290404,
+      "min_latency_ms": 0.257077,
+      "max_latency_ms": 0.404577,
+      "top_k": [
+        {
+          "record_id": "K-000024",
+          "similarity": 0.8888446092605591
+        },
+        {
+          "record_id": "K-000021",
+          "similarity": 0.8293660879135132
+        },
+        {
+          "record_id": "K-000004",
+          "similarity": 0.8074148893356323
+        },
+        {
+          "record_id": "K-000015",
+          "similarity": 0.8010609745979309
+        },
+        {
+          "record_id": "K-000009",
+          "similarity": 0.8006436824798584
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000020",
+      "repetitions": 10,
+      "mean_latency_ms": 0.2823576,
+      "median_latency_ms": 0.271096,
+      "min_latency_ms": 0.255884,
+      "max_latency_ms": 0.33477,
+      "top_k": [
+        {
+          "record_id": "K-000025",
+          "similarity": 0.9263154864311218
+        },
+        {
+          "record_id": "K-000022",
+          "similarity": 0.8318670392036438
+        },
+        {
+          "record_id": "K-000014",
+          "similarity": 0.7892314195632935
+        },
+        {
+          "record_id": "K-000021",
+          "similarity": 0.7849709391593933
+        },
+        {
+          "record_id": "K-000009",
+          "similarity": 0.7741053104400635
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000021",
+      "repetitions": 10,
+      "mean_latency_ms": 0.283419,
+      "median_latency_ms": 0.276903,
+      "min_latency_ms": 0.253846,
+      "max_latency_ms": 0.330923,
+      "top_k": [
+        {
+          "record_id": "K-000003",
+          "similarity": 0.8443382978439331
+        },
+        {
+          "record_id": "K-000012",
+          "similarity": 0.8263511061668396
+        },
+        {
+          "record_id": "K-000005",
+          "similarity": 0.823622465133667
+        },
+        {
+          "record_id": "K-000006",
+          "similarity": 0.8180601000785828
+        },
+        {
+          "record_id": "K-000001",
+          "similarity": 0.8178309202194214
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000022",
+      "repetitions": 10,
+      "mean_latency_ms": 0.2967809,
+      "median_latency_ms": 0.2947885,
+      "min_latency_ms": 0.257923,
+      "max_latency_ms": 0.346462,
+      "top_k": [
+        {
+          "record_id": "K-000002",
+          "similarity": 0.8331599831581116
+        },
+        {
+          "record_id": "K-000012",
+          "similarity": 0.8207500576972961
+        },
+        {
+          "record_id": "K-000008",
+          "similarity": 0.8088277578353882
+        },
+        {
+          "record_id": "K-000001",
+          "similarity": 0.8070680499076843
+        },
+        {
+          "record_id": "K-000006",
+          "similarity": 0.7972823977470398
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000023",
+      "repetitions": 10,
+      "mean_latency_ms": 0.2916884,
+      "median_latency_ms": 0.27082649999999997,
+      "min_latency_ms": 0.253038,
+      "max_latency_ms": 0.372,
+      "top_k": [
+        {
+          "record_id": "K-000004",
+          "similarity": 0.8715894818305969
+        },
+        {
+          "record_id": "K-000002",
+          "similarity": 0.8707560896873474
+        },
+        {
+          "record_id": "K-000001",
+          "similarity": 0.8684332966804504
+        },
+        {
+          "record_id": "K-000009",
+          "similarity": 0.8669681549072266
+        },
+        {
+          "record_id": "K-000014",
+          "similarity": 0.8488738536834717
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000024",
+      "repetitions": 10,
+      "mean_latency_ms": 0.2897499,
+      "median_latency_ms": 0.2984035,
+      "min_latency_ms": 0.258384,
+      "max_latency_ms": 0.326347,
+      "top_k": [
+        {
+          "record_id": "K-000005",
+          "similarity": 0.8990521430969238
+        },
+        {
+          "record_id": "K-000015",
+          "similarity": 0.8821790218353271
+        },
+        {
+          "record_id": "K-000001",
+          "similarity": 0.8174185156822205
+        },
+        {
+          "record_id": "K-000010",
+          "similarity": 0.8092285394668579
+        },
+        {
+          "record_id": "K-000012",
+          "similarity": 0.7991947531700134
+        }
+      ],
+      "ranking_matches_existing": true
+    },
+    {
+      "query_id": "Q-000025",
+      "repetitions": 10,
+      "mean_latency_ms": 0.2919654,
+      "median_latency_ms": 0.286827,
+      "min_latency_ms": 0.262115,
+      "max_latency_ms": 0.381,
+      "top_k": [
+        {
+          "record_id": "K-000003",
+          "similarity": 0.8618313074111938
+        },
+        {
+          "record_id": "K-000012",
+          "similarity": 0.8549168109893799
+        },
+        {
+          "record_id": "K-000004",
+          "similarity": 0.8453917503356934
+        },
+        {
+          "record_id": "K-000001",
+          "similarity": 0.8375173807144165
+        },
+        {
+          "record_id": "K-000015",
+          "similarity": 0.831591784954071
+        }
+      ],
+      "ranking_matches_existing": true
+    }
+  ]
+}

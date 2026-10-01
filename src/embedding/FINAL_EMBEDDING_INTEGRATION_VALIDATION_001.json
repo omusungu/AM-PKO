@@ -1,0 +1,68 @@
+{
+  "validation_id": "FINAL_EMBEDDING_INTEGRATION_VALIDATION_001",
+  "status": "VALIDATED",
+  "validation_type": "FINAL_INTEGRATION_SMOKE_TEST",
+  "pipeline": "KnowledgeRecord \u2192 I-2/ER-10 \u2192 I-5 \u2192 I-3 \u2192 VectorRecord Mapper \u2192 I-4 Store \u2192 Search",
+  "test_record_id": "K-000001",
+  "test_model_id": "FINAL-PIPELINE-TEST-MODEL",
+  "result": "FINAL_EMBEDDING_PIPELINE: PASS",
+  "compile_status": "PASS",
+  "import_integrity": "PASS",
+  "files": [
+    {
+      "path": "src/embedding/document_interface.py",
+      "sha256": "a7b546ef2a6a7907e136d14be95920f55ec2db82bdce241ea11e99037d211cb5",
+      "bytes": 1063
+    },
+    {
+      "path": "src/embedding/model_interface.py",
+      "sha256": "3bcd298c388fd95a16446bc744a9a0206188e8463633a4e2a3f4f52a7e5ea071",
+      "bytes": 1954
+    },
+    {
+      "path": "src/embedding/service_interface.py",
+      "sha256": "12449d70035a4e560b35bffcb36ff08cca31494c6c8eb32eb3f300245ef36379",
+      "bytes": 888
+    },
+    {
+      "path": "src/embedding/generators/er10.py",
+      "sha256": "17ffc37424a1793b54d729d0d704e4153f12c2fb4aba5d0fe4888a62ae39077c",
+      "bytes": 3707
+    },
+    {
+      "path": "src/embedding/services/reference.py",
+      "sha256": "a4def9fd7288b6ccf87e2f22ebd4e9bafa1b4a337e295d4d172f0b5d85f286cf",
+      "bytes": 1043
+    },
+    {
+      "path": "src/embedding/vector_mapper_interface.py",
+      "sha256": "eb8981c4c7c393d7d401fb126e8627d015a3042a895c72a7c0c115386b5044c7",
+      "bytes": 549
+    },
+    {
+      "path": "src/embedding/vector_mapper.py",
+      "sha256": "bbe1f50d2d43f3e99f6dd9e880ee9e4f7e359e9d22abfde6642834384ffe0a27",
+      "bytes": 2942
+    },
+    {
+      "path": "src/embedding/store/interface.py",
+      "sha256": "bcff398e148fbc8339340e324efb1d279e3f6be13e3750514302c5d05c5105b3",
+      "bytes": 1767
+    },
+    {
+      "path": "src/embedding/store/errors.py",
+      "sha256": "08329a38015a665ebc5b70b0739a3732609f24af486160126d279affed751ffb",
+      "bytes": 648
+    },
+    {
+      "path": "src/embedding/store/payload.py",
+      "sha256": "b3ef1fbea9321eeafcc8e76cef85b95edd1197db04f264fb083d6c7ec2533f0f",
+      "bytes": 1845
+    },
+    {
+      "path": "src/embedding/store/memory.py",
+      "sha256": "691e4e33c5f91ba04420b75eeff44155cfe3662aec7145b11bf770824fc3b437",
+      "bytes": 4507
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "experiment_id": "EXP-4B5-002",
+  "validation_type": "retrieval_latency_benchmark_validation",
+  "status": "VALIDATED",
+  "validated_at": "2026-09-30",
+  "decision": "ACCEPT_EXISTING_BENCHMARK_RESULTS",
+  "source_experiment": "EXP-4B5-001",
+  "method_validation": {
+    "models": [
+      "M-000001",
+      "M-000002",
+      "M-000003"
+    ],
+    "corpus_size": 25,
+    "query_count": 25,
+    "embedding_dimension": 1024,
+    "similarity": "cosine",
+    "search_type": "brute_force",
+    "top_k": 5,
+    "warmup_passes": 3,
+    "timed_repetitions_per_query": 10
+  },
+  "validation_checks": {
+    "summary_artifact_exists": true,
+    "model_artifacts_exist": true,
+    "per_query_records_25_each": true,
+    "dimensions_1024": true,
+    "ranking_reproduction": "75/75",
+    "all_rankings_match": true,
+    "latency_statistics_recomputed": true,
+    "latency_statistics_match": true,
+    "summary_matches_model_artifacts": "3/3",
+    "embeddings_regenerated": false
+  },
+  "latency_results_ms": {
+    "M-000001": {
+      "model": "BGE-M3",
+      "mean": 0.291400752,
+      "median": 0.289173,
+      "minimum": 0.248962,
+      "maximum": 0.395
+    },
+    "M-000002": {
+      "model": "E5",
+      "mean": 0.291354264,
+      "median": 0.290231,
+      "minimum": 0.246923,
+      "maximum": 0.458192
+    },
+    "M-000003": {
+      "model": "Qwen3-Embedding",
+      "mean": 0.238977696,
+      "median": 0.2349425,
+      "minimum": 0.230269,
+      "maximum": 0.289884
+    }
+  },
+  "notes": [
+    "Benchmark uses already-generated embeddings from EXP-4B5-001.",
+    "No embedding regeneration was performed.",
+    "Ranking reproduction confirms compatibility with existing retrieval artifacts.",
+    "Latency statistics were independently recomputed from per-query records.",
+    "Summary values exactly match the three model benchmark artifacts.",
+    "This experiment measures retrieval cost only and does not select a production embedding model."
+  ]
+}

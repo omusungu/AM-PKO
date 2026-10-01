@@ -1,0 +1,572 @@
+[
+  {
+    "id": "K-000001",
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "knowledge_type": "FACT",
+    "topic": "Heat Distortion",
+    "granularity": "Claim",
+    "title": "Heat input changes structural dimensions",
+    "content": "Heat input during welding can cause a fabricated steel frame to move away from its intended dimensions.",
+    "status": "RAW",
+    "source": {
+      "type": "technical_reference",
+      "reference": "AM-PKO/Welding/Heat-Distortion"
+    },
+    "skills": [
+      "welding",
+      "fabrication",
+      "fit-up"
+    ],
+    "assets": [],
+    "actions": [],
+    "relationships": [],
+    "metadata": {
+      "created_at": "2026-09-28",
+      "version": "0.1"
+    }
+  },
+  {
+    "id": "K-000002",
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "knowledge_type": "EXPERIENCE",
+    "topic": "Structural Fit-up",
+    "granularity": "Heuristic",
+    "title": "Alternate tack sequence controls pull",
+    "content": "On long steel frames, tack opposite ends and alternate sides before full welding. Re-check diagonals after each tack pass; if the frame pulls, adjust the next tack before adding more heat.",
+    "status": "RAW",
+    "source": {
+      "type": "conversation",
+      "reference": "chat-2026-09-28"
+    },
+    "skills": [
+      "fit-up",
+      "arc-welding",
+      "fabrication",
+      "measurement"
+    ],
+    "assets": [],
+    "actions": [],
+    "relationships": [],
+    "metadata": {
+      "created_at": "2026-09-28",
+      "version": "0.1"
+    }
+  },
+  {
+    "id": "K-000003",
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "knowledge_type": "IDEA",
+    "topic": "Interpass Temperature Control",
+    "granularity": "Hypothesis",
+    "title": "Use temperature crayons to limit cumulative heat",
+    "content": "Use temperature-indicating crayons at tack and weld stages to keep interpass temperature below a chosen threshold. If successful on scrap, it may reduce cumulative distortion without slowing production excessively.",
+    "status": "RAW",
+    "source": {
+      "type": "brainstorm",
+      "reference": "AM-PKO/Welding/idea-log-01"
+    },
+    "skills": [
+      "welding",
+      "quality-control",
+      "inspection"
+    ],
+    "assets": [],
+    "actions": [],
+    "relationships": [],
+    "metadata": {
+      "created_at": "2026-09-28",
+      "version": "0.1"
+    }
+  },
+  {
+    "id": "K-000004",
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "knowledge_type": "PLAN",
+    "topic": "Pre-Weld Fit-up Check",
+    "granularity": "Procedure",
+    "title": "Dimensional verification before welding",
+    "content": "Before welding: verify square, diagonals, level, and root gaps; record measurements; correct fit-up before applying heat. After welding: re-check diagonals and document deviation.",
+    "status": "RAW",
+    "source": {
+      "type": "checklist",
+      "reference": "AM-PKO/Welding/Pre-Weld-Checklist"
+    },
+    "skills": [
+      "fit-up",
+      "measurement",
+      "inspection",
+      "fabrication"
+    ],
+    "assets": [
+      {
+        "type": "tool",
+        "name": "tape measure"
+      },
+      {
+        "type": "tool",
+        "name": "spirit level"
+      },
+      {
+        "type": "tool",
+        "name": "square"
+      }
+    ],
+    "actions": [
+      {
+        "verb": "measure",
+        "object": "frame diagonals"
+      },
+      {
+        "verb": "correct",
+        "object": "fit-up before welding"
+      },
+      {
+        "verb": "re-check",
+        "object": "diagonals after welding"
+      }
+    ],
+    "relationships": [],
+    "metadata": {
+      "created_at": "2026-09-28",
+      "version": "0.1"
+    }
+  },
+  {
+    "id": "K-000005",
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "knowledge_type": "ANALYSIS",
+    "topic": "Weld Porosity Root Cause",
+    "granularity": "Finding",
+    "title": "Porosity linked to surface contamination",
+    "content": "Rejected fillet welds showed porosity concentrated where mill scale and oil were present. Cleaning to bright metal and controlling gas flow reduced porosity in the sample batch.",
+    "status": "RAW",
+    "source": {
+      "type": "inspection_report",
+      "reference": "AM-PKO/Welding/QC-2026-09"
+    },
+    "skills": [
+      "welding",
+      "inspection",
+      "quality-control",
+      "root-cause-analysis"
+    ],
+    "assets": [
+      {
+        "type": "report",
+        "name": "QC porosity inspection report",
+        "reference": "QC-2026-09"
+      }
+    ],
+    "actions": [],
+    "relationships": [],
+    "metadata": {
+      "created_at": "2026-09-28",
+      "version": "0.1"
+    }
+  },
+  {
+    "id": "K-000006",
+    "knowledge_type": "FACT",
+    "topic": "Arc Welding",
+    "granularity": "Claim",
+    "title": "Arc length affects weld quality",
+    "content": "Maintaining a suitable arc length helps produce a stable arc and consistent weld bead.",
+    "source": "AM-PKO/EXP-4B5-001",
+    "skills": [],
+    "status": "RAW",
+    "metadata": {
+      "created_at": "2026-09-29",
+      "version": "0.1"
+    },
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "relationships": [],
+    "assets": [],
+    "actions": []
+  },
+  {
+    "id": "K-000007",
+    "knowledge_type": "EXPERIENCE",
+    "topic": "Fit-up",
+    "granularity": "Heuristic",
+    "title": "Check diagonals before final tacking",
+    "content": "Checking both diagonals before completing the tack sequence helps reveal frame movement while corrections are still easy.",
+    "source": "AM-PKO/EXP-4B5-001",
+    "skills": [],
+    "status": "RAW",
+    "metadata": {
+      "created_at": "2026-09-29",
+      "version": "0.1"
+    },
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "relationships": [],
+    "assets": [],
+    "actions": []
+  },
+  {
+    "id": "K-000008",
+    "knowledge_type": "IDEA",
+    "topic": "Welding Fixtures",
+    "granularity": "Hypothesis",
+    "title": "Simple temporary braces may reduce movement",
+    "content": "Temporary braces placed at strategic points may help resist movement while a fabricated frame is being welded.",
+    "source": "AM-PKO/EXP-4B5-001",
+    "skills": [],
+    "status": "RAW",
+    "metadata": {
+      "created_at": "2026-09-29",
+      "version": "0.1"
+    },
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "relationships": [],
+    "assets": [],
+    "actions": []
+  },
+  {
+    "id": "K-000009",
+    "knowledge_type": "PLAN",
+    "topic": "Weld Inspection",
+    "granularity": "Procedure",
+    "title": "Inspect welds after cleaning",
+    "content": "After welding, remove slag and inspect the bead for visible discontinuities before accepting the joint.",
+    "source": "AM-PKO/EXP-4B5-001",
+    "skills": [],
+    "status": "RAW",
+    "metadata": {
+      "created_at": "2026-09-29",
+      "version": "0.1"
+    },
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "relationships": [],
+    "assets": [],
+    "actions": []
+  },
+  {
+    "id": "K-000010",
+    "knowledge_type": "ANALYSIS",
+    "topic": "Weld Cracking",
+    "granularity": "Finding",
+    "title": "Cracking can follow excessive restraint",
+    "content": "A restrained joint can develop cracking when welding stresses cannot be relieved by normal movement during cooling.",
+    "source": "AM-PKO/EXP-4B5-001",
+    "skills": [],
+    "status": "RAW",
+    "metadata": {
+      "created_at": "2026-09-29",
+      "version": "0.1"
+    },
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "relationships": [],
+    "assets": [],
+    "actions": []
+  },
+  {
+    "id": "K-000011",
+    "knowledge_type": "FACT",
+    "topic": "Measurement",
+    "granularity": "Claim",
+    "title": "Diagonals indicate frame squareness",
+    "content": "Comparing the two diagonals of a rectangular steel frame is a practical way to check whether the frame is square.",
+    "source": "AM-PKO/EXP-4B5-001",
+    "skills": [],
+    "status": "RAW",
+    "metadata": {
+      "created_at": "2026-09-29",
+      "version": "0.1"
+    },
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "relationships": [],
+    "assets": [],
+    "actions": []
+  },
+  {
+    "id": "K-000012",
+    "knowledge_type": "EXPERIENCE",
+    "topic": "Heat Control",
+    "granularity": "Heuristic",
+    "title": "Short weld sequences can limit heat buildup",
+    "content": "Using shorter alternating weld sequences can help distribute heat instead of concentrating it in one area of a frame.",
+    "source": "AM-PKO/EXP-4B5-001",
+    "skills": [],
+    "status": "RAW",
+    "metadata": {
+      "created_at": "2026-09-29",
+      "version": "0.1"
+    },
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "relationships": [],
+    "assets": [],
+    "actions": []
+  },
+  {
+    "id": "K-000013",
+    "knowledge_type": "IDEA",
+    "topic": "Inspection",
+    "granularity": "Hypothesis",
+    "title": "Photographs could improve weld records",
+    "content": "Taking consistent photographs after inspection may make it easier to compare weld conditions and document quality findings.",
+    "source": "AM-PKO/EXP-4B5-001",
+    "skills": [],
+    "status": "RAW",
+    "metadata": {
+      "created_at": "2026-09-29",
+      "version": "0.1"
+    },
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "relationships": [],
+    "assets": [],
+    "actions": []
+  },
+  {
+    "id": "K-000014",
+    "knowledge_type": "PLAN",
+    "topic": "Fabrication Workflow",
+    "granularity": "Procedure",
+    "title": "Measure before cutting steel",
+    "content": "Before cutting material, verify dimensions against the fabrication drawing and mark the required lengths clearly.",
+    "source": "AM-PKO/EXP-4B5-001",
+    "skills": [],
+    "status": "RAW",
+    "metadata": {
+      "created_at": "2026-09-29",
+      "version": "0.1"
+    },
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "relationships": [],
+    "assets": [],
+    "actions": []
+  },
+  {
+    "id": "K-000015",
+    "knowledge_type": "ANALYSIS",
+    "topic": "Porosity",
+    "granularity": "Finding",
+    "title": "Moisture can contribute to weld porosity",
+    "content": "Moisture or contamination in the welding environment can introduce gases into the weld and contribute to porosity.",
+    "source": "AM-PKO/EXP-4B5-001",
+    "skills": [],
+    "status": "RAW",
+    "metadata": {
+      "created_at": "2026-09-29",
+      "version": "0.1"
+    },
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "relationships": [],
+    "assets": [],
+    "actions": []
+  },
+  {
+    "id": "K-000016",
+    "knowledge_type": "FACT",
+    "topic": "Knowledge Ontology",
+    "granularity": "Claim",
+    "title": "Knowledge type is separate from domain",
+    "content": "AM-PKO treats knowledge type as a distinct dimension from domain so that facts, experiences, ideas, plans, and analysis can be identified independently.",
+    "source": "AM-PKO/EXP-4B5-001",
+    "skills": [],
+    "status": "RAW",
+    "metadata": {
+      "created_at": "2026-09-29",
+      "version": "0.1"
+    },
+    "domain": "AM-PKO",
+    "project": "MUSUNGU TECH-FUNDI",
+    "relationships": [],
+    "assets": [],
+    "actions": []
+  },
+  {
+    "id": "K-000017",
+    "knowledge_type": "EXPERIENCE",
+    "topic": "Knowledge Capture",
+    "granularity": "Heuristic",
+    "title": "Shop-floor knowledge often lives in tacit practice",
+    "content": "Experienced trade knowledge can include practical decisions and adjustments that are difficult to capture in formal technical references.",
+    "source": "AM-PKO/EXP-4B5-001",
+    "skills": [],
+    "status": "RAW",
+    "metadata": {
+      "created_at": "2026-09-29",
+      "version": "0.1"
+    },
+    "domain": "AM-PKO",
+    "project": "MUSUNGU TECH-FUNDI",
+    "relationships": [],
+    "assets": [],
+    "actions": []
+  },
+  {
+    "id": "K-000018",
+    "knowledge_type": "IDEA",
+    "topic": "Retrieval",
+    "granularity": "Hypothesis",
+    "title": "Knowledge relationships may improve retrieval",
+    "content": "Explicit relationships between related records may help AM-PKO retrieve useful knowledge that a simple keyword match could miss.",
+    "source": "AM-PKO/EXP-4B5-001",
+    "skills": [],
+    "status": "RAW",
+    "metadata": {
+      "created_at": "2026-09-29",
+      "version": "0.1"
+    },
+    "domain": "AM-PKO",
+    "project": "MUSUNGU TECH-FUNDI",
+    "relationships": [],
+    "assets": [],
+    "actions": []
+  },
+  {
+    "id": "K-000019",
+    "knowledge_type": "PLAN",
+    "topic": "Pipeline",
+    "granularity": "Procedure",
+    "title": "Process knowledge through structured stages",
+    "content": "AM-PKO can process knowledge through Capture, Structure, Connect, Embed, Retrieve, Reason, and Apply stages.",
+    "source": "AM-PKO/EXP-4B5-001",
+    "skills": [],
+    "status": "RAW",
+    "metadata": {
+      "created_at": "2026-09-29",
+      "version": "0.1"
+    },
+    "domain": "AM-PKO",
+    "project": "MUSUNGU TECH-FUNDI",
+    "relationships": [],
+    "assets": [],
+    "actions": []
+  },
+  {
+    "id": "K-000020",
+    "knowledge_type": "ANALYSIS",
+    "topic": "Embedding Evaluation",
+    "granularity": "Finding",
+    "title": "Embedding quality and runtime cost must both be considered",
+    "content": "An embedding model can produce strong retrieval metrics while still imposing substantial local encoding latency, so model evaluation should consider both quality and operational cost.",
+    "source": "AM-PKO/EXP-4B5-001",
+    "skills": [],
+    "status": "RAW",
+    "metadata": {
+      "created_at": "2026-09-29",
+      "version": "0.1"
+    },
+    "domain": "AM-PKO",
+    "project": "MUSUNGU TECH-FUNDI",
+    "relationships": [],
+    "assets": [],
+    "actions": []
+  },
+  {
+    "id": "K-000021",
+    "knowledge_type": "FACT",
+    "topic": "Quoting",
+    "granularity": "Claim",
+    "title": "Material quantity affects fabrication quotations",
+    "content": "A fabrication quotation should account for the quantity and type of steel and other materials required for the job.",
+    "source": "AM-PKO/EXP-4B5-001",
+    "skills": [],
+    "status": "RAW",
+    "metadata": {
+      "created_at": "2026-09-29",
+      "version": "0.1"
+    },
+    "domain": "Business",
+    "project": "MUSUNGU TECH-FUNDI",
+    "relationships": [],
+    "assets": [],
+    "actions": []
+  },
+  {
+    "id": "K-000022",
+    "knowledge_type": "EXPERIENCE",
+    "topic": "Client Payment",
+    "granularity": "Heuristic",
+    "title": "Written agreements clarify payment expectations",
+    "content": "Recording agreed wages, materials, scope, and payment terms in writing can reduce misunderstandings during fabrication projects.",
+    "source": "AM-PKO/EXP-4B5-001",
+    "skills": [],
+    "status": "RAW",
+    "metadata": {
+      "created_at": "2026-09-29",
+      "version": "0.1"
+    },
+    "domain": "Business",
+    "project": "MUSUNGU TECH-FUNDI",
+    "relationships": [],
+    "assets": [],
+    "actions": []
+  },
+  {
+    "id": "K-000023",
+    "knowledge_type": "IDEA",
+    "topic": "Digital Services",
+    "granularity": "Hypothesis",
+    "title": "Web skills can complement fabrication income",
+    "content": "Simple HTML, CSS, and JavaScript projects could provide an additional income path alongside welding and metal fabrication.",
+    "source": "AM-PKO/EXP-4B5-001",
+    "skills": [],
+    "status": "RAW",
+    "metadata": {
+      "created_at": "2026-09-29",
+      "version": "0.1"
+    },
+    "domain": "Business",
+    "project": "MUSUNGU TECH-FUNDI",
+    "relationships": [],
+    "assets": [],
+    "actions": []
+  },
+  {
+    "id": "K-000024",
+    "knowledge_type": "PLAN",
+    "topic": "Marketing",
+    "granularity": "Procedure",
+    "title": "Publish a clear service list",
+    "content": "Create marketing material that clearly lists welding, metal fabrication, gate making, structural welding, and related services offered by the business.",
+    "source": "AM-PKO/EXP-4B5-001",
+    "skills": [],
+    "status": "RAW",
+    "metadata": {
+      "created_at": "2026-09-29",
+      "version": "0.1"
+    },
+    "domain": "Business",
+    "project": "MUSUNGU TECH-FUNDI",
+    "relationships": [],
+    "assets": [],
+    "actions": []
+  },
+  {
+    "id": "K-000025",
+    "knowledge_type": "ANALYSIS",
+    "topic": "Payment Dispute",
+    "granularity": "Finding",
+    "title": "Payment disputes often involve scope and material disagreements",
+    "content": "When a fabrication project develops a payment dispute, reviewing the agreed scope, materials, work performed, and payment terms can clarify the source of disagreement.",
+    "source": "AM-PKO/EXP-4B5-001",
+    "skills": [],
+    "status": "RAW",
+    "metadata": {
+      "created_at": "2026-09-29",
+      "version": "0.1"
+    },
+    "domain": "Business",
+    "project": "MUSUNGU TECH-FUNDI",
+    "relationships": [],
+    "assets": [],
+    "actions": []
+  }
+]

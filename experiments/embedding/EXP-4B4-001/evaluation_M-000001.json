@@ -1,0 +1,95 @@
+{
+  "experiment_id": "EXP-4B4-001",
+  "model_id": "M-000001",
+  "model": "BAAI BGE-M3",
+  "evaluation_basis": "fixed judgments.json",
+  "per_query": [
+    {
+      "query_id": "Q-000001",
+      "metrics": {
+        "Recall@1": 0.25,
+        "HighRelevanceRecall@1": 0.25,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.75,
+        "HighRelevanceRecall@3": 0.75,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000002",
+      "metrics": {
+        "Recall@1": 0.25,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.75,
+        "HighRelevanceRecall@3": 0.5,
+        "nDCG@3": 0.832282,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.93133,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000003",
+      "metrics": {
+        "Recall@1": 0.333333,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000004",
+      "metrics": {
+        "Recall@1": 1.0,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000005",
+      "metrics": {
+        "Recall@1": 0.25,
+        "HighRelevanceRecall@1": 0.0,
+        "nDCG@1": 0.5,
+        "Recall@3": 0.75,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 0.882121,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.896375,
+        "MRR": 1.0
+      }
+    }
+  ],
+  "aggregate": {
+    "Recall@1": 0.416667,
+    "HighRelevanceRecall@1": 0.45,
+    "nDCG@1": 0.9,
+    "Recall@3": 0.85,
+    "HighRelevanceRecall@3": 0.85,
+    "nDCG@3": 0.942881,
+    "Recall@5": 1.0,
+    "HighRelevanceRecall@5": 1.0,
+    "nDCG@5": 0.965541,
+    "MRR": 1.0
+  }
+}

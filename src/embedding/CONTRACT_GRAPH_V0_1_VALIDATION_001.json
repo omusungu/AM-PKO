@@ -1,0 +1,73 @@
+{
+  "validation_id": "CONTRACT_GRAPH_V0_1_VALIDATION_001",
+  "artifact": "src/embedding/CONTRACT_GRAPH_V0_1.json",
+  "graph_version": "0.1",
+  "status": "VALIDATED_DRAFT_DERIVED",
+  "freeze_status": "NOT_FROZEN",
+  "validated_at": "2026-10-01T09:08:17.738956+00:00",
+  "validation_gates": {
+    "schema_gate": {
+      "status": "PASS",
+      "checks": 26,
+      "failures": 0
+    },
+    "semantic_integrity_gate": {
+      "status": "PASS",
+      "errors": 0
+    },
+    "provenance_integrity_gate": {
+      "status": "PASS",
+      "errors": 0
+    },
+    "dependency_invalidation_gate": {
+      "status": "PASS",
+      "errors": 0
+    },
+    "supporting_node_design_gate": {
+      "status": "PASS",
+      "checks": 17,
+      "failures": 0
+    },
+    "supporting_node_provenance_gate": {
+      "status": "PASS",
+      "errors": 0
+    },
+    "combined_integrity_gate_v2": {
+      "status": "PASS",
+      "errors": 0
+    },
+    "coverage_invalidation_consistency_gate": {
+      "status": "PASS",
+      "errors": 0,
+      "warnings": 6
+    }
+  },
+  "graph_inventory": {
+    "frozen_contract_nodes": 8,
+    "supporting_boundary_nodes": 4,
+    "relationships": 17,
+    "external_boundary_references": 1,
+    "historical_contract_references": 1
+  },
+  "evidence_position": {
+    "frozen_contract_nodes": "validated_against_repository_freeze_manifests",
+    "supporting_boundaries": "validated_against_source_artifacts",
+    "relationships": "validated_against_repository_evidence",
+    "historical_evolution": "explicitly_preserved",
+    "descriptive_invalidation_warnings": 6
+  },
+  "lifecycle_protection": {
+    "graph_status": "DRAFT_DERIVED",
+    "frozen_contracts_modified": false,
+    "freeze_manifests_modified": false,
+    "contract_versions_modified": false,
+    "production_model_selected": false,
+    "vector_database_selected": false,
+    "automatic_invalidation_performed": false
+  },
+  "decision": {
+    "result": "VALIDATED_DRAFT",
+    "freeze_decision": "DEFERRED",
+    "reason": "Substantive validation passed; formal graph freeze remains a separate explicit lifecycle decision."
+  }
+}

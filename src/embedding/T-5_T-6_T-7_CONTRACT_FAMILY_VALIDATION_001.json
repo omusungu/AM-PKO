@@ -1,0 +1,56 @@
+{
+  "validation_id": "T-5_T-6_T-7_CONTRACT_FAMILY_VALIDATION_001",
+  "status": "VALIDATED_DESIGN",
+  "contract_versions": {
+    "T-5": "0.1-design",
+    "T-6": "0.1-design",
+    "T-7": "0.1-design"
+  },
+  "contracts": {
+    "T-5": {
+      "name": "QueryRequest",
+      "fields": [
+        "query",
+        "k",
+        "filters",
+        "include_excluded"
+      ],
+      "boundary": "retrieval request"
+    },
+    "T-6": {
+      "name": "RankedResult",
+      "fields": [
+        "record_id",
+        "score"
+      ],
+      "boundary": "individual ranked retrieval result"
+    },
+    "T-7": {
+      "name": "EvaluationRun",
+      "fields": [
+        "evaluation_id",
+        "experiment_id",
+        "model_id",
+        "model_family",
+        "judgment_scale",
+        "per_query",
+        "metrics"
+      ],
+      "boundary": "retrieval evaluation run"
+    }
+  },
+  "checks": {
+    "T-5_verified": true,
+    "T-6_verified": true,
+    "T-7_verified": true,
+    "field_sets_non_overlapping": true,
+    "responsibility_boundaries_distinct": true
+  },
+  "architectural_constraints": {
+    "frozen_i2_i3_i4_i5_modified": false,
+    "runtime_retrieval_implemented": false,
+    "production_model_selected": false,
+    "persistent_vector_database_selected": false
+  },
+  "freeze_status": "NOT_FROZEN"
+}

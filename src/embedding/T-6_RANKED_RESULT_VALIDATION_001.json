@@ -1,0 +1,32 @@
+{
+  "validation_id": "T-6_RANKED_RESULT_VALIDATION_001",
+  "contract": "T-6",
+  "artifact": "src/embedding/retrieval_result.py",
+  "status": "FROZEN_VALIDATED",
+  "contract_version": "0.2",
+  "checks": {
+    "dataclass_frozen": true,
+    "field_order": [
+      "record_id",
+      "score"
+    ],
+    "record_id_string_validation": true,
+    "record_id_nonempty_validation": true,
+    "score_numeric_validation": true,
+    "boolean_score_rejection": true,
+    "score_normalized_to_float": true,
+    "nan_score_rejection": true,
+    "python_compile": true
+  },
+  "architectural_constraints": {
+    "similarity_computation": false,
+    "result_reordering": false,
+    "knowledge_record_transformation": false,
+    "evaluation_metrics": false,
+    "relevance_judgments": false,
+    "graph_traversal": false,
+    "rag_synthesis": false,
+    "frozen_i2_i3_i4_i5_contracts_modified": false
+  },
+  "freeze_status": "FROZEN"
+}

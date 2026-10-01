@@ -1,0 +1,65 @@
+{
+  "decision_framework_id": "EMBEDDING-MODEL-SELECTION-001",
+  "type": "PRODUCTION_MODEL_SELECTION_FRAMEWORK",
+  "status": "FROZEN",
+  "purpose": "Define the evidence and constraints required for selecting a production embedding model for AM-PKO.",
+  "source_evidence": [
+    "EXP-4B4-001",
+    "EXP-4B5-001",
+    "EXP-4B5-002",
+    "EXP-4B5-CONSOLIDATED-001"
+  ],
+  "candidate_models": [
+    "M-000001",
+    "M-000002",
+    "M-000003"
+  ],
+  "decision_dimensions": [
+    "retrieval_quality",
+    "high_relevance_recall",
+    "ranking_quality",
+    "embedding_generation_runtime",
+    "retrieval_runtime",
+    "resource_constraints",
+    "model_provenance",
+    "reproducibility",
+    "integration_compatibility",
+    "operational_constraints"
+  ],
+  "quality_evidence": {
+    "required_metrics": [
+      "Recall@1",
+      "Recall@3",
+      "Recall@5",
+      "HighRelevanceRecall@1",
+      "HighRelevanceRecall@3",
+      "HighRelevanceRecall@5",
+      "nDCG@1",
+      "nDCG@3",
+      "nDCG@5",
+      "MRR"
+    ],
+    "judgments_must_remain_frozen": true
+  },
+  "runtime_evidence": {
+    "embedding_generation": true,
+    "retrieval_latency": true,
+    "benchmark_environment_must_be_recorded": true
+  },
+  "hard_constraints": [
+    "candidate must implement the frozen embedding interface contract",
+    "candidate identity and model checksum must be reproducible",
+    "candidate must preserve embedding-document protocol requirements",
+    "candidate must operate within the available deployment environment",
+    "candidate must pass required adapter regression tests"
+  ],
+  "decision_rules": {
+    "automatic_winner": false,
+    "single_metric_selection": false,
+    "quality_only_selection": false,
+    "runtime_only_selection": false,
+    "production_selection_requires_explicit_decision_record": true
+  },
+  "current_decision": "NOT_SELECTED",
+  "note": "The framework defines how evidence will be considered; it does not rank, score, or select the candidate models."
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "query_id": "Q-000001",
+    "model_id": "M-000002",
+    "retrieval_latency_ms": 3.6508,
+    "ranking": [
+      {
+        "rank": 1,
+        "id": "K-000003",
+        "cosine_similarity": 0.86652645
+      },
+      {
+        "rank": 2,
+        "id": "K-000004",
+        "cosine_similarity": 0.85841619
+      },
+      {
+        "rank": 3,
+        "id": "K-000002",
+        "cosine_similarity": 0.84604513
+      },
+      {
+        "rank": 4,
+        "id": "K-000001",
+        "cosine_similarity": 0.84146268
+      },
+      {
+        "rank": 5,
+        "id": "K-000005",
+        "cosine_similarity": 0.83451433
+      }
+    ]
+  },
+  {
+    "query_id": "Q-000002",
+    "model_id": "M-000002",
+    "retrieval_latency_ms": 3.5724,
+    "ranking": [
+      {
+        "rank": 1,
+        "id": "K-000002",
+        "cosine_similarity": 0.81628893
+      },
+      {
+        "rank": 2,
+        "id": "K-000001",
+        "cosine_similarity": 0.7967216
+      },
+      {
+        "rank": 3,
+        "id": "K-000003",
+        "cosine_similarity": 0.79105075
+      },
+      {
+        "rank": 4,
+        "id": "K-000005",
+        "cosine_similarity": 0.77286768
+      },
+      {
+        "rank": 5,
+        "id": "K-000004",
+        "cosine_similarity": 0.74442229
+      }
+    ]
+  },
+  {
+    "query_id": "Q-000003",
+    "model_id": "M-000002",
+    "retrieval_latency_ms": 3.5569,
+    "ranking": [
+      {
+        "rank": 1,
+        "id": "K-000004",
+        "cosine_similarity": 0.87158958
+      },
+      {
+        "rank": 2,
+        "id": "K-000002",
+        "cosine_similarity": 0.87075635
+      },
+      {
+        "rank": 3,
+        "id": "K-000001",
+        "cosine_similarity": 0.86843323
+      },
+      {
+        "rank": 4,
+        "id": "K-000003",
+        "cosine_similarity": 0.82167586
+      },
+      {
+        "rank": 5,
+        "id": "K-000005",
+        "cosine_similarity": 0.81899725
+      }
+    ]
+  },
+  {
+    "query_id": "Q-000004",
+    "model_id": "M-000002",
+    "retrieval_latency_ms": 3.5684,
+    "ranking": [
+      {
+        "rank": 1,
+        "id": "K-000005",
+        "cosine_similarity": 0.8990522
+      },
+      {
+        "rank": 2,
+        "id": "K-000001",
+        "cosine_similarity": 0.81741902
+      },
+      {
+        "rank": 3,
+        "id": "K-000004",
+        "cosine_similarity": 0.79139702
+      },
+      {
+        "rank": 4,
+        "id": "K-000003",
+        "cosine_similarity": 0.78550973
+      },
+      {
+        "rank": 5,
+        "id": "K-000002",
+        "cosine_similarity": 0.76573737
+      }
+    ]
+  },
+  {
+    "query_id": "Q-000005",
+    "model_id": "M-000002",
+    "retrieval_latency_ms": 3.562,
+    "ranking": [
+      {
+        "rank": 1,
+        "id": "K-000003",
+        "cosine_similarity": 0.86432209
+      },
+      {
+        "rank": 2,
+        "id": "K-000004",
+        "cosine_similarity": 0.84477941
+      },
+      {
+        "rank": 3,
+        "id": "K-000001",
+        "cosine_similarity": 0.8370483
+      },
+      {
+        "rank": 4,
+        "id": "K-000002",
+        "cosine_similarity": 0.81754698
+      },
+      {
+        "rank": 5,
+        "id": "K-000005",
+        "cosine_similarity": 0.80425894
+      }
+    ]
+  }
+]

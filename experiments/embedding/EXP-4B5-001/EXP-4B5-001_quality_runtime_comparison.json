@@ -1,0 +1,128 @@
+{
+  "experiment_id": "EXP-4B5-001",
+  "comparison_type": "QUALITY_AND_RUNTIME",
+  "models": [
+    {
+      "model_id": "M-000001",
+      "model_name": "BGE-M3",
+      "quality": {
+        "Recall@1": 0.588,
+        "Recall@3": 0.869333,
+        "Recall@5": 0.907333,
+        "HighRelevanceRecall@1": 0.871333,
+        "HighRelevanceRecall@3": 0.922667,
+        "HighRelevanceRecall@5": 0.940667,
+        "nDCG@1": 1.0,
+        "nDCG@3": 0.937322,
+        "nDCG@5": 0.938382,
+        "MRR": 1.0
+      },
+      "runtime": {
+        "corpus_embedding": {
+          "count": 25,
+          "mean_latency_ms": 7224.5,
+          "min_latency_ms": 5490.03,
+          "max_latency_ms": 15882.44
+        },
+        "query_embedding": {
+          "count": 25,
+          "mean_latency_ms": 5792.49,
+          "min_latency_ms": 5275.05,
+          "max_latency_ms": 10870.32
+        },
+        "combined_mean_embedding_latency_ms": 13016.99,
+        "retrieval_latency_ms": null,
+        "retrieval_latency_status": "NOT_RECORDED"
+      },
+      "source_artifacts": {
+        "evaluation": "M-000001_evaluation.json",
+        "corpus_embeddings": "M-000001_corpus_embeddings.json",
+        "query_embeddings": "M-000001_query_embeddings.json",
+        "retrieval": "M-000001_retrieval.json"
+      },
+      "retrieval_queries": 25
+    },
+    {
+      "model_id": "M-000002",
+      "model_name": "E5",
+      "quality": {
+        "Recall@1": 0.588,
+        "Recall@3": 0.836,
+        "Recall@5": 0.8773333333333333,
+        "HighRelevanceRecall@1": 0.8313333333333334,
+        "HighRelevanceRecall@3": 0.9226666666666666,
+        "HighRelevanceRecall@5": 0.9506666666666667,
+        "nDCG@1": 0.9733333333333333,
+        "nDCG@3": 0.9175599671403379,
+        "nDCG@5": 0.9205929413179418,
+        "MRR": 1.0
+      },
+      "runtime": {
+        "corpus_embedding": {
+          "count": 25,
+          "mean_latency_ms": 6618.7536,
+          "min_latency_ms": 5496.12,
+          "max_latency_ms": 12210.48
+        },
+        "query_embedding": {
+          "count": 25,
+          "mean_latency_ms": 5853.7144,
+          "min_latency_ms": 5320.4,
+          "max_latency_ms": 10767.67
+        },
+        "combined_mean_embedding_latency_ms": 12472.468,
+        "retrieval_latency_ms": null,
+        "retrieval_latency_status": "NOT_RECORDED"
+      },
+      "source_artifacts": {
+        "evaluation": "M-000002_evaluation.json",
+        "corpus_embeddings": "M-000002_corpus_embeddings.json",
+        "query_embeddings": "M-000002_query_embeddings.json",
+        "retrieval": "M-000002_retrieval.json"
+      },
+      "retrieval_queries": 25
+    },
+    {
+      "model_id": "M-000003",
+      "model_name": "Qwen3-Embedding",
+      "quality": {
+        "Recall@1": 0.588,
+        "Recall@3": 0.816,
+        "Recall@5": 0.9286666666666666,
+        "HighRelevanceRecall@1": 0.8313333333333334,
+        "HighRelevanceRecall@3": 0.9226666666666666,
+        "HighRelevanceRecall@5": 0.972,
+        "nDCG@1": 0.9733333333333333,
+        "nDCG@3": 0.9079770682108789,
+        "nDCG@5": 0.9367056385228285,
+        "MRR": 1.0
+      },
+      "runtime": {
+        "corpus_embedding": {
+          "count": 25,
+          "mean_latency_ms": 4248.8752,
+          "min_latency_ms": 3479.41,
+          "max_latency_ms": 10128.82
+        },
+        "query_embedding": {
+          "count": 25,
+          "mean_latency_ms": 4790.2828,
+          "min_latency_ms": 4339.66,
+          "max_latency_ms": 8217.52
+        },
+        "combined_mean_embedding_latency_ms": 9039.158,
+        "retrieval_latency_ms": null,
+        "retrieval_latency_status": "NOT_RECORDED"
+      },
+      "source_artifacts": {
+        "evaluation": "M-000003_evaluation.json",
+        "corpus_embeddings": "M-000003_corpus_embeddings.json",
+        "query_embeddings": "M-000003_query_embeddings.json",
+        "retrieval": "M-000003_retrieval.json"
+      },
+      "retrieval_queries": 25
+    }
+  ],
+  "retrieval_latency_status": "NOT_RECORDED",
+  "production_selection": "NOT_SELECTED"
+}

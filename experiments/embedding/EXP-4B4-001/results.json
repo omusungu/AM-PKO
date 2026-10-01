@@ -1,0 +1,67 @@
+{
+  "experiment_id": "EXP-4B4-001",
+  "models": [
+    {
+      "model_id": "M-000001",
+      "evaluation_file": "evaluation_M-000001.json",
+      "retrieval_file": "retrieval_M-000001.json",
+      "corpus_embeddings_file": "corpus_embeddings_M-000001.json",
+      "query_embeddings_file": "query_embeddings_M-000001.json",
+      "metrics": {
+        "Recall@1": 0.416667,
+        "HighRelevanceRecall@1": 0.45,
+        "nDCG@1": 0.9,
+        "Recall@3": 0.85,
+        "HighRelevanceRecall@3": 0.85,
+        "nDCG@3": 0.942881,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.965541,
+        "MRR": 1.0
+      },
+      "status": "EVALUATED"
+    },
+    {
+      "model_id": "M-000002",
+      "evaluation_file": "evaluation_M-000002.json",
+      "retrieval_file": "retrieval_M-000002.json",
+      "corpus_embeddings_file": "corpus_embeddings_M-000002.json",
+      "query_embeddings_file": "query_embeddings_M-000002.json",
+      "metrics": {
+        "Recall@1": 0.416667,
+        "HighRelevanceRecall@1": 0.65,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.85,
+        "HighRelevanceRecall@3": 0.85,
+        "nDCG@3": 0.966456,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.986266,
+        "RR": 1.0
+      },
+      "status": "EVALUATED"
+    },
+    {
+      "model_id": "M-000003",
+      "evaluation_file": "evaluation_M-000003.json",
+      "retrieval_file": "retrieval_M-000003.json",
+      "corpus_embeddings_file": "corpus_embeddings_M-000003.json",
+      "query_embeddings_file": "query_embeddings_M-000003.json",
+      "metrics": {
+        "recall_at_1": 0.4166666666666667,
+        "high_relevance_recall_at_1": 0.65,
+        "ndcg_at_1": 1.0,
+        "recall_at_3": 0.85,
+        "high_relevance_recall_at_3": 0.85,
+        "ndcg_at_3": 0.9532019722582017,
+        "recall_at_5": 1.0,
+        "high_relevance_recall_at_5": 1.0,
+        "mrr": 1.0
+      },
+      "status": "EVALUATED"
+    }
+  ],
+  "winner": null,
+  "selection_status": "NO_WINNER_SELECTED",
+  "comparison_status": "ALL_THREE_CANDIDATES_EVALUATED"
+}

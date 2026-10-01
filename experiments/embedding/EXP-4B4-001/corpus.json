@@ -1,0 +1,172 @@
+[
+  {
+    "id": "K-000001",
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "knowledge_type": "FACT",
+    "topic": "Heat Distortion",
+    "granularity": "Claim",
+    "title": "Heat input changes structural dimensions",
+    "content": "Heat input during welding can cause a fabricated steel frame to move away from its intended dimensions.",
+    "status": "RAW",
+    "source": {
+      "type": "technical_reference",
+      "reference": "AM-PKO/Welding/Heat-Distortion"
+    },
+    "skills": [
+      "welding",
+      "fabrication",
+      "fit-up"
+    ],
+    "assets": [],
+    "actions": [],
+    "relationships": [],
+    "metadata": {
+      "created_at": "2026-09-28",
+      "version": "0.1"
+    }
+  },
+  {
+    "id": "K-000002",
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "knowledge_type": "EXPERIENCE",
+    "topic": "Structural Fit-up",
+    "granularity": "Heuristic",
+    "title": "Alternate tack sequence controls pull",
+    "content": "On long steel frames, tack opposite ends and alternate sides before full welding. Re-check diagonals after each tack pass; if the frame pulls, adjust the next tack before adding more heat.",
+    "status": "RAW",
+    "source": {
+      "type": "conversation",
+      "reference": "chat-2026-09-28"
+    },
+    "skills": [
+      "fit-up",
+      "arc-welding",
+      "fabrication",
+      "measurement"
+    ],
+    "assets": [],
+    "actions": [],
+    "relationships": [],
+    "metadata": {
+      "created_at": "2026-09-28",
+      "version": "0.1"
+    }
+  },
+  {
+    "id": "K-000003",
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "knowledge_type": "IDEA",
+    "topic": "Interpass Temperature Control",
+    "granularity": "Hypothesis",
+    "title": "Use temperature crayons to limit cumulative heat",
+    "content": "Use temperature-indicating crayons at tack and weld stages to keep interpass temperature below a chosen threshold. If successful on scrap, it may reduce cumulative distortion without slowing production excessively.",
+    "status": "RAW",
+    "source": {
+      "type": "brainstorm",
+      "reference": "AM-PKO/Welding/idea-log-01"
+    },
+    "skills": [
+      "welding",
+      "quality-control",
+      "inspection"
+    ],
+    "assets": [],
+    "actions": [],
+    "relationships": [],
+    "metadata": {
+      "created_at": "2026-09-28",
+      "version": "0.1"
+    }
+  },
+  {
+    "id": "K-000004",
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "knowledge_type": "PLAN",
+    "topic": "Pre-Weld Fit-up Check",
+    "granularity": "Procedure",
+    "title": "Dimensional verification before welding",
+    "content": "Before welding: verify square, diagonals, level, and root gaps; record measurements; correct fit-up before applying heat. After welding: re-check diagonals and document deviation.",
+    "status": "RAW",
+    "source": {
+      "type": "checklist",
+      "reference": "AM-PKO/Welding/Pre-Weld-Checklist"
+    },
+    "skills": [
+      "fit-up",
+      "measurement",
+      "inspection",
+      "fabrication"
+    ],
+    "assets": [
+      {
+        "type": "tool",
+        "name": "tape measure"
+      },
+      {
+        "type": "tool",
+        "name": "spirit level"
+      },
+      {
+        "type": "tool",
+        "name": "square"
+      }
+    ],
+    "actions": [
+      {
+        "verb": "measure",
+        "object": "frame diagonals"
+      },
+      {
+        "verb": "correct",
+        "object": "fit-up before welding"
+      },
+      {
+        "verb": "re-check",
+        "object": "diagonals after welding"
+      }
+    ],
+    "relationships": [],
+    "metadata": {
+      "created_at": "2026-09-28",
+      "version": "0.1"
+    }
+  },
+  {
+    "id": "K-000005",
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "knowledge_type": "ANALYSIS",
+    "topic": "Weld Porosity Root Cause",
+    "granularity": "Finding",
+    "title": "Porosity linked to surface contamination",
+    "content": "Rejected fillet welds showed porosity concentrated where mill scale and oil were present. Cleaning to bright metal and controlling gas flow reduced porosity in the sample batch.",
+    "status": "RAW",
+    "source": {
+      "type": "inspection_report",
+      "reference": "AM-PKO/Welding/QC-2026-09"
+    },
+    "skills": [
+      "welding",
+      "inspection",
+      "quality-control",
+      "root-cause-analysis"
+    ],
+    "assets": [
+      {
+        "type": "report",
+        "name": "QC porosity inspection report",
+        "reference": "QC-2026-09"
+      }
+    ],
+    "actions": [],
+    "relationships": [],
+    "metadata": {
+      "created_at": "2026-09-28",
+      "version": "0.1"
+    }
+  }
+]

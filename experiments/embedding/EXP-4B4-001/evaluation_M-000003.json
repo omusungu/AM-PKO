@@ -1,0 +1,78 @@
+{
+  "experiment_id": "EXP-4B4-001",
+  "model_id": "M-000003",
+  "query_count": 5,
+  "metrics": {
+    "recall_at_1": 0.4166666666666667,
+    "high_relevance_recall_at_1": 0.65,
+    "ndcg_at_1": 1.0,
+    "recall_at_3": 0.85,
+    "high_relevance_recall_at_3": 0.85,
+    "ndcg_at_3": 0.9532019722582017,
+    "recall_at_5": 1.0,
+    "high_relevance_recall_at_5": 1.0,
+    "mrr": 1.0
+  },
+  "per_query": [
+    {
+      "query_id": "Q-000001",
+      "recall_at_1": 0.25,
+      "high_relevance_recall_at_1": 0.25,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 0.75,
+      "high_relevance_recall_at_3": 0.75,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "high_relevance_recall_at_5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "Q-000002",
+      "recall_at_1": 0.25,
+      "high_relevance_recall_at_1": 0.5,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 0.75,
+      "high_relevance_recall_at_3": 0.5,
+      "ndcg_at_3": 0.7660098612910087,
+      "recall_at_5": 1.0,
+      "high_relevance_recall_at_5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "Q-000003",
+      "recall_at_1": 0.3333333333333333,
+      "high_relevance_recall_at_1": 0.5,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "high_relevance_recall_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "high_relevance_recall_at_5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "Q-000004",
+      "recall_at_1": 1.0,
+      "high_relevance_recall_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "high_relevance_recall_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "high_relevance_recall_at_5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "Q-000005",
+      "recall_at_1": 0.25,
+      "high_relevance_recall_at_1": 1.0,
+      "ndcg_at_1": 1.0,
+      "recall_at_3": 0.75,
+      "high_relevance_recall_at_3": 1.0,
+      "ndcg_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "high_relevance_recall_at_5": 1.0,
+      "reciprocal_rank": 1.0
+    }
+  ]
+}

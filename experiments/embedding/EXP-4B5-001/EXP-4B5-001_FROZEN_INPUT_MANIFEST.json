@@ -1,0 +1,26 @@
+{
+  "experiment_id": "EXP-4B5-001",
+  "manifest_type": "frozen_input_manifest",
+  "status": "FROZEN",
+  "files": {
+    "corpus.json": {
+      "sha256": "7da950ff174c6d9c6ed444e9e26211436e1b955b6053c0e389095c1f1a0e71c5",
+      "bytes": 16753,
+      "expected_records_or_models": 25
+    },
+    "queries.json": {
+      "sha256": "bc03d5eba8f0d6322e8ab4bfe5bde48ac2161b9745cc90448a97a4c3ad53d08a",
+      "bytes": 2816,
+      "expected_records_or_models": 25
+    },
+    "judgments.json": {
+      "sha256": "03001d3b5b8c131ca58a2a1e84eb236aed5492bddb4318368a506d144844cfea",
+      "bytes": 2640
+    },
+    "models.json": {
+      "sha256": "4cafd3ec4a8bee71caa94f908e35b7cd51653a6242cd7fdb64a0a467849ef117",
+      "bytes": 2579,
+      "expected_records_or_models": 3
+    }
+  }
+}
