@@ -26,7 +26,38 @@ body {
   line-height: 1.6;
 }
 
-header {
+.record-card,
+.relationship-card,
+.module-card,
+.experiment-card {
+  padding: 16px;
+  margin-bottom: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.record-card h3,
+.relationship-card h3,
+.module-card h3,
+.experiment-card h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.record-card p,
+.relationship-card p,
+.module-card p,
+.experiment-card p {
+  margin: 0 0 8px;
+}
+
+.record-card small,
+.relationship-card small,
+.module-card small,
+.experiment-card small {
+  color: var(--muted);
+}header {
   padding: 32px 24px;
   border-bottom: 1px solid var(--border);
   background: var(--surface);
