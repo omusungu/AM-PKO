@@ -1,0 +1,57 @@
+[
+  {
+    "id": "K-000001",
+    "knowledge_type": "FACT",
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "topic": "Heat Distortion",
+    "granularity": "Claim",
+    "title": "Heat input changes structural dimensions",
+    "content": "Heat input changes structural dimensions during welding.",
+    "status": "VALIDATED"
+  },
+  {
+    "id": "K-000002",
+    "knowledge_type": "EXPERIENCE",
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "topic": "Structural Fit-up",
+    "granularity": "Heuristic",
+    "title": "Alternate tack sequence controls pull",
+    "content": "Alternating the tack sequence can help control weld pull during structural fit-up.",
+    "status": "REVIEWED"
+  },
+  {
+    "id": "K-000003",
+    "knowledge_type": "IDEA",
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "topic": "Interpass Temperature Control",
+    "granularity": "Hypothesis",
+    "title": "Use temperature crayons for interpass control",
+    "content": "Temperature crayons could provide a practical method for controlling interpass temperature.",
+    "status": "RAW"
+  },
+  {
+    "id": "K-000004",
+    "knowledge_type": "PLAN",
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "topic": "Pre-Weld Fit-up Check",
+    "granularity": "Procedure",
+    "title": "Pre-weld fit-up check",
+    "content": "Perform a structured fit-up check before welding begins.",
+    "status": "REVIEWED"
+  },
+  {
+    "id": "K-000005",
+    "knowledge_type": "ANALYSIS",
+    "domain": "Welding",
+    "project": "MUSUNGU TECH-FUNDI",
+    "topic": "Weld Porosity Root Cause",
+    "granularity": "Finding",
+    "title": "Weld porosity root cause",
+    "content": "Analyze process and environmental conditions to identify the root cause of weld porosity.",
+    "status": "REVIEWED"
+  }
+]
