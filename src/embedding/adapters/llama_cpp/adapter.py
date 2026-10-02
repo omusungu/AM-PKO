@@ -37,7 +37,7 @@ class LlamaCppEmbeddingAdapter(CheckpointEmbeddingAdapter):
         self._model_family = model_family
         self._dimension = dimension
         self._max_input_tokens = max_input_tokens
-        self._pooling = pooling
+        self._pooling = None if pooling == "model_default" else pooling
         self._normalize = normalize
         self._context_size = context_size
         self._threads = threads

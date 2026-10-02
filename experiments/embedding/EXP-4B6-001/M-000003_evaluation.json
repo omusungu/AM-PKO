@@ -1,0 +1,775 @@
+{
+  "evaluation_id": "EXP-4B6-001:M-000003",
+  "experiment_id": "EXP-4B6-001",
+  "model_id": "M-000003",
+  "model_family": "Qwen",
+  "judgment_scale": {
+    "0": "not relevant",
+    "1": "partially relevant",
+    "2": "highly relevant"
+  },
+  "per_query": [
+    {
+      "query_id": "Q-000001",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000002",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000003",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000004",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000005",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000006",
+      "metrics": {
+        "Recall@1": 1.0,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000007",
+      "metrics": {
+        "Recall@1": 0.3333333333333333,
+        "HighRelevanceRecall@1": 0.0,
+        "nDCG@1": 0.3333333333333333,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 0.8213137146137828,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.8213137146137828,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000008",
+      "metrics": {
+        "Recall@1": 0.3333333333333333,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000009",
+      "metrics": {
+        "Recall@1": 0.3333333333333333,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000010",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.5,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 0.8262346571285599,
+        "Recall@5": 0.5,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.8262346571285599,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000011",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.0,
+        "nDCG@1": 0.3333333333333333,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 0.7967075809905066,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.7967075809905066,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000012",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000013",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.5,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 0.8262346571285599,
+        "Recall@5": 0.5,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.8262346571285599,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000014",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.5,
+        "HighRelevanceRecall@3": 0.5,
+        "nDCG@3": 0.6131471927654584,
+        "Recall@5": 0.5,
+        "HighRelevanceRecall@5": 0.5,
+        "nDCG@5": 0.6131471927654584,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000015",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000016",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000017",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000018",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.5,
+        "HighRelevanceRecall@3": 0.5,
+        "nDCG@3": 0.6131471927654584,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.8503449055347546,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000019",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000020",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000021",
+      "metrics": {
+        "Recall@1": 1.0,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000022",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.5,
+        "HighRelevanceRecall@3": 0.5,
+        "nDCG@3": 0.6131471927654584,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.8772153153380493,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000023",
+      "metrics": {
+        "Recall@1": 0.3333333333333333,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.3333333333333333,
+        "HighRelevanceRecall@3": 0.5,
+        "nDCG@3": 0.5562983930884396,
+        "Recall@5": 0.3333333333333333,
+        "HighRelevanceRecall@5": 0.5,
+        "nDCG@5": 0.5562983930884396,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000024",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 0.9639404333166532,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.9639404333166532,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000025",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.5,
+        "HighRelevanceRecall@3": 0.5,
+        "nDCG@3": 0.6131471927654584,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.8772153153380493,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000026",
+      "metrics": {
+        "Recall@1": 0.3333333333333333,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.6666666666666666,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 0.9072836011519267,
+        "Recall@5": 0.6666666666666666,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.9072836011519267,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000027",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 0.9639404333166532,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.9639404333166532,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000028",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.5,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 0.8262346571285599,
+        "Recall@5": 0.5,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.8262346571285599,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000029",
+      "metrics": {
+        "Recall@1": 0.3333333333333333,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.3333333333333333,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 0.7262287617954056,
+        "Recall@5": 0.6666666666666666,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.8304853296300547,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000030",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 0.9197207891481876,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.9197207891481876,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000031",
+      "metrics": {
+        "Recall@1": 1.0,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000032",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 0.9197207891481876,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.9197207891481876,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000033",
+      "metrics": {
+        "Recall@1": 0.3333333333333333,
+        "HighRelevanceRecall@1": 0.3333333333333333,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.3333333333333333,
+        "HighRelevanceRecall@3": 0.3333333333333333,
+        "nDCG@3": 0.4692787260227565,
+        "Recall@5": 0.6666666666666666,
+        "HighRelevanceRecall@5": 0.6666666666666666,
+        "nDCG@5": 0.6713860725233042,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000034",
+      "metrics": {
+        "Recall@1": 1.0,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000035",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.5,
+        "HighRelevanceRecall@3": 0.5,
+        "nDCG@3": 0.6131471927654584,
+        "Recall@5": 0.5,
+        "HighRelevanceRecall@5": 0.5,
+        "nDCG@5": 0.6131471927654584,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000036",
+      "metrics": {
+        "Recall@1": 1.0,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000037",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 0.9639404333166532,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.9639404333166532,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000038",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.5,
+        "HighRelevanceRecall@3": 0.5,
+        "nDCG@3": 0.6131471927654584,
+        "Recall@5": 0.5,
+        "HighRelevanceRecall@5": 0.5,
+        "nDCG@5": 0.6131471927654584,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000039",
+      "metrics": {
+        "Recall@1": 0.3333333333333333,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.6666666666666666,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 0.878961873034099,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.9832184408687481,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000040",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.5,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 0.8262346571285599,
+        "Recall@5": 0.5,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.8262346571285599,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000041",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000042",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.5,
+        "HighRelevanceRecall@3": 0.5,
+        "nDCG@3": 0.6131471927654584,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.8503449055347546,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000043",
+      "metrics": {
+        "Recall@1": 1.0,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000044",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000045",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000046",
+      "metrics": {
+        "Recall@1": 1.0,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000047",
+      "metrics": {
+        "Recall@1": 0.5,
+        "HighRelevanceRecall@1": 0.5,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.5,
+        "HighRelevanceRecall@3": 0.5,
+        "nDCG@3": 0.6131471927654584,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.8772153153380493,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000048",
+      "metrics": {
+        "Recall@1": 0.3333333333333333,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 0.3333333333333333,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 0.7262287617954056,
+        "Recall@5": 0.6666666666666666,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 0.8304853296300547,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000049",
+      "metrics": {
+        "Recall@1": 1.0,
+        "HighRelevanceRecall@1": 1.0,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    },
+    {
+      "query_id": "Q-000050",
+      "metrics": {
+        "Recall@1": 0.3333333333333333,
+        "HighRelevanceRecall@1": 0.3333333333333333,
+        "nDCG@1": 1.0,
+        "Recall@3": 1.0,
+        "HighRelevanceRecall@3": 1.0,
+        "nDCG@3": 1.0,
+        "Recall@5": 1.0,
+        "HighRelevanceRecall@5": 1.0,
+        "nDCG@5": 1.0,
+        "MRR": 1.0
+      }
+    }
+  ],
+  "metrics": {
+    "Recall@1": 0.5466666666666666,
+    "Recall@3": 0.8133333333333332,
+    "Recall@5": 0.89,
+    "HighRelevanceRecall@1": 0.6733333333333333,
+    "HighRelevanceRecall@3": 0.8966666666666667,
+    "HighRelevanceRecall@5": 0.9533333333333333,
+    "nDCG@1": 0.9733333333333333,
+    "nDCG@3": 0.8764736092275313,
+    "nDCG@5": 0.9121031460927485,
+    "MRR": 1.0
+  }
+}

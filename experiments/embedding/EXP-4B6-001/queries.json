@@ -1,0 +1,517 @@
+{
+  "experiment_id": "EXP-4B6-001",
+  "query_version": "0.1",
+  "status": "FROZEN",
+  "corpus_version": "0.1",
+  "query_count": 50,
+  "queries": [
+    {
+      "query_id": "Q-000001",
+      "query": "How are heat input and tack-welding sequence related to changes in the final dimensions of a fabricated steel structure?",
+      "query_class": "semantic_overlap",
+      "target_record_ids": [
+        "K-000101",
+        "K-000105"
+      ],
+      "rationale": "Tests semantic discrimination between the general heat-distortion claim and the related hypothesis that tack sequence can influence final alignment."
+    },
+    {
+      "query_id": "Q-000002",
+      "query": "How does the observation about restraint-dependent fit-up differ from the hypothesis that tack sequence can influence final structural alignment?",
+      "query_class": "contradiction",
+      "target_record_ids": [
+        "K-000102",
+        "K-000105"
+      ],
+      "rationale": "Tests retrieval of the two explicitly contradictory records concerning structural fit-up and the influence of tack sequence."
+    },
+    {
+      "query_id": "Q-000003",
+      "query": "When investigating weld porosity, how does material preparation connect to the sequence of process-condition checks?",
+      "query_class": "relationship_dependent",
+      "target_record_ids": [
+        "K-000103",
+        "K-000107"
+      ],
+      "rationale": "Tests whether retrieval follows the dependency between the porosity-troubleshooting heuristic and the preparation principle on which it depends."
+    },
+    {
+      "query_id": "Q-000004",
+      "query": "How can planning a controlled root pass be compared with interpreting a biblical passage in terms of preparation, sequence, and context?",
+      "query_class": "cross_domain",
+      "target_record_ids": [
+        "K-000104",
+        "K-000114"
+      ],
+      "rationale": "Tests cross-domain retrieval using the explicit relationship between root-pass preparation in welding and structured interpretation in theology."
+    },
+    {
+      "query_id": "Q-000005",
+      "query": "What tension exists between the observed importance of restraint and the hypothesis that tack sequence can influence final alignment?",
+      "query_class": "contradiction",
+      "target_record_ids": [
+        "K-000105",
+        "K-000102"
+      ],
+      "rationale": "Tests the same explicit contradiction from the K-000105 side while requiring retrieval of the opposing structural-fit-up observation."
+    },
+    {
+      "query_id": "Q-000006",
+      "query": "What finding explains the role of interpass temperature as an observable condition during successive welding passes?",
+      "query_class": "direct",
+      "target_record_ids": [
+        "K-000106"
+      ],
+      "rationale": "Direct retrieval of the finding concerning interpass temperature as a controlled welding condition."
+    },
+    {
+      "query_id": "Q-000007",
+      "query": "How does the principle of material preparation overlap with knowledge about heat distortion and weld-porosity troubleshooting?",
+      "query_class": "semantic_overlap",
+      "target_record_ids": [
+        "K-000107",
+        "K-000101",
+        "K-000103"
+      ],
+      "rationale": "Tests semantic retrieval across the preparation principle and the related heat-distortion and porosity knowledge it supports."
+    },
+    {
+      "query_id": "Q-000008",
+      "query": "When a fixture improves repeatability in one dimension but constrains another, what does that imply about judging whether the fixture is appropriate?",
+      "query_class": "ambiguous",
+      "target_record_ids": [
+        "K-000108"
+      ],
+      "rationale": "Tests retrieval of the ambiguity in fixture usefulness, where the answer depends on which dimension, constraint, and intended movement are being considered."
+    },
+    {
+      "query_id": "Q-000009",
+      "query": "How should site troubleshooting connect observations of welding symptoms with preparation and process-condition checks?",
+      "query_class": "relationship_dependent",
+      "target_record_ids": [
+        "K-000109",
+        "K-000103",
+        "K-000107"
+      ],
+      "rationale": "Tests whether retrieval follows the troubleshooting plan's dependencies on porosity process checks and material-preparation knowledge."
+    },
+    {
+      "query_id": "Q-000010",
+      "query": "What should a fabrication plan coordinate when fit-up, welding sequence, inspection, and dimensional control all affect the final assembly?",
+      "query_class": "direct",
+      "target_record_ids": [
+        "K-000110"
+      ],
+      "rationale": "Direct retrieval of the fabrication-planning recommendation concerning coordinated preparation, welding, inspection, and dimensional control."
+    },
+    {
+      "query_id": "Q-000011",
+      "query": "How does the idea of discipleship as practiced Christian life overlap with the way biblical interpretation connects understanding a passage to its application?",
+      "query_class": "semantic_overlap",
+      "target_record_ids": [
+        "K-000111",
+        "K-000114"
+      ],
+      "rationale": "Tests semantic discrimination between discipleship as formation through belief and practice and the related interpretive procedure that separates biblical understanding from later application."
+    },
+    {
+      "query_id": "Q-000012",
+      "query": "When mission practice changes with the community and ministry setting, what kind of contextual differences need to be considered?",
+      "query_class": "ambiguous",
+      "target_record_ids": [
+        "K-000112",
+        "K-000117"
+      ],
+      "rationale": "Tests ambiguity around context-dependent ministry language, where the meaning and application of a practice can vary with community, tradition, purpose, and setting."
+    },
+    {
+      "query_id": "Q-000013",
+      "query": "How can a historical movement be studied so that its theological claims are understood in relation to the conditions and questions that shaped its response?",
+      "query_class": "relationship_dependent",
+      "target_record_ids": [
+        "K-000113",
+        "K-000111"
+      ],
+      "rationale": "Tests retrieval of the historical-context heuristic together with the related knowledge about belief, practice, and formation that provides the broader theological context."
+    },
+    {
+      "query_id": "Q-000014",
+      "query": "How can preparing a biblical interpretation be compared with preparing a welding operation when both require attention to context, sequence, and conditions?",
+      "query_class": "cross_domain",
+      "target_record_ids": [
+        "K-000114",
+        "K-000104"
+      ],
+      "rationale": "Tests cross-domain retrieval between biblical interpretation and root-pass preparation while preserving the distinct meanings of preparation, sequence, and context in each domain."
+    },
+    {
+      "query_id": "Q-000015",
+      "query": "What tension exists between treating discipleship as practiced Christian formation and the possibility that information-rich teaching alone may be sufficient for learning?",
+      "query_class": "contradiction",
+      "target_record_ids": [
+        "K-000115",
+        "K-000111"
+      ],
+      "rationale": "Tests retrieval of the explicit competing propositions about whether Christian learning requires participatory formation or may be sufficiently supported by structured information-rich teaching."
+    },
+    {
+      "query_id": "Q-000016",
+      "query": "How does clear responsibility in ministry administration connect with assigning an identifiable point of accountability for follow-up?",
+      "query_class": "relationship_dependent",
+      "target_record_ids": [
+        "K-000116",
+        "K-000119"
+      ],
+      "rationale": "Tests whether retrieval follows the relationship between the finding about traceable responsibility and the plan for making responsibility explicit before assigning follow-up."
+    },
+    {
+      "query_id": "Q-000017",
+      "query": "What can the meaning of revival depend on when comparing different ministry communities, traditions, or purposes?",
+      "query_class": "ambiguous",
+      "target_record_ids": [
+        "K-000117",
+        "K-000112"
+      ],
+      "rationale": "Tests genuine ambiguity in the meaning of revival language, where interpretation can depend on ministry setting, community, tradition, purpose, and related mission practice."
+    },
+    {
+      "query_id": "Q-000018",
+      "query": "How can comparing different traditions through a shared question be related to representing structured knowledge through common categories without assuming that the underlying meanings are identical?",
+      "query_class": "cross_domain",
+      "target_record_ids": [
+        "K-000118",
+        "K-000121"
+      ],
+      "rationale": "Tests cross-domain retrieval between comparative theological study and structured personal knowledge representation while preserving the distinction between shared comparison frames and domain-specific meanings."
+    },
+    {
+      "query_id": "Q-000019",
+      "query": "What information should be made explicit before assigning follow-up responsibility for an important ministry task?",
+      "query_class": "relationship_dependent",
+      "target_record_ids": [
+        "K-000119",
+        "K-000116"
+      ],
+      "rationale": "Tests retrieval of the ministry responsibility plan together with the related finding that explicit responsibility improves traceability and accountability."
+    },
+    {
+      "query_id": "Q-000020",
+      "query": "How should theological teaching be connected to the practices it is intended to shape without reducing theology to technique?",
+      "query_class": "semantic_overlap",
+      "target_record_ids": [
+        "K-000120",
+        "K-000111"
+      ],
+      "rationale": "Tests semantic discrimination between connecting theological teaching to practice and the broader concept of discipleship as a connection between belief, practice, and formation."
+    },
+    {
+      "query_id": "Q-000021",
+      "query": "What information does a structured knowledge record preserve that would be lost if the same knowledge were kept only as an unstructured note?",
+      "query_class": "semantic_overlap",
+      "target_record_ids": [
+        "K-000121"
+      ],
+      "rationale": "Tests retrieval of the distinction between structured knowledge representation and plain notes, especially identity, type, provenance, relationships, and application context."
+    },
+    {
+      "query_id": "Q-000022",
+      "query": "How might choosing different categories for personal knowledge affect whether records from different areas can be connected and interpreted consistently?",
+      "query_class": "ambiguous",
+      "target_record_ids": [
+        "K-000122",
+        "K-000121"
+      ],
+      "rationale": "Tests genuine ambiguity around ontology choices, where categories can improve connection but may also be too broad, too narrow, or understood differently across knowledge areas."
+    },
+    {
+      "query_id": "Q-000023",
+      "query": "Why would explicit relationships be needed when trying to follow how one piece of personal knowledge supports, contradicts, or depends on another?",
+      "query_class": "relationship_dependent",
+      "target_record_ids": [
+        "K-000123",
+        "K-000122",
+        "K-000124"
+      ],
+      "rationale": "Tests retrieval of the relationship-design heuristic together with the ontology choices and canonical representation process on which its practical use depends."
+    },
+    {
+      "query_id": "Q-000024",
+      "query": "How does generating a vector from a canonical knowledge representation differ from treating the vector representation as the definition of the knowledge itself?",
+      "query_class": "semantic_overlap",
+      "target_record_ids": [
+        "K-000124",
+        "K-000121"
+      ],
+      "rationale": "Tests semantic discrimination between the canonical representation of structured knowledge and the separate vector-generation process used to represent that knowledge for retrieval."
+    },
+    {
+      "query_id": "Q-000025",
+      "query": "What would be missed if semantic similarity were treated as sufficient for personal knowledge retrieval without considering explicit structure, relationships, or contradictions?",
+      "query_class": "contradiction",
+      "target_record_ids": [
+        "K-000125",
+        "K-000123"
+      ],
+      "rationale": "Tests the competing proposition between similarity-only retrieval and the use of explicit knowledge structure and relationships for tasks involving ambiguity, contradiction, and provenance."
+    },
+    {
+      "query_id": "Q-000026",
+      "query": "How did making score transport explicit change the way retrieval results could be passed from vector matching to later evaluation?",
+      "query_class": "relationship_dependent",
+      "target_record_ids": [
+        "K-000126",
+        "K-000124",
+        "K-000127"
+      ],
+      "rationale": "Tests whether retrieval can follow the historical design change from vector records to scored matches and connect that change to canonical embedding generation and evaluation interpretation."
+    },
+    {
+      "query_id": "Q-000027",
+      "query": "Why might a highly ranked retrieval result still be difficult to judge as useful for a particular knowledge task?",
+      "query_class": "ambiguous",
+      "target_record_ids": [
+        "K-000127",
+        "K-000125"
+      ],
+      "rationale": "Tests ambiguity between retrieval relevance as indicated by similarity or ranking and human usefulness, where the appropriate interpretation depends on the question being evaluated."
+    },
+    {
+      "query_id": "Q-000028",
+      "query": "How can a knowledge system distinguish a retrieved authoritative record from a suggestion or generated interpretation when used in a ministry or community setting?",
+      "query_class": "cross_domain",
+      "target_record_ids": [
+        "K-000128",
+        "K-000111"
+      ],
+      "rationale": "Tests cross-domain retrieval between knowledge governance in AM-PKO and the distinction between authoritative knowledge and applied interpretation in ministry practice."
+    },
+    {
+      "query_id": "Q-000029",
+      "query": "What should remain visible when retrieved knowledge is assembled into a context package so that a later user can inspect where it came from and how it relates to other records?",
+      "query_class": "semantic_overlap",
+      "target_record_ids": [
+        "K-000129",
+        "K-000121",
+        "K-000126"
+      ],
+      "rationale": "Tests semantic discrimination around retrieval context, identity, provenance, relationship information, and scores while distinguishing this application layer from the underlying structured record and vector-match mechanisms."
+    },
+    {
+      "query_id": "Q-000030",
+      "query": "How does designing a personal knowledge system around connected knowledge compare with treating retrieval as the isolated task of finding similar information?",
+      "query_class": "cross_domain",
+      "target_record_ids": [
+        "K-000130",
+        "K-000125"
+      ],
+      "rationale": "Tests cross-domain reasoning between the broader connected-knowledge architecture and the contrasting similarity-only retrieval hypothesis, while preserving their different roles in system design."
+    },
+    {
+      "query_id": "Q-000031",
+      "query": "What makes a life story more than a chronological record of events?",
+      "query_class": "direct",
+      "target_record_ids": [
+        "K-000131"
+      ],
+      "rationale": "Directly tests retrieval of the distinction between chronology and the meanings, relationships, decisions, and lessons preserved within a life story."
+    },
+    {
+      "query_id": "Q-000032",
+      "query": "Why can a remembered detail be difficult to interpret correctly when the circumstances surrounding it are no longer known?",
+      "query_class": "ambiguous",
+      "target_record_ids": [
+        "K-000132",
+        "K-000131"
+      ],
+      "rationale": "Tests genuine ambiguity between remembered details and the contextual meaning attached to them, requiring distinction between recollection and later interpretation."
+    },
+    {
+      "query_id": "Q-000033",
+      "query": "What should be connected to a digital heritage story so that its meaning and source context remain traceable?",
+      "query_class": "relationship_dependent",
+      "target_record_ids": [
+        "K-000133",
+        "K-000132",
+        "K-000134"
+      ],
+      "rationale": "Tests retrieval of the relationship between story, source context, and contextual documentation, requiring more than an isolated heritage record."
+    },
+    {
+      "query_id": "Q-000034",
+      "query": "How should community stories, people, places, and sources be connected when documenting community memory?",
+      "query_class": "direct",
+      "target_record_ids": [
+        "K-000134"
+      ],
+      "rationale": "Directly tests retrieval of the documented procedure for building a traceable community-memory record while preserving provenance and contextual distinctions."
+    },
+    {
+      "query_id": "Q-000035",
+      "query": "What tension exists between preserving inherited stories and allowing later generations to reinterpret their meanings?",
+      "query_class": "contradiction",
+      "target_record_ids": [
+        "K-000135",
+        "K-000134"
+      ],
+      "rationale": "Tests retrieval of the explicit contradiction between limiting reinterpretation to preserve inherited meaning and the need for later interpretation."
+    },
+    {
+      "query_id": "Q-000036",
+      "query": "What makes cultural identity records easier to understand across time and changing circumstances?",
+      "query_class": "direct",
+      "target_record_ids": [
+        "K-000136"
+      ],
+      "rationale": "Directly tests retrieval of the finding that context and continuity surrounding people, practices, stories, and symbols improve interpretation."
+    },
+    {
+      "query_id": "Q-000037",
+      "query": "How should visually similar heritage images be treated when their original community or historical context is uncertain?",
+      "query_class": "ambiguous",
+      "target_record_ids": [
+        "K-000137",
+        "K-000136"
+      ],
+      "rationale": "Tests genuine ambiguity around visually similar traditions where provenance, location, occasion, and historical context may support different interpretations."
+    },
+    {
+      "query_id": "Q-000038",
+      "query": "How can lived heritage experience be connected with digital records without treating the digital record as a replacement for the people who carry that knowledge?",
+      "query_class": "cross_domain",
+      "target_record_ids": [
+        "K-000138",
+        "K-000121"
+      ],
+      "rationale": "Tests cross-domain retrieval between intergenerational heritage practice and structured personal knowledge systems while preserving the distinction between stored records and human experience."
+    },
+    {
+      "query_id": "Q-000039",
+      "query": "What should be compared and recorded when building a legacy record from stories, artifacts, and other contextual evidence?",
+      "query_class": "semantic_overlap",
+      "target_record_ids": [
+        "K-000139",
+        "K-000134",
+        "K-000131"
+      ],
+      "rationale": "Tests semantic discrimination between general life-story preservation, community-memory documentation, and the more specific process of constructing a traceable legacy record from multiple evidence sources."
+    },
+    {
+      "query_id": "Q-000040",
+      "query": "How can heritage preservation support responsible digital reuse while keeping the difference between original sources and later interpretation visible?",
+      "query_class": "direct",
+      "target_record_ids": [
+        "K-000140"
+      ],
+      "rationale": "Directly tests retrieval of the recommendation connecting long-term heritage preservation with responsible digital reuse, provenance, uncertainty, and visible human interpretation."
+    },
+    {
+      "query_id": "Q-000041",
+      "query": "What tension exists between preserving practical working context in a knowledge record and the possibility that additional context can make that knowledge harder to reuse?",
+      "query_class": "contradiction",
+      "target_record_ids": [
+        "K-000141",
+        "K-000142"
+      ],
+      "rationale": "Tests the explicit contradiction between context as a condition for practical reuse and context as a possible source of unnecessary complexity or reduced usability."
+    },
+    {
+      "query_id": "Q-000042",
+      "query": "When can adding context to a knowledge record improve understanding, and when might it instead make the practical decision harder to identify?",
+      "query_class": "contradiction",
+      "target_record_ids": [
+        "K-000142",
+        "K-000141"
+      ],
+      "rationale": "Tests the competing positions on contextual detail, requiring retrieval of both the caution about excessive context and the claim that working context supports reuse."
+    },
+    {
+      "query_id": "Q-000043",
+      "query": "What kinds of recognition cues can help someone understand why a remembered piece of knowledge matters when they encounter it later?",
+      "query_class": "direct",
+      "target_record_ids": [
+        "K-000143"
+      ],
+      "rationale": "Directly tests retrieval of the heuristic concerning topic, context, relationships, provenance, and other cues that help a person recognize the meaning of stored knowledge."
+    },
+    {
+      "query_id": "Q-000044",
+      "query": "How should a digital representation be handled when it is unclear whether it is preserving an original tradition, documenting it, or creating a new interpretation?",
+      "query_class": "ambiguous",
+      "target_record_ids": [
+        "K-000144",
+        "K-000140"
+      ],
+      "rationale": "Tests genuine ambiguity around the purpose of digital representation and whether preservation, documentation, or interpretation is being performed."
+    },
+    {
+      "query_id": "Q-000045",
+      "query": "Can structured retrieval cues sometimes support a decision without requiring extensive review of the surrounding context, or is broader contextual inspection always necessary?",
+      "query_class": "contradiction",
+      "target_record_ids": [
+        "K-000145",
+        "K-000143"
+      ],
+      "rationale": "Tests the explicit tension between the hypothesis that structured cues may sometimes be sufficient and the heuristic that retrieval should expose enough contextual structure for evaluation."
+    },
+    {
+      "query_id": "Q-000046",
+      "query": "Why is it useful to keep contradictory claims independently traceable instead of combining them into a single conclusion?",
+      "query_class": "direct",
+      "target_record_ids": [
+        "K-000146"
+      ],
+      "rationale": "Directly tests retrieval of the finding that independent representation preserves provenance, disagreement, conditions, and evidence needed for later reasoning."
+    },
+    {
+      "query_id": "Q-000047",
+      "query": "How should a record represent a practice or meaning that appears continuous over time but may also have changed in purpose or interpretation?",
+      "query_class": "ambiguous",
+      "target_record_ids": [
+        "K-000147",
+        "K-000136"
+      ],
+      "rationale": "Tests genuine ambiguity between continuity and historical change, requiring preservation of both evidence for continuity and uncertainty about adaptation or reinterpretation."
+    },
+    {
+      "query_id": "Q-000048",
+      "query": "How can relationships shared across welding, technology, theology, or heritage be reused without assuming that the same relationship has identical meaning in every domain?",
+      "query_class": "cross_domain",
+      "target_record_ids": [
+        "K-000148",
+        "K-000130",
+        "K-000141"
+      ],
+      "rationale": "Tests cross-domain retrieval of the principle that structural relationships can be reused while domain-specific meanings, provenance, conditions, and evidence standards remain distinct."
+    },
+    {
+      "query_id": "Q-000049",
+      "query": "What should be checked about the origin and circumstances of a knowledge record before reusing it in a different situation?",
+      "query_class": "direct",
+      "target_record_ids": [
+        "K-000149"
+      ],
+      "rationale": "Directly tests retrieval of the provenance-inspection plan covering source, circumstances, relationships, supporting evidence, and uncertainty."
+    },
+    {
+      "query_id": "Q-000050",
+      "query": "How can a knowledge pattern from one domain be applied in another domain while keeping its original context, provenance, assumptions, and limitations visible?",
+      "query_class": "cross_domain",
+      "target_record_ids": [
+        "K-000150",
+        "K-000148",
+        "K-000149"
+      ],
+      "rationale": "Tests cross-domain application of knowledge by requiring explicit examination of the reused relationship together with provenance, context, assumptions, and limitations."
+    }
+  ],
+  "freeze": {
+    "freeze_status": "FROZEN",
+    "freeze_artifact": "EXP-4B6-001_QUERY_FREEZE_MANIFEST.md",
+    "validation_artifact": "EXP-4B6-001_QUERY_VALIDATION_001.json",
+    "previous_version": "0.1-skeleton",
+    "frozen_at": "2026-10-02T04:45:50.974021+00:00",
+    "query_count": 50,
+    "judgments_authorized_after_freeze": true,
+    "embedding_evaluation_authorized_after_freeze": true
+  }
+}

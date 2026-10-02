@@ -1,0 +1,48 @@
+{
+  "validation_id": "EXP-4B6-001_JUDGMENT_VALIDATION_001",
+  "experiment_id": "EXP-4B6-001",
+  "artifact": "judgments.json",
+  "validation_version": "0.1",
+  "status": "VALIDATED",
+  "validated_at": "2026-10-02T04:48:34.017976+00:00",
+  "corpus_dependency": {
+    "artifact": "corpus.json",
+    "status": "FROZEN",
+    "version": "0.1",
+    "record_count": 50
+  },
+  "query_dependency": {
+    "artifact": "queries.json",
+    "status": "FROZEN",
+    "version": "0.1",
+    "query_count": 50
+  },
+  "judgment_count": 50,
+  "relevance_assignment_count": 102,
+  "judgment_scale": {
+    "1": "partially relevant",
+    "2": "highly relevant"
+  },
+  "grade_counts": {
+    "1": 22,
+    "2": 80
+  },
+  "checks": {
+    "judgment_count": true,
+    "unique_query_ids": true,
+    "all_query_ids_present": true,
+    "all_record_ids_valid": true,
+    "all_grades_valid": true,
+    "all_query_targets_judged": true,
+    "contradiction_targets_preserved": true,
+    "frozen_corpus_dependency": true,
+    "frozen_query_dependency": true,
+    "model_independence": true
+  },
+  "decision": {
+    "judgment_authoring_complete": true,
+    "judgment_validation_passed": true,
+    "embedding_evaluation_authorized": true
+  },
+  "errors": []
+}

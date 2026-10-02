@@ -1,0 +1,58 @@
+{
+  "validation_id": "EXP-4B6-001_EVALUATION_VALIDATION_001",
+  "experiment_id": "EXP-4B6-001",
+  "artifact": "T-7 EvaluationRun outputs",
+  "status": "VALIDATED",
+  "validation_scope": {
+    "models": [
+      "M-000001",
+      "M-000002",
+      "M-000003"
+    ],
+    "query_count": 50,
+    "judgment_assignment_count": 102,
+    "retrieval_k": 5,
+    "evaluation_contract": "T-7",
+    "evaluation_contract_version": "0.2"
+  },
+  "checks": {
+    "all_models_evaluated": true,
+    "all_queries_evaluated": true,
+    "judgments_frozen": true,
+    "corpus_frozen": true,
+    "queries_frozen": true,
+    "production_selection_not_selected": true,
+    "t7_seven_field_contract": true,
+    "per_query_results_complete": true,
+    "query_ids_unique": true,
+    "metric_set_complete": true,
+    "metric_values_bounded": true,
+    "retrieval_scores_finite": true,
+    "retrieval_scores_ordered": true,
+    "retrieval_record_ids_unique_per_query": true,
+    "independent_metric_recomputation": true,
+    "independent_recomputation_max_difference_zero": true
+  },
+  "results": {
+    "M-000001": {
+      "evaluation_artifact": "M-000001_evaluation.json",
+      "status": "PASS"
+    },
+    "M-000002": {
+      "evaluation_artifact": "M-000002_evaluation.json",
+      "status": "PASS"
+    },
+    "M-000003": {
+      "evaluation_artifact": "M-000003_evaluation.json",
+      "status": "PASS"
+    }
+  },
+  "production_selection": {
+    "status": "NOT_SELECTED",
+    "decision_artifact": "experiments/embedding/EMBEDDING-MODEL-DECISION-001.json"
+  },
+  "conclusion": "T-7 evaluation artifacts are structurally valid and numerically independently reproducible for all three candidate models. No production model selection is made by this validation artifact.",
+  "independent_recomputation": {
+    "max_difference": 0.0
+  }
+}

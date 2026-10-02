@@ -1,0 +1,2641 @@
+{
+  "experiment_id": "EXP-4B6-001",
+  "corpus_version": "0.1",
+  "status": "FROZEN",
+  "record_count": 50,
+  "records": [
+    {
+      "id": "K-000101",
+      "domain": "Welding/Fabrication",
+      "project": "MUSUNGU TECH-FUNDI",
+      "knowledge_type": "FACT",
+      "topic": "Heat Distortion",
+      "granularity": "Claim",
+      "title": "Heat input changes structural dimensions",
+      "content": "Welding heat input can change the dimensions and alignment of a fabricated steel structure because localized heating and subsequent cooling cause uneven thermal expansion and contraction. The effect depends on factors such as weld size, weld sequence, joint restraint, material thickness, and the distribution of heat. Dimensional control therefore has to be considered during fit-up and welding rather than only after fabrication is complete.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "conversation",
+        "reference": "AM-PKO welding knowledge corpus authoring"
+      },
+      "skills": [
+        "arc welding",
+        "fabrication fitting",
+        "dimensional control"
+      ],
+      "assets": [
+        "portable arc welder",
+        "grinder"
+      ],
+      "actions": [
+        "control fit-up before welding",
+        "plan weld sequence",
+        "inspect dimensions after welding"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "K-000105"
+        },
+        {
+          "type": "supports",
+          "target": "K-000107"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "A",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "semantic_overlap"
+        ]
+      }
+    },
+    {
+      "id": "K-000102",
+      "domain": "Welding/Fabrication",
+      "project": "MUSUNGU TECH-FUNDI",
+      "knowledge_type": "EXPERIENCE",
+      "topic": "Structural Fit-up",
+      "granularity": "Observation",
+      "title": "Fit-up accuracy depends on how the joint is restrained",
+      "content": "During structural fabrication, a joint that appears correctly aligned before welding can behave differently once welding begins. The observed result depends on how the members are supported, clamped, tacked, and restrained, as well as on the sequence in which welds are made. A fit-up that looks acceptable from one reference point may still contain a problem that becomes visible when another dimension or alignment is checked. This makes the meaning of a 'good fit-up' dependent on the specific joint, reference dimensions, and restraint conditions.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "field_note",
+        "reference": "AM-PKO welding/fabrication experience authoring"
+      },
+      "skills": [
+        "structural fit-up",
+        "measurement",
+        "general fitting"
+      ],
+      "assets": [
+        "fabrication clamps",
+        "measuring tools"
+      ],
+      "actions": [
+        "check more than one reference dimension",
+        "inspect restraint conditions before welding",
+        "recheck alignment after tack welding"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "K-000101"
+        },
+        {
+          "type": "depends_on",
+          "target": "K-000107"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "A",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "ambiguity"
+        ]
+      }
+    },
+    {
+      "id": "K-000103",
+      "domain": "Welding/Fabrication",
+      "project": "MUSUNGU TECH-FUNDI",
+      "knowledge_type": "IDEA",
+      "topic": "Weld Porosity",
+      "granularity": "Heuristic",
+      "title": "Porosity troubleshooting should begin with the process conditions",
+      "content": "A useful troubleshooting heuristic for weld porosity is to examine the process conditions before assuming that the defect comes from a single material problem. Moisture, contamination, shielding conditions, electrode condition, surface preparation, and welding technique can interact to produce or reveal porosity. Treating the investigation as a sequence of related checks can make it easier to distinguish a preparation problem from a welding-process problem and from a condition introduced by the surrounding work environment.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "brainstorm",
+        "reference": "AM-PKO welding/fabrication knowledge authoring"
+      },
+      "skills": [
+        "weld inspection",
+        "porosity troubleshooting",
+        "surface preparation"
+      ],
+      "assets": [
+        "arc welding equipment",
+        "cleaning tools"
+      ],
+      "actions": [
+        "inspect surface condition",
+        "check electrode condition",
+        "review welding conditions",
+        "trace the defect to its likely process stage"
+      ],
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target": "K-000107"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000106"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "A",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "relationship_chain"
+        ]
+      }
+    },
+    {
+      "id": "K-000104",
+      "domain": "Welding/Fabrication",
+      "project": "MUSUNGU TECH-FUNDI",
+      "knowledge_type": "PLAN",
+      "topic": "Root Passes",
+      "granularity": "Procedure",
+      "title": "Plan root-pass preparation before closing the joint",
+      "content": "For a structural joint that requires a controlled root pass, the work should be planned around fit-up, root opening, access, cleanliness, electrode condition, and the intended welding sequence. Before starting the root pass, verify that the joint is accessible and that the members are held in the required alignment. After welding the root, inspect the pass before proceeding so that an unacceptable condition is not buried under subsequent weld metal. This procedure connects preparation and inspection rather than treating the root pass as an isolated welding operation.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "checklist",
+        "reference": "AM-PKO structural welding procedure authoring"
+      },
+      "skills": [
+        "root-pass welding",
+        "fit-up inspection",
+        "weld preparation"
+      ],
+      "assets": [
+        "arc welder",
+        "measuring tools",
+        "cleaning tools"
+      ],
+      "actions": [
+        "verify root opening",
+        "check alignment and access",
+        "prepare the joint",
+        "complete the root pass",
+        "inspect the root before filling"
+      ],
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target": "K-000102"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000103"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "A",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "semantic_overlap",
+          "cross_domain"
+        ]
+      }
+    },
+    {
+      "id": "K-000105",
+      "domain": "Welding/Fabrication",
+      "project": "MUSUNGU TECH-FUNDI",
+      "knowledge_type": "ANALYSIS",
+      "topic": "Tack Sequence",
+      "granularity": "Hypothesis",
+      "title": "Tack sequence can influence final structural alignment",
+      "content": "A working hypothesis in structural fabrication is that the sequence and distribution of tack welds can influence the final alignment of a fabricated assembly. Tacks can restrain members temporarily, but the restraint they create may also affect how later welds pull the joint. The useful question is therefore not simply whether a joint was tacked, but whether the tack arrangement and welding sequence were appropriate for the joint geometry and required dimensions. This hypothesis should be tested against actual fit-up and post-welding measurements rather than treated as a universal rule.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "conversation",
+        "reference": "AM-PKO structural fit-up analysis authoring"
+      },
+      "skills": [
+        "structural fit-up",
+        "weld sequencing",
+        "dimensional inspection"
+      ],
+      "assets": [
+        "fabrication clamps",
+        "measuring tools",
+        "arc welder"
+      ],
+      "actions": [
+        "record the initial alignment",
+        "plan tack distribution",
+        "observe dimensional changes during welding",
+        "compare final alignment with initial measurements"
+      ],
+      "relationships": [
+        {
+          "type": "contradicts",
+          "target": "K-000102"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000101"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "A",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "contradiction"
+        ]
+      }
+    },
+    {
+      "id": "K-000106",
+      "domain": "Welding/Fabrication",
+      "project": "MUSUNGU TECH-FUNDI",
+      "knowledge_type": "FACT",
+      "topic": "Interpass Temperature",
+      "granularity": "Finding",
+      "title": "Interpass temperature is part of controlled welding conditions",
+      "content": "Interpass temperature is one of the welding conditions that can be monitored between successive weld passes. Its significance depends on the material, joint design, welding procedure, and applicable requirements. A practical finding from controlled fabrication is that temperature between passes should be treated as an observable process condition rather than assumed to be unchanged throughout the weld. Where a specified procedure or project requirement exists, the measured condition should be checked against that requirement.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "inspection_report",
+        "reference": "AM-PKO welding process observation authoring"
+      },
+      "skills": [
+        "welding process control",
+        "temperature monitoring",
+        "weld inspection"
+      ],
+      "assets": [
+        "temperature measuring device",
+        "arc welder",
+        "welding procedure"
+      ],
+      "actions": [
+        "measure temperature between passes",
+        "record observed conditions",
+        "compare measurements with applicable requirements"
+      ],
+      "relationships": [
+        {
+          "type": "derived_from",
+          "target": "K-000101"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000103"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "A",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "historical_superseding"
+        ]
+      }
+    },
+    {
+      "id": "K-000107",
+      "domain": "Welding/Fabrication",
+      "project": "MUSUNGU TECH-FUNDI",
+      "knowledge_type": "EXPERIENCE",
+      "topic": "Material Preparation",
+      "granularity": "Principle",
+      "title": "Preparation quality affects the reliability of later welding work",
+      "content": "A practical fabrication principle is that welding quality is influenced by the condition of the material before welding begins. Removing contamination, preparing joint surfaces, confirming dimensions, and checking the fit-up can reduce avoidable problems during welding and inspection. In practice, preparation should be treated as part of the welding operation rather than as separate work that can be skipped when the joint appears simple. The amount of preparation should still match the material, joint, procedure, and actual requirements of the job.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "field_note",
+        "reference": "AM-PKO fabrication experience authoring"
+      },
+      "skills": [
+        "material preparation",
+        "surface cleaning",
+        "fabrication fitting"
+      ],
+      "assets": [
+        "grinder",
+        "cleaning tools",
+        "measuring tools"
+      ],
+      "actions": [
+        "clean joint surfaces",
+        "verify dimensions",
+        "check fit-up before welding",
+        "match preparation to job requirements"
+      ],
+      "relationships": [
+        {
+          "type": "supports",
+          "target": "K-000101"
+        },
+        {
+          "type": "supports",
+          "target": "K-000103"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000102"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "A",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "relationship_chain",
+          "semantic_overlap"
+        ]
+      }
+    },
+    {
+      "id": "K-000108",
+      "domain": "Welding/Fabrication",
+      "project": "MUSUNGU TECH-FUNDI",
+      "knowledge_type": "IDEA",
+      "topic": "Jigs and Fixtures",
+      "granularity": "Pattern",
+      "title": "A fixture can stabilize one dimension while constraining another",
+      "content": "A recurring fabrication pattern is that a jig or fixture can improve repeatability in one part of an assembly while creating a new constraint elsewhere. The useful effect depends on what the fixture references, which movement it prevents, and how the assembly is expected to change during welding. A fixture that makes one measurement consistent is not automatically the right fixture for the whole assembly. Its usefulness therefore has to be judged against the dimensions, sequence, and intended movement of the specific work.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "brainstorm",
+        "reference": "AM-PKO fabrication pattern authoring"
+      },
+      "skills": [
+        "jig and fixture design",
+        "fabrication fitting",
+        "dimensional control"
+      ],
+      "assets": [
+        "fabrication jig",
+        "clamps",
+        "measuring tools"
+      ],
+      "actions": [
+        "identify the dimension being controlled",
+        "check which movements the fixture restricts",
+        "compare fixture behavior with the welding sequence",
+        "inspect the completed assembly against required dimensions"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "K-000102"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000105"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "A",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "ambiguity",
+          "cross_domain"
+        ]
+      }
+    },
+    {
+      "id": "K-000109",
+      "domain": "Welding/Fabrication",
+      "project": "MUSUNGU TECH-FUNDI",
+      "knowledge_type": "PLAN",
+      "topic": "Site Troubleshooting",
+      "granularity": "PlanItem",
+      "title": "Trace site welding problems from symptoms to process conditions",
+      "content": "A site troubleshooting plan should begin by recording the visible symptom and the conditions under which it appeared before changing the process. Check the joint preparation, fit-up, material condition, electrode condition, welding sequence, and relevant environmental conditions in a deliberate order. The purpose is to narrow the likely cause using observations rather than changing several variables at once. Record what was checked and what changed so that the next inspection can build on the previous finding.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "field_note",
+        "reference": "AM-PKO site troubleshooting planning authoring"
+      },
+      "skills": [
+        "site welding troubleshooting",
+        "weld inspection",
+        "process diagnosis"
+      ],
+      "assets": [
+        "inspection tools",
+        "arc welding equipment",
+        "site measurements"
+      ],
+      "actions": [
+        "record the visible symptom",
+        "check preparation and fit-up",
+        "check material and electrode condition",
+        "review welding sequence and environment",
+        "record each finding before changing the process"
+      ],
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target": "K-000103"
+        },
+        {
+          "type": "depends_on",
+          "target": "K-000107"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "A",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "relationship_chain"
+        ]
+      }
+    },
+    {
+      "id": "K-000110",
+      "domain": "Welding/Fabrication",
+      "project": "MUSUNGU TECH-FUNDI",
+      "knowledge_type": "ANALYSIS",
+      "topic": "Fabrication Planning",
+      "granularity": "Recommendation",
+      "title": "Plan fabrication around fit-up, sequence, inspection, and dimensional control",
+      "content": "A practical fabrication recommendation is to plan the work as a connected sequence rather than treating cutting, fit-up, welding, and inspection as separate stages. Before welding, identify the dimensions that must be controlled, the joints that may be affected by heat, the restraint available, and the points where inspection can catch a problem early. The plan should also allow for checking alignment after tacking and welding because a sound-looking joint can still change dimensionally as heat is introduced. This approach helps connect preparation decisions with the final requirements of the assembly.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "checklist",
+        "reference": "AM-PKO fabrication planning recommendation authoring"
+      },
+      "skills": [
+        "fabrication planning",
+        "dimensional control",
+        "welding inspection"
+      ],
+      "assets": [
+        "fabrication drawings",
+        "measuring tools",
+        "arc welding equipment"
+      ],
+      "actions": [
+        "identify critical dimensions",
+        "plan fit-up and restraint",
+        "plan welding sequence",
+        "define inspection points",
+        "check alignment after tacking and welding"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "K-000101"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000104"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "A",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "semantic_overlap"
+        ]
+      }
+    },
+    {
+      "id": "K-000111",
+      "domain": "Theology/Ministry",
+      "project": "Theology/Ministry Education",
+      "knowledge_type": "FACT",
+      "topic": "Discipleship",
+      "granularity": "Claim",
+      "title": "Discipleship connects belief with practiced Christian life",
+      "content": "Discipleship involves more than receiving information about Christian beliefs. In Christian teaching, discipleship connects what a person believes with patterns of learning, practice, obedience, community, and ongoing formation. The specific practices may differ between traditions and ministry settings, but the concept commonly treats Christian growth as an ongoing process rather than a single educational event.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "conversation",
+        "reference": "AM-PKO theology and ministry knowledge corpus authoring"
+      },
+      "skills": [
+        "theological teaching",
+        "discipleship education",
+        "Christian formation"
+      ],
+      "assets": [
+        "Bible study materials",
+        "teaching notes"
+      ],
+      "actions": [
+        "connect teaching with practice",
+        "identify ongoing formation needs",
+        "relate belief to community life"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "K-000114"
+        },
+        {
+          "type": "supports",
+          "target": "K-000117"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "B",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "semantic_overlap"
+        ]
+      }
+    },
+    {
+      "id": "K-000112",
+      "domain": "Theology/Ministry",
+      "project": "Theology/Ministry Education",
+      "knowledge_type": "EXPERIENCE",
+      "topic": "Missiology",
+      "granularity": "Observation",
+      "title": "Mission practice changes with the community and ministry setting",
+      "content": "In ministry teaching and discussion, the meaning of effective mission practice can depend on the community, cultural setting, available relationships, and the purpose of the ministry activity. An approach that communicates clearly in one setting may require adaptation in another because people do not share identical histories, assumptions, or ways of receiving a message. This observation does not mean that every approach is equally suitable; it means that the setting is part of understanding what a particular mission practice is intended to do.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "field_note",
+        "reference": "AM-PKO missiology teaching observation authoring"
+      },
+      "skills": [
+        "missiology teaching",
+        "cross-cultural communication",
+        "ministry observation"
+      ],
+      "assets": [
+        "mission teaching notes",
+        "community context notes"
+      ],
+      "actions": [
+        "identify the ministry setting",
+        "consider community assumptions",
+        "compare the intended purpose with the local context"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "K-000111"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000117"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "B",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "ambiguity"
+        ]
+      }
+    },
+    {
+      "id": "K-000113",
+      "domain": "Theology/Ministry",
+      "project": "Theology/Ministry Education",
+      "knowledge_type": "IDEA",
+      "topic": "Church History",
+      "granularity": "Heuristic",
+      "title": "Historical movements are easier to understand through their context and responses",
+      "content": "A useful historical heuristic is to examine a church movement together with the conditions that preceded it, the questions it addressed, and the responses it generated. Studying a movement only as a list of leaders, dates, or doctrines can hide why particular ideas became significant at a given time. Connecting theological claims with their historical setting can therefore help distinguish the movement's stated teaching from later interpretations or applications.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "conversation",
+        "reference": "AM-PKO church history teaching heuristic authoring"
+      },
+      "skills": [
+        "church history teaching",
+        "historical analysis",
+        "theological interpretation"
+      ],
+      "assets": [
+        "church history notes",
+        "historical timelines",
+        "theological texts"
+      ],
+      "actions": [
+        "identify the historical setting",
+        "identify the questions being addressed",
+        "compare stated teaching with later interpretation",
+        "trace significant responses"
+      ],
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target": "K-000111"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000116"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "B",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "relationship_chain"
+        ]
+      }
+    },
+    {
+      "id": "K-000114",
+      "domain": "Theology/Ministry",
+      "project": "Theology/Ministry Education",
+      "knowledge_type": "PLAN",
+      "topic": "Biblical Interpretation",
+      "granularity": "Procedure",
+      "title": "Interpret a biblical passage by separating text, context, and application",
+      "content": "A practical interpretation procedure is to begin with the passage as written, identify its literary and historical context, and distinguish observations from conclusions before moving to application. The reader can then compare the proposed interpretation with the surrounding passage and relevant theological context. Application should follow the interpretive work rather than replace it. This process is useful when teaching because it makes the movement from textual observation to theological conclusion and practical response easier to inspect.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "checklist",
+        "reference": "AM-PKO biblical interpretation procedure authoring"
+      },
+      "skills": [
+        "biblical interpretation",
+        "theological teaching",
+        "contextual analysis"
+      ],
+      "assets": [
+        "Bible text",
+        "study notes",
+        "interpretation checklist"
+      ],
+      "actions": [
+        "read the passage in context",
+        "identify textual observations",
+        "separate observations from conclusions",
+        "compare the interpretation with surrounding context",
+        "derive application after interpretation"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "K-000111"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000113"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000104"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "B",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "semantic_overlap",
+          "cross_domain"
+        ]
+      }
+    },
+    {
+      "id": "K-000115",
+      "domain": "Theology/Ministry",
+      "project": "Theology/Ministry Education",
+      "knowledge_type": "ANALYSIS",
+      "topic": "Christian Education",
+      "granularity": "Hypothesis",
+      "title": "Information-rich teaching may be sufficient for Christian learning",
+      "content": "A deliberately contrasting hypothesis in Christian education is that well-structured information-rich teaching may be sufficient to produce meaningful Christian learning without requiring extensive participatory activities. From this view, clear explanation, organized content, careful instruction, and opportunities for individual study can provide an adequate foundation for understanding and formation. This hypothesis stands in tension with approaches that treat participation, discussion, practice, and community activity as necessary components of effective formation. It should be tested against observed learning and formation rather than accepted as a universal rule.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "conversation",
+        "reference": "AM-PKO Christian education analysis authoring"
+      },
+      "skills": [
+        "Christian education",
+        "teaching analysis",
+        "learner engagement"
+      ],
+      "assets": [
+        "teaching notes",
+        "lesson materials",
+        "discussion activities"
+      ],
+      "actions": [
+        "compare information delivered with learning outcomes",
+        "observe learner participation",
+        "provide opportunities for questions and discussion",
+        "test whether practice improves understanding"
+      ],
+      "relationships": [
+        {
+          "type": "contradicts",
+          "target": "K-000111"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000114"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "B",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "contradiction"
+        ]
+      }
+    },
+    {
+      "id": "K-000116",
+      "domain": "Theology/Ministry",
+      "project": "Theology/Ministry Education",
+      "knowledge_type": "FACT",
+      "topic": "Church Administration",
+      "granularity": "Finding",
+      "title": "Clear responsibility improves traceability in ministry administration",
+      "content": "A practical administrative finding is that assigning clear responsibility for a ministry task makes it easier to trace what was decided, what was done, and what still requires attention. When several people participate in the same administrative process without defined responsibilities, follow-up can become dependent on assumptions about who is expected to act. Clear responsibility does not remove the need for collaboration; it makes the points of accountability within that collaboration more visible.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "field_note",
+        "reference": "AM-PKO church administration observation authoring"
+      },
+      "skills": [
+        "church administration",
+        "ministry coordination",
+        "accountability"
+      ],
+      "assets": [
+        "administrative records",
+        "task lists",
+        "meeting notes"
+      ],
+      "actions": [
+        "assign responsibility for each task",
+        "record administrative decisions",
+        "track follow-up actions",
+        "review unresolved responsibilities"
+      ],
+      "relationships": [
+        {
+          "type": "supports",
+          "target": "K-000119"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000115"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "B",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "relationship_chain"
+        ]
+      }
+    },
+    {
+      "id": "K-000117",
+      "domain": "Theology/Ministry",
+      "project": "Theology/Ministry Education",
+      "knowledge_type": "EXPERIENCE",
+      "topic": "Revivalism",
+      "granularity": "Principle",
+      "title": "Revival language can mean different things in different ministry settings",
+      "content": "An observed principle in ministry teaching is that the meaning of revival language can shift according to the historical tradition, community, and purpose in which the term is being used. In one setting, revival may emphasize renewed personal faith and repentance; in another, it may emphasize wider participation, evangelistic activity, or renewal of a church community. The word therefore requires contextual clarification before different experiences or movements are treated as expressions of the same phenomenon. This does not make the term meaningless; it makes its intended meaning part of responsible interpretation.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "conversation",
+        "reference": "AM-PKO revivalism teaching experience authoring"
+      },
+      "skills": [
+        "revivalism teaching",
+        "theological interpretation",
+        "ministry observation"
+      ],
+      "assets": [
+        "revivalism notes",
+        "church history materials",
+        "ministry teaching notes"
+      ],
+      "actions": [
+        "identify how revival is being defined",
+        "identify the historical and ministry setting",
+        "compare the intended meaning with the described experience",
+        "avoid treating different uses as automatically equivalent"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "K-000112"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000113"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000111"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "B",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "ambiguity",
+          "semantic_overlap"
+        ]
+      }
+    },
+    {
+      "id": "K-000118",
+      "domain": "Theology/Ministry",
+      "project": "Theology/Ministry Education",
+      "knowledge_type": "IDEA",
+      "topic": "Comparative Religion",
+      "granularity": "Pattern",
+      "title": "Comparative study is clearer when traditions are compared by the same question",
+      "content": "A useful comparative-religion pattern is to organize comparison around the same question for each tradition rather than describing one tradition under one set of categories and another under different categories. Questions about authority, human purpose, practice, community, or knowledge can provide a shared analytical frame while still allowing each tradition to be represented on its own terms. The pattern is useful for teaching because it reduces accidental comparison between unlike categories and makes similarities and differences easier to inspect.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "conversation",
+        "reference": "AM-PKO comparative religion teaching pattern authoring"
+      },
+      "skills": [
+        "comparative religion",
+        "theological analysis",
+        "structured teaching"
+      ],
+      "assets": [
+        "comparative religion notes",
+        "teaching outlines",
+        "comparison tables"
+      ],
+      "actions": [
+        "define the comparison question",
+        "apply the same analytical frame to each tradition",
+        "record similarities and differences",
+        "check that each tradition is represented on its own terms"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "K-000114"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000117"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000121"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "B",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "cross_domain"
+        ]
+      }
+    },
+    {
+      "id": "K-000119",
+      "domain": "Theology/Ministry",
+      "project": "Theology/Ministry Education",
+      "knowledge_type": "PLAN",
+      "topic": "Ministry Leadership",
+      "granularity": "PlanItem",
+      "title": "Make ministry leadership responsibilities explicit before assigning follow-up",
+      "content": "A ministry leadership plan should make responsibility visible before follow-up work begins. For each significant task, the plan should identify what needs to be done, who is responsible for the next action, what information or resources are required, and when the matter should be reviewed. Shared responsibility can remain where appropriate, but at least one clear accountability point should be recorded so that an unfinished task does not depend on assumptions about who will act next.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "checklist",
+        "reference": "AM-PKO ministry leadership planning checklist authoring"
+      },
+      "skills": [
+        "ministry leadership",
+        "task coordination",
+        "administrative planning"
+      ],
+      "assets": [
+        "ministry task lists",
+        "meeting notes",
+        "follow-up records"
+      ],
+      "actions": [
+        "identify the significant task",
+        "assign a clear accountability point",
+        "record required information or resources",
+        "set a review point",
+        "record unresolved follow-up"
+      ],
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target": "K-000116"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000113"
+        },
+        {
+          "type": "supports",
+          "target": "K-000111"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "B",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "relationship_chain"
+        ]
+      }
+    },
+    {
+      "id": "K-000120",
+      "domain": "Theology/Ministry",
+      "project": "Theology/Ministry Education",
+      "knowledge_type": "ANALYSIS",
+      "topic": "Theology and Practice",
+      "granularity": "Recommendation",
+      "title": "Connect theological teaching with the practices it is intended to shape",
+      "content": "An analysis of theology teaching suggests that theological concepts become more useful when their relationship to Christian practice is made explicit. A teaching session can identify the theological claim, explain its meaning and context, and then show how that understanding relates to worship, discipleship, ministry, ethical decisions, or community life. This does not reduce theology to practical technique; rather, it helps learners distinguish between understanding a theological idea and knowing how that idea informs responsible practice. The recommendation is to make this connection visible when designing or evaluating theology teaching.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "conversation",
+        "reference": "AM-PKO theology and practice teaching analysis authoring"
+      },
+      "skills": [
+        "theology teaching",
+        "theological analysis",
+        "ministry education"
+      ],
+      "assets": [
+        "theology teaching notes",
+        "lesson plans",
+        "ministry application examples"
+      ],
+      "actions": [
+        "identify the theological claim",
+        "explain its meaning and context",
+        "identify the practices it may inform",
+        "distinguish theological understanding from practical technique",
+        "review whether the teaching makes the connection visible"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "K-000111"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000114"
+        },
+        {
+          "type": "supports",
+          "target": "K-000119"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "B",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "semantic_overlap"
+        ]
+      }
+    },
+    {
+      "id": "K-000121",
+      "domain": "Technology/AM-PKO",
+      "project": "Digital Technology / AM-PKO",
+      "knowledge_type": "FACT",
+      "topic": "Knowledge Records",
+      "granularity": "Claim",
+      "title": "Structured knowledge records preserve more than the text of a claim",
+      "content": "A structured knowledge record can preserve a claim together with information about its type, topic, status, provenance, relationships, skills, assets, and actions. This makes the record different from a plain text note because the surrounding structure can describe how the knowledge should be interpreted and connected to other knowledge. For a personal knowledge system, preserving these dimensions helps separate what is known from where it came from, what it relates to, and how it may be applied.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "conversation",
+        "reference": "AM-PKO knowledge-record architecture authoring"
+      },
+      "skills": [
+        "knowledge modeling",
+        "structured data design",
+        "personal knowledge systems"
+      ],
+      "assets": [
+        "AM-PKO KnowledgeRecord schema",
+        "ontology definitions",
+        "knowledge-record examples"
+      ],
+      "actions": [
+        "identify the knowledge type",
+        "record provenance",
+        "connect the record to related knowledge",
+        "identify applicable skills and actions"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "K-000118"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000124"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "C",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "semantic_overlap"
+        ]
+      }
+    },
+    {
+      "id": "K-000122",
+      "domain": "Technology/AM-PKO",
+      "project": "Digital Technology / AM-PKO",
+      "knowledge_type": "EXPERIENCE",
+      "topic": "Ontology",
+      "granularity": "Observation",
+      "title": "Ontology choices shape how personal knowledge can be connected",
+      "content": "In designing a personal knowledge system, the categories used to describe knowledge influence which distinctions and relationships can be represented explicitly. A category that is useful for one domain may be too broad, too narrow, or differently understood in another domain. This creates an ambiguity that requires attention to the meaning and intended use of a category rather than assuming that identical labels always represent identical concepts. In practice, ontology design benefits from testing categories against real records from different areas of knowledge.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "field_note",
+        "reference": "AM-PKO ontology design observation authoring"
+      },
+      "skills": [
+        "ontology design",
+        "knowledge classification",
+        "cross-domain analysis"
+      ],
+      "assets": [
+        "AM-PKO ontology definitions",
+        "KnowledgeRecord schema",
+        "cross-domain knowledge examples"
+      ],
+      "actions": [
+        "test categories against real records",
+        "identify ambiguous category meanings",
+        "compare category use across domains",
+        "revise definitions when evidence requires clarification"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "K-000121"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000123"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "C",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "ambiguity",
+          "cross_domain"
+        ]
+      }
+    },
+    {
+      "id": "K-000123",
+      "domain": "Technology/AM-PKO",
+      "project": "Digital Technology / AM-PKO",
+      "knowledge_type": "IDEA",
+      "topic": "Relationships",
+      "granularity": "Heuristic",
+      "title": "Explicit relationships make knowledge dependencies easier to inspect",
+      "content": "A useful heuristic for personal knowledge modeling is to represent important connections explicitly rather than relying entirely on similar wording between records. Relationship types can distinguish different meanings of connection, such as support, contradiction, dependency, derivation, or association. This makes a knowledge system more inspectable because a user can follow a stated relationship and examine why two records are connected. The heuristic is especially useful when a chain of records contributes to a larger explanation or decision.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "conversation",
+        "reference": "AM-PKO relationship architecture heuristic authoring"
+      },
+      "skills": [
+        "relationship modeling",
+        "knowledge graph design",
+        "dependency analysis"
+      ],
+      "assets": [
+        "AM-PKO relationship definitions",
+        "relationship compatibility matrix",
+        "knowledge relationship examples"
+      ],
+      "actions": [
+        "identify important record connections",
+        "choose an explicit relationship type",
+        "inspect relationship chains",
+        "verify that a relationship has a meaningful basis"
+      ],
+      "relationships": [
+        {
+          "type": "supports",
+          "target": "K-000124"
+        },
+        {
+          "type": "depends_on",
+          "target": "K-000122"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000119"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "C",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "relationship_chain"
+        ]
+      }
+    },
+    {
+      "id": "K-000124",
+      "domain": "Technology/AM-PKO",
+      "project": "Digital Technology / AM-PKO",
+      "knowledge_type": "PLAN",
+      "topic": "Embeddings",
+      "granularity": "Procedure",
+      "title": "Generate embeddings from a canonical knowledge representation",
+      "content": "A practical embedding procedure should begin with a deterministic canonical representation of the knowledge record rather than sending an arbitrary collection of fields directly to a model. First, identify the fields authorized by the embedding specification. Next, generate the canonical embedding document without changing the substantive meaning of the record. Then pass that document through the selected embedding interface, validate the returned vector and its dimension, and retain the identity and specification information needed to trace the vector back to its source record. This procedure separates knowledge representation from model execution and makes embedding generation reproducible across candidate implementations.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "checklist",
+        "reference": "AM-PKO embedding generation procedure authoring"
+      },
+      "skills": [
+        "embedding pipeline design",
+        "data transformation",
+        "reproducible experimentation"
+      ],
+      "assets": [
+        "AM-PKO embedding specification",
+        "canonical embedding document generator",
+        "embedding interface contract"
+      ],
+      "actions": [
+        "identify authorized embedding fields",
+        "generate the canonical document",
+        "execute the embedding interface",
+        "validate vector dimension and identity",
+        "record provenance needed for later retrieval"
+      ],
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target": "K-000121"
+        },
+        {
+          "type": "requires",
+          "target": "K-000123"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000118"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "C",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "semantic_overlap"
+        ]
+      }
+    },
+    {
+      "id": "K-000125",
+      "domain": "Technology/AM-PKO",
+      "project": "Digital Technology / AM-PKO",
+      "knowledge_type": "ANALYSIS",
+      "topic": "Retrieval",
+      "granularity": "Hypothesis",
+      "title": "Similarity retrieval may be sufficient without explicit knowledge structure",
+      "content": "A deliberately contrasting hypothesis is that semantic similarity retrieval may be sufficient for many personal knowledge tasks without requiring explicit ontological relationships or structured retrieval controls. Under this hypothesis, sufficiently relevant text can be located from semantic similarity alone, and additional relationship structure may add complexity without enough practical benefit. This position stands in tension with an architecture that treats explicit relationships, provenance, and record structure as necessary parts of retrieval and later reasoning. The hypothesis should be evaluated against ambiguous queries, contradictory records, and tasks where the origin or relationship of retrieved knowledge matters.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "brainstorm",
+        "reference": "AM-PKO retrieval architecture contrasting hypothesis authoring"
+      },
+      "skills": [
+        "retrieval analysis",
+        "information retrieval",
+        "architectural evaluation"
+      ],
+      "assets": [
+        "retrieval evaluation results",
+        "AM-PKO retrieval architecture",
+        "human utility assay design"
+      ],
+      "actions": [
+        "compare similarity-only retrieval with structured retrieval",
+        "test ambiguous queries",
+        "test contradictory knowledge",
+        "inspect provenance requirements",
+        "measure practical retrieval utility"
+      ],
+      "relationships": [
+        {
+          "type": "contradicts",
+          "target": "K-000123"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000124"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000121"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "C",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "contradiction"
+        ]
+      }
+    },
+    {
+      "id": "K-000126",
+      "domain": "Technology/AM-PKO",
+      "project": "Digital Technology / AM-PKO",
+      "knowledge_type": "FACT",
+      "topic": "Evaluation",
+      "granularity": "Finding",
+      "title": "AM-PKO retrieval design evolved when score transport became an explicit contract requirement",
+      "content": "During AM-PKO retrieval reconstruction, the earlier I-4 design returned ordered VectorRecord objects even though the retrieval implementation computed similarity scores. Later contract analysis identified that T-6 RankedResult requires both record identity and retrieval score, while the score was not part of the VectorRecord payload. The design was therefore evolved to introduce a transient VectorStoreMatch boundary carrying the VectorRecord together with its retrieval score. This finding records a documented architectural supersession: the earlier score-discarding transport design was replaced by an explicit score-preserving boundary. The change preserved T-4 payload integrity while making the retrieval score available to the downstream retrieval service.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "technical_reference",
+        "reference": "AM-PKO I-4 to T-6 score transport design and validation records"
+      },
+      "skills": [
+        "retrieval architecture",
+        "interface design",
+        "software evaluation"
+      ],
+      "assets": [
+        "I-4 freeze manifest",
+        "VectorStoreMatch contract",
+        "I-6 retrieval service"
+      ],
+      "actions": [
+        "trace interface requirements across contracts",
+        "identify gaps between computed and transported values",
+        "preserve immutable payload boundaries",
+        "introduce explicit transient transport when required",
+        "validate downstream identity and score preservation"
+      ],
+      "relationships": [
+        {
+          "type": "derived_from",
+          "target": "K-000123"
+        },
+        {
+          "type": "supports",
+          "target": "K-000124"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000125"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "C",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "historical_superseding",
+          "relationship_chain"
+        ]
+      }
+    },
+    {
+      "id": "K-000127",
+      "domain": "Technology/AM-PKO",
+      "project": "Digital Technology / AM-PKO",
+      "knowledge_type": "EXPERIENCE",
+      "topic": "Evaluation",
+      "granularity": "Principle",
+      "title": "Evaluation results can mean different things depending on the retrieval question",
+      "content": "In evaluating retrieval systems, the meaning of a result depends on what the evaluation question is intended to measure. A top-ranked record may be relevant to the wording of a query while still being less useful for the user's actual task, especially when several records share related concepts. Similarly, a high aggregate metric does not by itself show that identity, provenance, contradiction, or human usefulness were preserved for every query. This experience supports a principle of interpreting retrieval results at both the metric level and the individual-query level, while keeping the evaluation criterion explicit.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "field_note",
+        "reference": "AM-PKO retrieval evaluation experience authoring"
+      },
+      "skills": [
+        "retrieval evaluation",
+        "metric interpretation",
+        "experimental analysis"
+      ],
+      "assets": [
+        "retrieval evaluation metrics",
+        "per-query retrieval results",
+        "human utility assay design"
+      ],
+      "actions": [
+        "state the evaluation question explicitly",
+        "inspect individual query results",
+        "compare aggregate metrics with query-level evidence",
+        "check identity and provenance preservation",
+        "distinguish relevance from practical usefulness"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "K-000125"
+        },
+        {
+          "type": "supports",
+          "target": "K-000126"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000124"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "C",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "ambiguity",
+          "semantic_overlap"
+        ]
+      }
+    },
+    {
+      "id": "K-000128",
+      "domain": "Technology/AM-PKO",
+      "project": "Digital Technology / AM-PKO",
+      "knowledge_type": "IDEA",
+      "topic": "Human Control",
+      "granularity": "Pattern",
+      "title": "Human control is clearer when system suggestions remain distinct from authoritative knowledge",
+      "content": "A useful pattern for human-facing knowledge systems is to distinguish system suggestions from knowledge that a person has explicitly accepted as authoritative within the system. A retrieval result, proposed relationship, generated interpretation, or captured draft can be shown for inspection without automatically becoming part of the trusted knowledge base. This pattern connects software interaction with knowledge governance because the interface determines whether a person can inspect, correct, reject, or accept what the system proposes. Keeping that boundary visible can reduce accidental mutation while preserving provenance and human responsibility for consequential knowledge changes.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "brainstorm",
+        "reference": "AM-PKO human control architecture pattern authoring"
+      },
+      "skills": [
+        "human-in-the-loop system design",
+        "knowledge governance",
+        "interface architecture"
+      ],
+      "assets": [
+        "U-1 product usability design",
+        "AM-PKO KnowledgeRecord lifecycle",
+        "provenance and control requirements"
+      ],
+      "actions": [
+        "label system suggestions clearly",
+        "inspect proposed knowledge before acceptance",
+        "allow correction or rejection",
+        "record explicit acceptance of authoritative changes",
+        "preserve provenance for generated interpretations"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "K-000127"
+        },
+        {
+          "type": "supports",
+          "target": "K-000121"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000119"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "C",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "cross_domain"
+        ]
+      }
+    },
+    {
+      "id": "K-000129",
+      "domain": "Technology/AM-PKO",
+      "project": "Digital Technology / AM-PKO",
+      "knowledge_type": "PLAN",
+      "topic": "Context Assembly",
+      "granularity": "PlanItem",
+      "title": "Assemble retrieved context without losing identity and provenance",
+      "content": "A context-assembly plan should preserve the identity and provenance of retrieved records while preparing information for a downstream reasoning task. For each selected record, retain its stable record ID, relevant metadata, source information, retrieval score where applicable, and relationship context before combining the substantive knowledge into a bounded context package. The assembly process should distinguish stored knowledge from generated interpretation and should expose contradictory records rather than silently resolving them. This plan connects retrieval results with later reasoning while protecting the traceability needed to inspect how a conclusion relates to its source records.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "checklist",
+        "reference": "AM-PKO context assembly planning authoring"
+      },
+      "skills": [
+        "context assembly",
+        "provenance preservation",
+        "retrieval-to-reasoning design"
+      ],
+      "assets": [
+        "T-6 RankedResult contract",
+        "U-1 context preview requirements",
+        "AM-PKO provenance fields"
+      ],
+      "actions": [
+        "retain stable record identities",
+        "preserve provenance and relevant metadata",
+        "retain relationship context",
+        "mark stored knowledge separately from generated interpretation",
+        "expose contradictions during context assembly",
+        "apply a bounded context budget"
+      ],
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target": "K-000124"
+        },
+        {
+          "type": "depends_on",
+          "target": "K-000126"
+        },
+        {
+          "type": "supports",
+          "target": "K-000128"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000127"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "C",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "relationship_chain",
+          "semantic_overlap"
+        ]
+      }
+    },
+    {
+      "id": "K-000130",
+      "domain": "Technology/AM-PKO",
+      "project": "Digital Technology / AM-PKO",
+      "knowledge_type": "ANALYSIS",
+      "topic": "Personal Knowledge Systems",
+      "granularity": "Recommendation",
+      "title": "Design personal knowledge systems around connected knowledge rather than isolated retrieval",
+      "content": "A personal knowledge system should be designed as a connected knowledge environment rather than as a collection of isolated searchable notes. Retrieval is useful for locating relevant records, but the wider system should preserve knowledge type, provenance, relationships, contradictions, and possible applications so that retrieved information can be inspected and used in context. This analysis connects structured knowledge representation with semantic retrieval and human governance: each layer contributes a different capability, and none should silently replace the others. The recommendation is therefore to treat capture, structure, connection, retrieval, inspection, reasoning, and application as related stages of one personal knowledge architecture.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "conversation",
+        "reference": "AM-PKO personal knowledge systems architecture analysis authoring"
+      },
+      "skills": [
+        "personal knowledge architecture",
+        "systems analysis",
+        "knowledge management"
+      ],
+      "assets": [
+        "AM-PKO architecture",
+        "Capture-to-Apply pipeline",
+        "KnowledgeRecord ontology"
+      ],
+      "actions": [
+        "preserve structured knowledge alongside searchable text",
+        "retain provenance and relationships during retrieval",
+        "inspect contradictions before applying retrieved knowledge",
+        "separate retrieval from reasoning and application",
+        "evaluate the system through real knowledge-use tasks"
+      ],
+      "relationships": [
+        {
+          "type": "supports",
+          "target": "K-000121"
+        },
+        {
+          "type": "supports",
+          "target": "K-000124"
+        },
+        {
+          "type": "supports",
+          "target": "K-000129"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000128"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "C",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "cross_domain"
+        ]
+      }
+    },
+    {
+      "id": "K-000131",
+      "domain": "Heritage/Storytelling",
+      "project": "Heritage/Storytelling",
+      "knowledge_type": "FACT",
+      "topic": "Life Stories",
+      "granularity": "Claim",
+      "title": "Life stories preserve meaning alongside remembered events",
+      "content": "A life story is more than a chronological list of events because people often connect remembered events with the meanings, relationships, decisions, and lessons they associate with them. Preserving a life story therefore requires attention to both what happened and how the person understands its significance. Different retellings may emphasize different parts of the same life without necessarily representing entirely different histories. For heritage work, preserving the narrative context alongside identifiable events helps keep a person's experience connected to the meaning they intended to communicate.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "conversation",
+        "reference": "AM-PKO Heritage Meets Digital life-story knowledge authoring"
+      },
+      "skills": [
+        "life-story documentation",
+        "heritage storytelling",
+        "narrative analysis"
+      ],
+      "assets": [
+        "life-story interview notes",
+        "storytelling session records",
+        "heritage documentation framework"
+      ],
+      "actions": [
+        "record significant events",
+        "preserve the narrator's interpretation",
+        "retain relationships and contextual details",
+        "compare different retellings without erasing their context"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "K-000132"
+        },
+        {
+          "type": "supports",
+          "target": "K-000134"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "D",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "semantic_overlap"
+        ]
+      }
+    },
+    {
+      "id": "K-000132",
+      "domain": "Heritage/Storytelling",
+      "project": "Heritage/Storytelling",
+      "knowledge_type": "EXPERIENCE",
+      "topic": "Oral History",
+      "granularity": "Observation",
+      "title": "Oral histories can change meaning when remembered details are separated from context",
+      "content": "In oral-history work, a remembered detail can be accurate in itself while its meaning becomes unclear when the surrounding context is removed. People may remember a place, person, event, phrase, or custom but explain its significance differently depending on the period, relationship, or circumstances being discussed. This creates an interpretive ambiguity: preserving the remembered detail alone does not always preserve what the narrator intended it to communicate. A useful oral-history record therefore keeps relevant contextual information with the remembered account and distinguishes the narrator's recollection from later interpretation.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "field_note",
+        "reference": "AM-PKO Heritage Meets Digital oral-history observation authoring"
+      },
+      "skills": [
+        "oral-history documentation",
+        "contextual interpretation",
+        "heritage interviewing"
+      ],
+      "assets": [
+        "oral-history interview notes",
+        "context records",
+        "heritage interview framework"
+      ],
+      "actions": [
+        "record remembered details",
+        "capture the surrounding context",
+        "distinguish recollection from interpretation",
+        "clarify ambiguous references during an interview"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "K-000131"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000133"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "D",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "ambiguity"
+        ]
+      }
+    },
+    {
+      "id": "K-000133",
+      "domain": "Heritage/Storytelling",
+      "project": "Heritage/Storytelling",
+      "knowledge_type": "IDEA",
+      "topic": "Digital Heritage",
+      "granularity": "Heuristic",
+      "title": "Digital heritage is stronger when records preserve both story and source context",
+      "content": "A useful heuristic for digital heritage work is to preserve a story together with enough source context to show where the account came from and how it was documented. A digitized photograph, interview, document, or oral account can remain accessible while losing important meaning if its creator, narrator, date, place, or relationship to a community is omitted. The digital representation should therefore connect the preserved story with provenance and contextual information rather than treating digitization as simple conversion of an artifact into a digital file. This makes later interpretation and responsible reuse easier because users can inspect the relationship between the story, its source, and the circumstances in which it was preserved.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "conversation",
+        "reference": "AM-PKO Heritage Meets Digital digital-heritage heuristic authoring"
+      },
+      "skills": [
+        "digital heritage design",
+        "provenance documentation",
+        "heritage storytelling"
+      ],
+      "assets": [
+        "digital heritage records",
+        "source metadata",
+        "heritage documentation framework"
+      ],
+      "actions": [
+        "record the source of a heritage account",
+        "preserve relevant date and place information",
+        "connect digital artifacts with their contextual records",
+        "inspect provenance before reuse"
+      ],
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target": "K-000132"
+        },
+        {
+          "type": "supports",
+          "target": "K-000134"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000131"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "D",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "relationship_chain",
+          "cross_domain"
+        ]
+      }
+    },
+    {
+      "id": "K-000134",
+      "domain": "Heritage/Storytelling",
+      "project": "Heritage/Storytelling",
+      "knowledge_type": "PLAN",
+      "topic": "Community Memory",
+      "granularity": "Procedure",
+      "title": "Document community memory by connecting stories, people, places, and sources",
+      "content": "A community-memory documentation procedure should begin by identifying the story or memory being preserved and the people, places, events, or practices connected to it. Next, record the narrator or source, the context in which the account was collected, and any available supporting material. Then distinguish the remembered account from information added through later interpretation or documentation. Connect the record to related stories, people, places, and heritage materials so that the memory can be understood within its wider community context. Finally, review the record for provenance, ambiguity, and missing context before making it available for later teaching, storytelling, or digital reuse.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "checklist",
+        "reference": "AM-PKO Heritage Meets Digital community-memory documentation procedure authoring"
+      },
+      "skills": [
+        "community-memory documentation",
+        "heritage interviewing",
+        "provenance management"
+      ],
+      "assets": [
+        "community-memory interview checklist",
+        "heritage source records",
+        "story relationship notes"
+      ],
+      "actions": [
+        "identify the memory being preserved",
+        "record people, places, events, and practices",
+        "capture narrator and source context",
+        "distinguish recollection from later interpretation",
+        "connect related heritage records",
+        "review provenance and ambiguity before reuse"
+      ],
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target": "K-000133"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000131"
+        },
+        {
+          "type": "supports",
+          "target": "K-000135"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "D",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "semantic_overlap"
+        ]
+      }
+    },
+    {
+      "id": "K-000135",
+      "domain": "Heritage/Storytelling",
+      "project": "Heritage/Storytelling",
+      "knowledge_type": "ANALYSIS",
+      "topic": "Story Preservation",
+      "granularity": "Hypothesis",
+      "title": "Preserving inherited stories may require limits on reinterpretation",
+      "content": "A working hypothesis in heritage documentation is that preserving inherited stories may sometimes require limits on reinterpretation. A story can carry meanings shaped by the people, places, practices, and historical circumstances from which it came, so extensive reinterpretation may change meanings that are important to the original community. At the same time, later generations may need to interpret inherited stories in order to understand or apply them in changing circumstances. The hypothesis therefore proposes that responsible story preservation should distinguish the inherited account from later interpretations rather than treating either one as the only legitimate version. This remains a hypothesis because the appropriate balance between preservation and reinterpretation can differ across communities and traditions.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "brainstorm",
+        "reference": "AM-PKO Heritage Meets Digital story preservation hypothesis analysis"
+      },
+      "skills": [
+        "heritage interpretation",
+        "story preservation",
+        "cultural context analysis"
+      ],
+      "assets": [
+        "oral-history records",
+        "inherited stories",
+        "contextual heritage notes"
+      ],
+      "actions": [
+        "distinguish inherited accounts from later interpretation",
+        "document the context of inherited stories",
+        "compare preservation and reinterpretation needs",
+        "record unresolved interpretive differences"
+      ],
+      "relationships": [
+        {
+          "type": "contradicts",
+          "target": "K-000134"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000136"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000131"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "D",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "contradiction"
+        ]
+      }
+    },
+    {
+      "id": "K-000136",
+      "domain": "Heritage/Storytelling",
+      "project": "Heritage/Storytelling",
+      "knowledge_type": "FACT",
+      "topic": "Cultural Identity",
+      "granularity": "Finding",
+      "title": "Cultural identity records become more interpretable when context and continuity are preserved",
+      "content": "A documented finding from heritage work is that records about cultural identity are more interpretable when they preserve the context and continuity surrounding the people, practices, stories, and symbols they describe. A cultural artifact or story can be difficult to understand when separated from the community, occasion, historical setting, or relationships that gave it meaning. Preserving these connections does not require treating every interpretation as identical; it allows later users to see how meanings relate to particular contexts and historical experiences. The finding supports heritage documentation that keeps context, provenance, and relationships visible rather than storing cultural identity as isolated descriptions.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "field_note",
+        "reference": "AM-PKO Heritage Meets Digital cultural identity documentation finding"
+      },
+      "skills": [
+        "cultural heritage documentation",
+        "contextual interpretation",
+        "provenance-aware documentation"
+      ],
+      "assets": [
+        "cultural identity records",
+        "heritage context notes",
+        "community documentation materials"
+      ],
+      "actions": [
+        "preserve cultural context",
+        "document continuity and historical relationships",
+        "record provenance for cultural materials",
+        "connect cultural identity records with related heritage evidence"
+      ],
+      "relationships": [
+        {
+          "type": "supports",
+          "target": "K-000133"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000135"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000137"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "D",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "relationship_chain"
+        ]
+      }
+    },
+    {
+      "id": "K-000137",
+      "domain": "Heritage/Storytelling",
+      "project": "Heritage/Storytelling",
+      "knowledge_type": "EXPERIENCE",
+      "topic": "Visual Heritage",
+      "granularity": "Principle",
+      "title": "Visual heritage interpretation should preserve context before treating similar images as the same tradition",
+      "content": "A practical principle for visual heritage work is that visually similar images should be interpreted through their context before being treated as representations of the same tradition. Location, occasion, community, historical setting, provenance, and descriptive records can affect the meaning of a visual feature even when its appearance is similar. When context is incomplete, the record should preserve the ambiguity rather than assuming that similar appearance proves shared meaning. Comparing provenance, descriptions, and related heritage records can help later users distinguish visual similarity from cultural equivalence.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "observation",
+        "reference": "AM-PKO Heritage Meets Digital visual-heritage observation authoring"
+      },
+      "skills": [
+        "visual comparison",
+        "heritage contextualization",
+        "semantic interpretation"
+      ],
+      "assets": [
+        "heritage image collections",
+        "visual comparison notes",
+        "contextual provenance records"
+      ],
+      "actions": [
+        "compare visible features across images",
+        "record location and occasion",
+        "check accompanying descriptions and provenance",
+        "compare related heritage records before assigning shared meaning"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "K-000136"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000131"
+        },
+        {
+          "type": "supports",
+          "target": "K-000138"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "D",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "ambiguity",
+          "semantic_overlap"
+        ]
+      }
+    },
+    {
+      "id": "K-000138",
+      "domain": "Heritage/Storytelling",
+      "project": "Heritage/Storytelling",
+      "knowledge_type": "IDEA",
+      "topic": "Intergenerational Knowledge",
+      "granularity": "Pattern",
+      "title": "Intergenerational knowledge can be strengthened by linking lived experience with digital records",
+      "content": "A proposed pattern for intergenerational knowledge work is to connect lived experience with carefully documented digital records so that younger participants can encounter both the knowledge itself and the context in which it was learned. A digital record can preserve a story, practice, explanation, or visual artifact, while an experienced person can clarify meanings that are difficult to capture in structured fields alone. This combination may support learning without treating the digital record as a replacement for the people and relationships from which the knowledge originated. The idea therefore connects heritage practice with personal knowledge-system design, where provenance and human interpretation remain visible alongside stored information.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "brainstorm",
+        "reference": "AM-PKO Heritage Meets Digital intergenerational knowledge idea authoring"
+      },
+      "skills": [
+        "intergenerational knowledge transfer",
+        "digital heritage design",
+        "knowledge documentation"
+      ],
+      "assets": [
+        "oral-history records",
+        "digital heritage archive",
+        "community knowledge notes"
+      ],
+      "actions": [
+        "document lived experience",
+        "connect experience with digital records",
+        "capture contextual explanations from experienced people",
+        "preserve provenance alongside stored knowledge"
+      ],
+      "relationships": [
+        {
+          "type": "supports",
+          "target": "K-000137"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000133"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000139"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "D",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "cross_domain"
+        ]
+      }
+    },
+    {
+      "id": "K-000139",
+      "domain": "Heritage/Storytelling",
+      "project": "Heritage/Storytelling",
+      "knowledge_type": "PLAN",
+      "topic": "Legacy",
+      "granularity": "PlanItem",
+      "title": "Build a traceable legacy record from stories, artifacts, and contextual evidence",
+      "content": "A legacy documentation plan should bring together stories, artifacts, and contextual evidence without treating any single source as the complete representation of a person's or community's legacy. Begin by identifying the person, family, community, or tradition whose legacy is being documented. Then collect relevant stories, photographs, documents, objects, and recorded accounts while preserving information about who provided each source and when it was documented. Compare related accounts where they overlap or differ, and record uncertainty rather than silently resolving conflicting memories. Finally, connect the resulting legacy record to related heritage materials and digital knowledge records so that later users can trace how the account was assembled and reuse it for teaching, storytelling, or further research.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "plan",
+        "reference": "AM-PKO Heritage Meets Digital legacy documentation planning"
+      },
+      "skills": [
+        "heritage documentation",
+        "oral-history preservation",
+        "provenance management"
+      ],
+      "assets": [
+        "life-story records",
+        "photographs and heritage artifacts",
+        "digital legacy archive"
+      ],
+      "actions": [
+        "identify the legacy subject",
+        "collect stories and supporting materials",
+        "record source provenance",
+        "compare overlapping or conflicting accounts",
+        "preserve uncertainty and contextual differences",
+        "connect the legacy record with related heritage materials"
+      ],
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target": "K-000134"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000131"
+        },
+        {
+          "type": "supports",
+          "target": "K-000140"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000138"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "D",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "relationship_chain",
+          "semantic_overlap"
+        ]
+      }
+    },
+    {
+      "id": "K-000140",
+      "domain": "Heritage/Storytelling",
+      "project": "Heritage/Storytelling",
+      "knowledge_type": "ANALYSIS",
+      "topic": "Heritage Documentation",
+      "granularity": "Recommendation",
+      "title": "Heritage documentation should connect preservation with responsible digital reuse",
+      "content": "A practical recommendation from heritage documentation work is to design preservation records for both long-term understanding and responsible reuse. A record should preserve the original story, artifact, image, or account while also documenting its provenance, context, uncertainty, and relationship to other heritage materials. Digital tools can make these records easier to search, connect, teach, and share, but digitization should not be treated as proof that the original context has been fully preserved. Heritage documentation should therefore keep human interpretation visible and allow later users to distinguish source material from interpretation added during documentation or reuse. This approach connects heritage practice with personal knowledge-system design by treating traceability and human judgment as necessary parts of useful digital knowledge.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "technical_reference",
+        "reference": "AM-PKO Heritage Meets Digital heritage documentation analysis"
+      },
+      "skills": [
+        "heritage documentation",
+        "digital preservation",
+        "provenance-aware knowledge design"
+      ],
+      "assets": [
+        "heritage documentation records",
+        "digital archive",
+        "context and provenance metadata"
+      ],
+      "actions": [
+        "preserve source material and context",
+        "document provenance and uncertainty",
+        "connect related heritage records",
+        "distinguish source material from interpretation",
+        "design records for responsible digital reuse"
+      ],
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target": "K-000139"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000134"
+        },
+        {
+          "type": "supports",
+          "target": "K-000138"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000129"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-01",
+        "cluster": "D",
+        "authoring_status": "REVIEWED",
+        "special_roles": [
+          "cross_domain"
+        ]
+      }
+    },
+    {
+      "id": "K-000141",
+      "domain": "Cross-domain / Contradiction",
+      "project": "",
+      "knowledge_type": "FACT",
+      "topic": "Craft and Knowledge",
+      "granularity": "Claim",
+      "title": "Practical craft knowledge becomes more reusable when its working context is preserved",
+      "content": "A documented claim from practical knowledge work is that craft knowledge becomes more reusable when the conditions, decisions, and context surrounding an action are preserved alongside the resulting instruction or description. A fabrication technique, for example, may appear simple when reduced to a sequence of steps, while the reason for choosing that sequence may depend on material, fit-up, tooling, site conditions, or prior experience. Structured records can preserve some of this context and make practical knowledge easier to retrieve and compare across situations. This does not mean that structured records can fully replace hands-on experience: practical judgment may remain necessary when conditions differ from those represented in the record. The claim therefore connects craft practice with knowledge-system design while preserving the distinction between documented knowledge and knowledge gained through direct practice.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "field_note",
+        "reference": "AM-PKO practical craft and knowledge documentation claim"
+      },
+      "skills": [
+        "metal fabrication",
+        "practical knowledge documentation",
+        "contextual reasoning"
+      ],
+      "assets": [
+        "fabrication procedures",
+        "fit-up observations",
+        "practical experience records"
+      ],
+      "actions": [
+        "document the context surrounding practical techniques",
+        "record reasons for important craft decisions",
+        "compare documented procedures with field conditions",
+        "distinguish documented knowledge from hands-on judgment"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "K-000130"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-02",
+        "cluster": "E",
+        "special_roles": [
+          "contradiction",
+          "cross_domain"
+        ]
+      }
+    },
+    {
+      "id": "K-000142",
+      "domain": "Cross-domain / Contradiction",
+      "project": "",
+      "knowledge_type": "EXPERIENCE",
+      "topic": "Experience and Evidence",
+      "granularity": "Observation",
+      "title": "Additional context can sometimes reduce the practical reusability of a knowledge record",
+      "content": "A practical observation from experience-based knowledge work is that adding more context to a knowledge record does not necessarily make the record more reusable and can sometimes make practical reuse harder. When a record accumulates extensive background, exceptions, historical detail, or contextual qualifications without clearly identifying the decision that a later user needs to make, the operational knowledge can become harder to locate and apply. In practical work, a concise record that identifies the relevant condition, decision, and action may sometimes support reuse more effectively than a record containing substantially more contextual information. This observation therefore preserves a genuine disagreement with the claim that preserving working context generally increases reusability: context can improve understanding, but additional context can also introduce retrieval and application costs when it is not organized around the user's practical need.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "field_note",
+        "reference": "AM-PKO practical experience and evidence observation"
+      },
+      "skills": [
+        "practical knowledge assessment",
+        "field observation",
+        "evidence interpretation"
+      ],
+      "assets": [
+        "field observations",
+        "practical experience records",
+        "work-context notes"
+      ],
+      "actions": [
+        "compare recorded context with observed working conditions",
+        "identify tacit conditions missing from documentation",
+        "distinguish documented evidence from practical judgment",
+        "record limitations affecting knowledge reuse"
+      ],
+      "relationships": [
+        {
+          "type": "contradicts",
+          "target": "K-000141"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000127"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-02",
+        "cluster": "E",
+        "special_roles": [
+          "contradiction",
+          "semantic_overlap"
+        ]
+      }
+    },
+    {
+      "id": "K-000143",
+      "domain": "Cross-domain / Contradiction",
+      "project": "",
+      "knowledge_type": "IDEA",
+      "topic": "Memory and Retrieval",
+      "granularity": "Heuristic",
+      "title": "Retrieval improves when stored memory preserves the cues people use to recognize its meaning",
+      "content": "A practical heuristic for personal knowledge systems is to preserve the cues that help a person recognize why a remembered experience, observation, or idea matters when it is retrieved later. A record that contains only a general statement may be difficult to connect with the situation in which the knowledge was learned, while a record that preserves relevant topic, context, relationships, and provenance can provide more useful recognition cues. This does not require storing every detail of an experience; the aim is to preserve the information that helps distinguish one memory from another and connect it to related knowledge. The heuristic therefore links personal memory practices with retrieval-system design: retrieval should expose enough contextual structure for a person to recognize and evaluate the knowledge rather than treating a retrieved statement as meaningful in isolation.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "brainstorm",
+        "reference": "AM-PKO memory and retrieval heuristic"
+      },
+      "skills": [
+        "knowledge organization",
+        "retrieval reasoning",
+        "contextual interpretation"
+      ],
+      "assets": [
+        "personal knowledge records",
+        "retrieval cues",
+        "relationship metadata"
+      ],
+      "actions": [
+        "preserve meaningful retrieval cues",
+        "connect memories to related records",
+        "retain provenance and contextual information",
+        "evaluate retrieved knowledge within its surrounding context"
+      ],
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target": "K-000121"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000138"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-02",
+        "cluster": "E",
+        "special_roles": [
+          "relationship_chain",
+          "cross_domain"
+        ]
+      }
+    },
+    {
+      "id": "K-000144",
+      "domain": "Cross-domain / Contradiction",
+      "project": "",
+      "knowledge_type": "PLAN",
+      "topic": "Tradition and Technology",
+      "granularity": "Procedure",
+      "title": "Document traditions digitally while keeping preservation, interpretation, and representation distinct",
+      "content": "A planned procedure for connecting tradition with digital technology is to document the original cultural or community context before deciding how the tradition should be represented digitally. First, identify the people, practice, story, object, or other heritage element being documented and record its provenance, setting, and known meanings. Next, distinguish what is being preserved as evidence from the interpretation being added by the person creating the digital record. Then document the technical form of the representation and note any information that the chosen format cannot fully capture. Where it is unclear whether a digital representation should be treated as preservation of the tradition, documentation about the tradition, or a new interpretation of it, retain that ambiguity rather than assigning one meaning without evidence. Finally, connect the digital record to related heritage records and review the result for provenance, contextual loss, and interpretive assumptions before using it for teaching, storytelling, or later digital reuse.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "checklist",
+        "reference": "AM-PKO tradition and technology documentation procedure"
+      },
+      "skills": [
+        "digital heritage documentation",
+        "provenance management",
+        "contextual interpretation"
+      ],
+      "assets": [
+        "heritage records",
+        "digital documentation materials",
+        "community context notes"
+      ],
+      "actions": [
+        "record provenance and original context",
+        "separate evidence from later interpretation",
+        "document limitations of the digital representation",
+        "preserve unresolved interpretive ambiguity",
+        "review digital records for contextual loss before reuse"
+      ],
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target": "K-000134"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000138"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-02",
+        "cluster": "E",
+        "special_roles": [
+          "ambiguity",
+          "semantic_overlap"
+        ]
+      }
+    },
+    {
+      "id": "K-000145",
+      "domain": "Cross-domain / Contradiction",
+      "project": "",
+      "knowledge_type": "ANALYSIS",
+      "topic": "Human Judgment",
+      "granularity": "Hypothesis",
+      "title": "Structured retrieval cues may sometimes support decisions without extensive contextual review",
+      "content": "A working hypothesis about human judgment in knowledge retrieval is that structured retrieval cues may sometimes provide enough information for a person to act without reviewing the wider contextual structure surrounding a record. When a knowledge item has a clearly defined purpose, stable meaning, known provenance, and an established application procedure, additional contextual material may add little value to a routine decision. In such cases, requiring extensive inspection of related records could increase cognitive effort without materially improving the decision. This hypothesis therefore questions the assumption that useful retrieval should normally expose enough surrounding context for the user to evaluate the knowledge in detail. It does not claim that contextual review is unnecessary in general; rather, it proposes that the amount of human judgment required may depend on the stability, provenance, and intended use of the retrieved knowledge. The proposition remains a hypothesis because the conditions under which contextual inspection can safely be reduced require empirical validation.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "brainstorm",
+        "reference": "AM-PKO human judgment and retrieval hypothesis analysis"
+      },
+      "skills": [
+        "human judgment analysis",
+        "retrieval evaluation",
+        "decision analysis"
+      ],
+      "assets": [
+        "retrieved knowledge records",
+        "provenance information",
+        "decision criteria"
+      ],
+      "actions": [
+        "identify decisions with stable application conditions",
+        "distinguish routine decisions from context-sensitive decisions",
+        "compare decision quality with and without extended contextual review",
+        "record conditions where additional context changes the decision",
+        "validate the hypothesis through controlled retrieval tasks"
+      ],
+      "relationships": [
+        {
+          "type": "contradicts",
+          "target": "K-000143"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000127"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-02",
+        "cluster": "E",
+        "special_roles": [
+          "contradiction"
+        ]
+      }
+    },
+    {
+      "id": "K-000146",
+      "domain": "Cross-domain / Contradiction",
+      "project": "",
+      "knowledge_type": "FACT",
+      "topic": "Contradictory Knowledge",
+      "granularity": "Finding",
+      "title": "Contradictory knowledge remains more useful when competing claims stay independently traceable",
+      "content": "A documented finding from structured knowledge work is that contradictory knowledge is easier to inspect and reason about when the competing claims remain independently represented and traceable to their sources or experiences. When opposing propositions are silently merged into a single statement, the system can lose information about what was actually disagreed with, why the disagreement exists, and which evidence supports each position. Keeping the records separate allows a later user to inspect the contradiction, compare provenance, and determine whether the disagreement is absolute, conditional, historical, or dependent on different circumstances. This finding applies across domains because disagreements in practical work, ministry, heritage, and technology can all require preservation of the competing propositions before a later interpretation or decision is made. The finding therefore supports explicit contradiction relationships and independent lineage rather than silent reconciliation.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "field_note",
+        "reference": "AM-PKO contradictory knowledge representation finding"
+      },
+      "skills": [
+        "knowledge representation",
+        "contradiction analysis",
+        "provenance reasoning"
+      ],
+      "assets": [
+        "contradictory knowledge records",
+        "provenance information",
+        "relationship metadata"
+      ],
+      "actions": [
+        "preserve competing propositions independently",
+        "record the provenance of each conflicting claim",
+        "classify whether disagreements are conditional or historical",
+        "inspect contradictions before attempting reconciliation"
+      ],
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target": "K-000142"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000115"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-02",
+        "cluster": "E",
+        "special_roles": [
+          "relationship_chain",
+          "cross_domain"
+        ]
+      }
+    },
+    {
+      "id": "K-000147",
+      "domain": "Cross-domain / Contradiction",
+      "project": "",
+      "knowledge_type": "EXPERIENCE",
+      "topic": "Historical Change",
+      "granularity": "Principle",
+      "title": "Historically changing knowledge should preserve both continuity and uncertainty",
+      "content": "A practical principle from working with historical and inherited knowledge is that records should preserve evidence of continuity while also leaving room for meanings that changed across time. A practice, phrase, story, or technical method may retain a recognizable form while its purpose, interpretation, or surrounding conditions change between generations or historical settings. Treating similar forms as identical can therefore hide meaningful historical differences, while treating every change as a complete break can hide genuine continuity. Where the available evidence does not establish whether a later form represents continuity, adaptation, or a distinct development, the record should preserve that ambiguity rather than forcing a single historical explanation. This principle also creates semantic overlap with records describing preservation and reinterpretation: similar terms may refer to related knowledge while carrying different meanings because of their historical context.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "field_note",
+        "reference": "AM-PKO historical change and inherited knowledge principle"
+      },
+      "skills": [
+        "historical interpretation",
+        "contextual analysis",
+        "knowledge continuity assessment"
+      ],
+      "assets": [
+        "historical knowledge records",
+        "inherited practices",
+        "contextual documentation"
+      ],
+      "actions": [
+        "record historical context",
+        "distinguish continuity from later adaptation",
+        "preserve unresolved historical ambiguity",
+        "compare related records across time"
+      ],
+      "relationships": [
+        {
+          "type": "related_to",
+          "target": "K-000135"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000136"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-02",
+        "cluster": "E",
+        "special_roles": [
+          "ambiguity",
+          "semantic_overlap"
+        ]
+      }
+    },
+    {
+      "id": "K-000148",
+      "domain": "Cross-domain / Contradiction",
+      "project": "",
+      "knowledge_type": "IDEA",
+      "topic": "Cross-domain Reasoning",
+      "granularity": "Pattern",
+      "title": "Cross-domain reasoning can use shared relationships without assuming identical meanings",
+      "content": "A proposed pattern for cross-domain reasoning is to compare knowledge from different domains through explicit relationships while preserving the meanings and conditions specific to each domain. A concept such as evidence, practice, memory, or judgment may appear in welding, theology, heritage, and technology, but its operational meaning can differ according to the context in which it is used. Cross-domain reasoning can therefore begin by identifying a shared relationship or problem and then examining how each domain expresses it rather than treating similar terms as interchangeable. This pattern can connect contradictory-knowledge analysis with personal knowledge system design: relationships can reveal useful structural parallels while provenance and context prevent those parallels from becoming unsupported equivalences. The idea is proposed as a reusable reasoning pattern, not as a claim that all domains share the same evidence standards, meanings, or methods.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "brainstorm",
+        "reference": "AM-PKO cross-domain reasoning pattern"
+      },
+      "skills": [
+        "cross-domain reasoning",
+        "comparative analysis",
+        "contextual interpretation"
+      ],
+      "assets": [
+        "cross-domain knowledge records",
+        "relationship metadata",
+        "provenance information"
+      ],
+      "actions": [
+        "identify shared relationships across domains",
+        "compare domain-specific meanings",
+        "preserve provenance and contextual conditions",
+        "test cross-domain parallels before treating them as equivalences"
+      ],
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target": "K-000146"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000130"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-02",
+        "cluster": "E",
+        "special_roles": [
+          "cross_domain",
+          "relationship_chain"
+        ]
+      }
+    },
+    {
+      "id": "K-000149",
+      "domain": "Cross-domain / Contradiction",
+      "project": "",
+      "knowledge_type": "PLAN",
+      "topic": "Provenance and Trust",
+      "granularity": "PlanItem",
+      "title": "Make provenance inspection part of routine knowledge reuse",
+      "content": "A planned improvement for personal knowledge work is to make provenance inspection a routine step before reusing a retrieved knowledge record in a new context. The plan is to identify the origin or source type of the record, check when and under what circumstances it was created, inspect relevant relationships and supporting evidence, and note any uncertainty that could affect its application. The purpose is not to require exhaustive investigation for every routine retrieval, but to provide a consistent way to distinguish well-supported knowledge from information whose origin or context remains unclear. This plan overlaps with broader practices of contextual documentation and heritage preservation because all three preserve information about where knowledge came from and how it should be interpreted. The planned workflow should therefore strengthen trust without treating provenance as proof that a knowledge claim is automatically correct.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "checklist",
+        "reference": "AM-PKO provenance and trust reuse plan"
+      },
+      "skills": [
+        "provenance assessment",
+        "knowledge governance",
+        "contextual verification"
+      ],
+      "assets": [
+        "knowledge records",
+        "source metadata",
+        "relationship and evidence records"
+      ],
+      "actions": [
+        "inspect source information before reuse",
+        "check creation context and relevant relationships",
+        "record uncertainty affecting application",
+        "distinguish provenance from proof of correctness"
+      ],
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target": "K-000146"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000144"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-02",
+        "cluster": "E",
+        "special_roles": [
+          "semantic_overlap"
+        ]
+      }
+    },
+    {
+      "id": "K-000150",
+      "domain": "Cross-domain / Contradiction",
+      "project": "",
+      "knowledge_type": "ANALYSIS",
+      "topic": "Knowledge Application",
+      "granularity": "Recommendation",
+      "title": "Apply cross-domain knowledge by preserving context and testing relationships",
+      "content": "A reasoned recommendation for applying personal knowledge across domains is to reuse relationships and reasoning patterns only after checking whether the conditions that gave them meaning remain comparable. A lesson from practical craft, for example, may illuminate how experience and evidence are recorded in a technology system, while a heritage documentation practice may suggest ways to preserve provenance in personal knowledge records. Such connections can be useful when the relationship between the situations is made explicit, but the knowledge should not be transferred as though the domains have identical meanings, evidence standards, or operating conditions. Cross-domain application should therefore identify the source knowledge, preserve its provenance and context, state the relationship being reused, and record any assumptions or limitations introduced by the new setting. This recommendation follows the broader finding that contradictory knowledge should remain independently traceable and the pattern that shared relationships can support comparison without creating unsupported equivalences. It is intended to guide application rather than replace domain-specific judgment.",
+      "status": "REVIEWED",
+      "source": {
+        "type": "brainstorm",
+        "reference": "AM-PKO cross-domain knowledge application recommendation"
+      },
+      "skills": [
+        "cross-domain reasoning",
+        "knowledge application",
+        "contextual analysis"
+      ],
+      "assets": [
+        "cross-domain knowledge records",
+        "provenance and relationship metadata",
+        "domain-specific evidence"
+      ],
+      "actions": [
+        "identify the source knowledge and its provenance",
+        "compare the conditions of the source and target domains",
+        "state the relationship being transferred",
+        "record assumptions and limitations",
+        "retain domain-specific judgment during application"
+      ],
+      "relationships": [
+        {
+          "type": "depends_on",
+          "target": "K-000148"
+        },
+        {
+          "type": "related_to",
+          "target": "K-000130"
+        }
+      ],
+      "metadata": {
+        "version": "1.1",
+        "created_at": "2026-10-02",
+        "cluster": "E",
+        "special_roles": [
+          "relationship_chain",
+          "cross_domain"
+        ]
+      }
+    }
+  ],
+  "freeze": {
+    "freeze_status": "FROZEN",
+    "freeze_artifact": "EXP-4B6-001_CORPUS_FREEZE_MANIFEST.md",
+    "validation_artifact": "EXP-4B6-001_CORPUS_VALIDATION_001.json",
+    "previous_version": "0.1-skeleton",
+    "frozen_at": "2026-10-02T01:18:56.171039+00:00",
+    "record_count": 50,
+    "queries_authorized_after_freeze": true,
+    "judgments_authorized_after_freeze": true,
+    "embedding_evaluation_authorized_after_freeze": true
+  }
+}

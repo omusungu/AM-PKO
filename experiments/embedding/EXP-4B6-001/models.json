@@ -1,0 +1,88 @@
+{
+  "experiment_id": "EXP-4B6-001",
+  "artifact": "models.json",
+  "version": "0.1",
+  "status": "FROZEN_CONFIGURATION",
+  "purpose": "Record the reproducible candidate-model configuration used for comparative evaluation.",
+  "production_selection": {
+    "status": "NOT_SELECTED",
+    "decision_artifact": "experiments/embedding/EMBEDDING-MODEL-DECISION-001.json"
+  },
+  "candidates": [
+    {
+      "id": "M-000001",
+      "family": "BGE-M3",
+      "model": "BAAI BGE-M3",
+      "status": "CANDIDATE",
+      "local_file": "models/bge-m3-q8_0-complete.gguf",
+      "quantization": "Q8_0",
+      "size_bytes": 634553760,
+      "sha256": "aa473d51f451a22f0fcf39ba3330c14bed38a385712b1113440f69df4047a173",
+      "runtime": "llama.cpp 0.5.0",
+      "platform": "Android ARM64/aarch64",
+      "context": 2048,
+      "threads": 8,
+      "embedding_dimension": 1024,
+      "pooling": "mean",
+      "normalization": 2,
+      "protocol": "document: content only; query: content only",
+      "validation_status": "VALIDATED_CANDIDATE"
+    },
+    {
+      "id": "M-000002",
+      "family": "E5",
+      "model": "intfloat multilingual-e5-large",
+      "status": "CANDIDATE",
+      "local_file": "models/multilingual-e5-large-q8_0-complete.gguf",
+      "quantization": "Q8_0",
+      "size_bytes": 603097600,
+      "sha256": "6fc086a43fa9f9a766ee664312ecf2f301ff24c89f866c64936e5b4c5099b3be",
+      "runtime": "llama.cpp 0.5.0",
+      "platform": "Android ARM64/aarch64",
+      "context": 512,
+      "threads": 8,
+      "embedding_dimension": 1024,
+      "pooling": "mean",
+      "normalization": 2,
+      "input_protocol": {
+        "query_prefix": "query: ",
+        "document_prefix": "passage: "
+      },
+      "validation_status": "VALIDATED_CANDIDATE"
+    },
+    {
+      "id": "M-000003",
+      "family": "Qwen",
+      "model": "Qwen3-Embedding-0.6B",
+      "status": "CANDIDATE",
+      "local_file": "models/Qwen3-Embedding-0.6B-Q8_0.gguf",
+      "quantization": "Q8_0",
+      "size_bytes": 639150592,
+      "sha256": "06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439",
+      "runtime": "llama.cpp 0.5.0",
+      "platform": "Android ARM64/aarch64",
+      "context": 512,
+      "native_context": 32768,
+      "threads": 8,
+      "embedding_dimension": 1024,
+      "pooling": "model_default",
+      "normalization": 2,
+      "protocol": {
+        "query_instruction": "Given an AM-PKO knowledge query, retrieve the most relevant knowledge records that answer or help answer the query.",
+        "query_format": "Instruct: <instruction>\\nQuery:<query>",
+        "document": "content only",
+        "embedding_separator": "\\x1e"
+      },
+      "validation_status": "VALIDATED_CANDIDATE"
+    }
+  ],
+  "evaluation_constraints": {
+    "candidate_count": 3,
+    "all_candidates_evaluated": true,
+    "automatic_winner": false,
+    "single_metric_selection": false,
+    "quality_only_selection": false,
+    "runtime_only_selection": false,
+    "judgments_must_remain_frozen": true
+  }
+}

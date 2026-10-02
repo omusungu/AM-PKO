@@ -1,0 +1,231 @@
+# EXP-4B6-001 — Corpus Design Specification
+
+Status: DESIGN
+Corpus design version: 0.1-design
+
+## Purpose
+
+Define a controlled, model-neutral 50-record corpus for evaluating human
+utility, retrieval behavior, identity preservation, provenance preservation,
+semantic discrimination, and contradiction visibility.
+
+The corpus is an experimental instrument. It must not be constructed to
+favor any embedding model.
+
+## Corpus Size
+
+Total records: 50
+
+## Controlled Distribution
+
+### Cluster A — Welding/Fabrication
+
+Records: 10
+
+Purpose:
+Grounded technical knowledge involving welding, fabrication, fit-up,
+heat distortion, inspection, materials, and site practice.
+
+Required diversity:
+- FACT
+- EXPERIENCE
+- IDEA
+- PLAN
+- ANALYSIS
+- multiple granularities
+- explicit technical provenance
+
+### Cluster B — Theology/Ministry
+
+Records: 10
+
+Purpose:
+Conceptual, historical, interpretive, and practical ministry knowledge.
+
+Required diversity:
+- FACT
+- EXPERIENCE
+- IDEA
+- PLAN
+- ANALYSIS
+- multiple granularities
+- explicit source/evidence provenance
+
+### Cluster C — Technology/AM-PKO
+
+Records: 10
+
+Purpose:
+AM-PKO architecture, software engineering, retrieval, embeddings,
+contracts, experiments, and knowledge-system design.
+
+Required diversity:
+- FACT
+- EXPERIENCE
+- IDEA
+- PLAN
+- ANALYSIS
+- multiple granularities
+- explicit technical provenance
+
+### Cluster D — Heritage/Storytelling
+
+Records: 10
+
+Purpose:
+Heritage, storytelling, digital preservation, identity, narrative,
+community memory, and Heritage Meets Digital concepts.
+
+Required diversity:
+- FACT
+- EXPERIENCE
+- IDEA
+- PLAN
+- ANALYSIS
+- multiple granularities
+- explicit provenance
+
+### Cluster E — Cross-domain / Contradiction
+
+Records: 10
+
+Purpose:
+Stress retrieval across domain boundaries and deliberately test ambiguity,
+contradiction, historical change, semantic overlap, and relationship-aware
+retrieval.
+
+Required characteristics:
+- cross-domain relationships
+- contradictory pairs
+- historical/superseding records
+- ambiguous terminology
+- semantically similar but substantively different records
+- relationship-dependent meaning
+- explicit provenance
+
+## Required Corpus Properties
+
+### P1 — Stable Identity
+
+Every record must have a unique KnowledgeRecord identifier.
+
+### P2 — Ontological Completeness
+
+Every record must contain the required AM-PKO knowledge fields appropriate
+to the existing KnowledgeRecord schema.
+
+### P3 — Knowledge-Type Diversity
+
+The corpus must contain all five canonical knowledge types:
+
+FACT
+EXPERIENCE
+IDEA
+PLAN
+ANALYSIS
+
+### P4 — Granularity Diversity
+
+The corpus must contain multiple canonical granularities including claims,
+observations, heuristics, procedures, hypotheses, findings, principles,
+patterns, plan items, and recommendations where appropriate.
+
+### P5 — Relationship Density
+
+At least 10 explicit relationship chains must exist across the corpus.
+
+### P6 — Semantic Overlap
+
+At least 8 records must intentionally contain substantial vocabulary or
+conceptual overlap with other records while retaining distinct meanings.
+
+### P7 — Ambiguity
+
+At least 5 records must participate in ambiguity tests where lexical
+similarity does not uniquely determine the intended meaning.
+
+### P8 — Contradictions
+
+At least 4 explicit contradictory relationships must exist.
+
+Contradictions must preserve both source records. No record may be silently
+rewritten to eliminate the disagreement.
+
+### P9 — Historical/Superseding Knowledge
+
+At least 2 record relationships must represent historical change,
+supersession, or evolving understanding.
+
+### P10 — Cross-domain Relationships
+
+At least 6 relationships must connect different domains.
+
+### P11 — Provenance
+
+Every record must contain explicit source/evidence information sufficient
+to identify where the knowledge originated.
+
+### P12 — Model Neutrality
+
+No record may be authored, selected, altered, or labeled to advantage a
+specific embedding model.
+
+## Experimental Control Rules
+
+The corpus must be completed and validated before queries are authored.
+
+Queries must be authored independently from model outputs.
+
+Relevance judgments must be frozen before comparative embedding evaluation.
+
+No candidate model may influence corpus construction.
+
+No production model may be selected from corpus construction.
+
+No frozen AM-PKO contract may be modified.
+
+## Planned Corpus Validation
+
+Validation must verify:
+
+- exactly 50 records;
+- exactly 10 records per cluster;
+- unique record identifiers;
+- valid KnowledgeTypes;
+- valid granularities;
+- required provenance;
+- required relationships;
+- contradiction count;
+- historical/superseding relationships;
+- cross-domain relationship count;
+- semantic-overlap test set;
+- ambiguity test set;
+- no model-specific references;
+- no duplicate identities;
+- no unintended extra records.
+
+## Lifecycle
+
+DESIGN → GENERATED → VALIDATED → FROZEN
+
+This specification is currently DESIGN only.
+
+No corpus records are generated by this document.
+
+## Architectural Protection
+
+This corpus experiment must not:
+
+- modify I-2;
+- modify I-3;
+- modify I-4;
+- modify I-5;
+- modify I-6;
+- modify T-5;
+- modify T-6;
+- modify T-7;
+- freeze T-8;
+- select a production embedding model;
+- select a vector database;
+- silently modify KnowledgeRecords;
+- replace the Contract Graph.

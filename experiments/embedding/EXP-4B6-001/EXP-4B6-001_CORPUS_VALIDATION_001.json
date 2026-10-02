@@ -1,0 +1,78 @@
+{
+  "validation_id": "EXP-4B6-001_CORPUS_VALIDATION_001",
+  "experiment_id": "EXP-4B6-001",
+  "artifact": "corpus.json",
+  "validation_version": "0.1",
+  "status": "VALIDATED",
+  "freeze_status": "NOT_FROZEN",
+  "validated_at": "2026-10-02T01:16:58.381658+00:00",
+  "record_count": 50,
+  "validation_basis": {
+    "corpus_wide_integrity_gate": "PASS",
+    "post_correction_corpus_gate": "PASS",
+    "corpus_freeze_preparation_gate": "PASS"
+  },
+  "checks": {
+    "stable_ids": true,
+    "knowledge_type_balance": true,
+    "granularity_balance": true,
+    "allocation_alignment": true,
+    "provenance_present": true,
+    "skills_present": true,
+    "assets_present": true,
+    "actions_present": true,
+    "relationship_integrity": true,
+    "special_role_requirements": true,
+    "model_neutrality": true,
+    "all_records_reviewed": true,
+    "substantive_content_present": true
+  },
+  "special_role_counts": {
+    "semantic_overlap": 20,
+    "ambiguity": 10,
+    "relationship_chain": 16,
+    "cross_domain": 15,
+    "contradiction": 7,
+    "historical_superseding": 2
+  },
+  "contradiction_edges": [
+    [
+      "K-000105",
+      "K-000102"
+    ],
+    [
+      "K-000115",
+      "K-000111"
+    ],
+    [
+      "K-000125",
+      "K-000123"
+    ],
+    [
+      "K-000135",
+      "K-000134"
+    ],
+    [
+      "K-000142",
+      "K-000141"
+    ],
+    [
+      "K-000145",
+      "K-000143"
+    ]
+  ],
+  "decision": {
+    "corpus_authoring_complete": true,
+    "corpus_validated": true,
+    "freeze_authorized": true,
+    "queries_authorized": false,
+    "judgments_authorized": false,
+    "embedding_evaluation_authorized": false
+  },
+  "protection": {
+    "frozen_core_contracts_modified": false,
+    "production_model_selected": false,
+    "vector_database_selected": false,
+    "t8_contract_frozen": false
+  }
+}

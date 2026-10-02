@@ -1,0 +1,41 @@
+{
+  "validation_id": "EXP-4B6-001_QUERY_VALIDATION_001",
+  "experiment_id": "EXP-4B6-001",
+  "artifact": "queries.json",
+  "validation_version": "0.1",
+  "status": "VALIDATED",
+  "validated_at": "2026-10-02T04:31:34.331425+00:00",
+  "corpus_dependency": {
+    "artifact": "corpus.json",
+    "status": "FROZEN",
+    "version": "0.1",
+    "record_count": 50
+  },
+  "query_count": 50,
+  "class_counts": {
+    "semantic_overlap": 8,
+    "contradiction": 8,
+    "relationship_dependent": 8,
+    "cross_domain": 8,
+    "direct": 9,
+    "ambiguous": 9
+  },
+  "checks": {
+    "query_count": true,
+    "unique_query_ids": true,
+    "required_fields_present": true,
+    "non_empty_queries": true,
+    "non_empty_rationales": true,
+    "target_ids_valid": true,
+    "allocation_alignment": true,
+    "frozen_corpus_dependency": true,
+    "whole_query_conformance_gate": true
+  },
+  "decision": {
+    "query_authoring_complete": true,
+    "query_validation_passed": true,
+    "judgments_authorized": true,
+    "embedding_evaluation_authorized": true
+  },
+  "errors": []
+}

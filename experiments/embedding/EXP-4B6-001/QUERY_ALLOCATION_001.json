@@ -1,0 +1,387 @@
+{
+  "experiment_id": "EXP-4B6-001",
+  "allocation_version": "0.1",
+  "status": "FROZEN_FOR_AUTHORING",
+  "basis": "CORPUS_DESIGN_001 + RECORD_ALLOCATION_MATRIX_001 + QUERY_AUTHORING_SPEC_001",
+  "query_count": 50,
+  "allocation": [
+    {
+      "record_id": "K-000101",
+      "query_class": "semantic_overlap",
+      "corpus_special_roles": [
+        "semantic_overlap"
+      ]
+    },
+    {
+      "record_id": "K-000102",
+      "query_class": "contradiction",
+      "corpus_special_roles": [
+        "ambiguity"
+      ]
+    },
+    {
+      "record_id": "K-000103",
+      "query_class": "relationship_dependent",
+      "corpus_special_roles": [
+        "relationship_chain"
+      ]
+    },
+    {
+      "record_id": "K-000104",
+      "query_class": "cross_domain",
+      "corpus_special_roles": [
+        "semantic_overlap",
+        "cross_domain"
+      ]
+    },
+    {
+      "record_id": "K-000105",
+      "query_class": "contradiction",
+      "corpus_special_roles": [
+        "contradiction"
+      ]
+    },
+    {
+      "record_id": "K-000106",
+      "query_class": "direct",
+      "corpus_special_roles": [
+        "historical_superseding"
+      ]
+    },
+    {
+      "record_id": "K-000107",
+      "query_class": "semantic_overlap",
+      "corpus_special_roles": [
+        "relationship_chain",
+        "semantic_overlap"
+      ]
+    },
+    {
+      "record_id": "K-000108",
+      "query_class": "ambiguous",
+      "corpus_special_roles": [
+        "ambiguity",
+        "cross_domain"
+      ]
+    },
+    {
+      "record_id": "K-000109",
+      "query_class": "relationship_dependent",
+      "corpus_special_roles": [
+        "relationship_chain"
+      ]
+    },
+    {
+      "record_id": "K-000110",
+      "query_class": "direct",
+      "corpus_special_roles": [
+        "semantic_overlap"
+      ]
+    },
+    {
+      "record_id": "K-000111",
+      "query_class": "semantic_overlap",
+      "corpus_special_roles": [
+        "semantic_overlap"
+      ]
+    },
+    {
+      "record_id": "K-000112",
+      "query_class": "ambiguous",
+      "corpus_special_roles": [
+        "ambiguity"
+      ]
+    },
+    {
+      "record_id": "K-000113",
+      "query_class": "relationship_dependent",
+      "corpus_special_roles": [
+        "relationship_chain"
+      ]
+    },
+    {
+      "record_id": "K-000114",
+      "query_class": "cross_domain",
+      "corpus_special_roles": [
+        "semantic_overlap",
+        "cross_domain"
+      ]
+    },
+    {
+      "record_id": "K-000115",
+      "query_class": "contradiction",
+      "corpus_special_roles": [
+        "contradiction"
+      ]
+    },
+    {
+      "record_id": "K-000116",
+      "query_class": "relationship_dependent",
+      "corpus_special_roles": [
+        "relationship_chain"
+      ]
+    },
+    {
+      "record_id": "K-000117",
+      "query_class": "ambiguous",
+      "corpus_special_roles": [
+        "ambiguity",
+        "semantic_overlap"
+      ]
+    },
+    {
+      "record_id": "K-000118",
+      "query_class": "cross_domain",
+      "corpus_special_roles": [
+        "cross_domain"
+      ]
+    },
+    {
+      "record_id": "K-000119",
+      "query_class": "relationship_dependent",
+      "corpus_special_roles": [
+        "relationship_chain"
+      ]
+    },
+    {
+      "record_id": "K-000120",
+      "query_class": "semantic_overlap",
+      "corpus_special_roles": [
+        "semantic_overlap"
+      ]
+    },
+    {
+      "record_id": "K-000121",
+      "query_class": "semantic_overlap",
+      "corpus_special_roles": [
+        "semantic_overlap"
+      ]
+    },
+    {
+      "record_id": "K-000122",
+      "query_class": "ambiguous",
+      "corpus_special_roles": [
+        "ambiguity",
+        "cross_domain"
+      ]
+    },
+    {
+      "record_id": "K-000123",
+      "query_class": "relationship_dependent",
+      "corpus_special_roles": [
+        "relationship_chain"
+      ]
+    },
+    {
+      "record_id": "K-000124",
+      "query_class": "semantic_overlap",
+      "corpus_special_roles": [
+        "semantic_overlap"
+      ]
+    },
+    {
+      "record_id": "K-000125",
+      "query_class": "contradiction",
+      "corpus_special_roles": [
+        "contradiction"
+      ]
+    },
+    {
+      "record_id": "K-000126",
+      "query_class": "relationship_dependent",
+      "corpus_special_roles": [
+        "historical_superseding",
+        "relationship_chain"
+      ]
+    },
+    {
+      "record_id": "K-000127",
+      "query_class": "ambiguous",
+      "corpus_special_roles": [
+        "ambiguity",
+        "semantic_overlap"
+      ]
+    },
+    {
+      "record_id": "K-000128",
+      "query_class": "cross_domain",
+      "corpus_special_roles": [
+        "cross_domain"
+      ]
+    },
+    {
+      "record_id": "K-000129",
+      "query_class": "semantic_overlap",
+      "corpus_special_roles": [
+        "relationship_chain",
+        "semantic_overlap"
+      ]
+    },
+    {
+      "record_id": "K-000130",
+      "query_class": "cross_domain",
+      "corpus_special_roles": [
+        "cross_domain"
+      ]
+    },
+    {
+      "record_id": "K-000131",
+      "query_class": "direct",
+      "corpus_special_roles": [
+        "semantic_overlap"
+      ]
+    },
+    {
+      "record_id": "K-000132",
+      "query_class": "ambiguous",
+      "corpus_special_roles": [
+        "ambiguity"
+      ]
+    },
+    {
+      "record_id": "K-000133",
+      "query_class": "relationship_dependent",
+      "corpus_special_roles": [
+        "relationship_chain",
+        "cross_domain"
+      ]
+    },
+    {
+      "record_id": "K-000134",
+      "query_class": "direct",
+      "corpus_special_roles": [
+        "semantic_overlap"
+      ]
+    },
+    {
+      "record_id": "K-000135",
+      "query_class": "contradiction",
+      "corpus_special_roles": [
+        "contradiction"
+      ]
+    },
+    {
+      "record_id": "K-000136",
+      "query_class": "direct",
+      "corpus_special_roles": [
+        "relationship_chain"
+      ]
+    },
+    {
+      "record_id": "K-000137",
+      "query_class": "ambiguous",
+      "corpus_special_roles": [
+        "ambiguity",
+        "semantic_overlap"
+      ]
+    },
+    {
+      "record_id": "K-000138",
+      "query_class": "cross_domain",
+      "corpus_special_roles": [
+        "cross_domain"
+      ]
+    },
+    {
+      "record_id": "K-000139",
+      "query_class": "semantic_overlap",
+      "corpus_special_roles": [
+        "relationship_chain",
+        "semantic_overlap"
+      ]
+    },
+    {
+      "record_id": "K-000140",
+      "query_class": "direct",
+      "corpus_special_roles": [
+        "cross_domain"
+      ]
+    },
+    {
+      "record_id": "K-000141",
+      "query_class": "contradiction",
+      "corpus_special_roles": [
+        "contradiction",
+        "cross_domain"
+      ]
+    },
+    {
+      "record_id": "K-000142",
+      "query_class": "contradiction",
+      "corpus_special_roles": [
+        "contradiction",
+        "semantic_overlap"
+      ]
+    },
+    {
+      "record_id": "K-000143",
+      "query_class": "direct",
+      "corpus_special_roles": [
+        "relationship_chain",
+        "cross_domain"
+      ]
+    },
+    {
+      "record_id": "K-000144",
+      "query_class": "ambiguous",
+      "corpus_special_roles": [
+        "ambiguity",
+        "semantic_overlap"
+      ]
+    },
+    {
+      "record_id": "K-000145",
+      "query_class": "contradiction",
+      "corpus_special_roles": [
+        "contradiction"
+      ]
+    },
+    {
+      "record_id": "K-000146",
+      "query_class": "direct",
+      "corpus_special_roles": [
+        "relationship_chain",
+        "cross_domain"
+      ]
+    },
+    {
+      "record_id": "K-000147",
+      "query_class": "ambiguous",
+      "corpus_special_roles": [
+        "ambiguity",
+        "semantic_overlap"
+      ]
+    },
+    {
+      "record_id": "K-000148",
+      "query_class": "cross_domain",
+      "corpus_special_roles": [
+        "cross_domain",
+        "relationship_chain"
+      ]
+    },
+    {
+      "record_id": "K-000149",
+      "query_class": "direct",
+      "corpus_special_roles": [
+        "semantic_overlap"
+      ]
+    },
+    {
+      "record_id": "K-000150",
+      "query_class": "cross_domain",
+      "corpus_special_roles": [
+        "relationship_chain",
+        "cross_domain"
+      ]
+    }
+  ],
+  "class_counts": {
+    "direct": 9,
+    "ambiguous": 9,
+    "semantic_overlap": 8,
+    "contradiction": 8,
+    "relationship_dependent": 8,
+    "cross_domain": 8
+  }
+}

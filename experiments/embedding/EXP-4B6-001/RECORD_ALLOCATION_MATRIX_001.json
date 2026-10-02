@@ -1,0 +1,578 @@
+{
+  "experiment_id": "EXP-4B6-001",
+  "matrix_version": "0.1-design",
+  "status": "DESIGN",
+  "record_count": 50,
+  "records": [
+    {
+      "id": "K-000101",
+      "cluster": "A",
+      "domain": "Welding/Fabrication",
+      "knowledge_type": "FACT",
+      "granularity": "Claim",
+      "topic": "Heat Distortion",
+      "special_roles": [
+        "semantic_overlap"
+      ]
+    },
+    {
+      "id": "K-000102",
+      "cluster": "A",
+      "domain": "Welding/Fabrication",
+      "knowledge_type": "EXPERIENCE",
+      "granularity": "Observation",
+      "topic": "Structural Fit-up",
+      "special_roles": [
+        "ambiguity"
+      ]
+    },
+    {
+      "id": "K-000103",
+      "cluster": "A",
+      "domain": "Welding/Fabrication",
+      "knowledge_type": "IDEA",
+      "granularity": "Heuristic",
+      "topic": "Weld Porosity",
+      "special_roles": [
+        "relationship_chain"
+      ]
+    },
+    {
+      "id": "K-000104",
+      "cluster": "A",
+      "domain": "Welding/Fabrication",
+      "knowledge_type": "PLAN",
+      "granularity": "Procedure",
+      "topic": "Root Passes",
+      "special_roles": [
+        "semantic_overlap",
+        "cross_domain"
+      ]
+    },
+    {
+      "id": "K-000105",
+      "cluster": "A",
+      "domain": "Welding/Fabrication",
+      "knowledge_type": "ANALYSIS",
+      "granularity": "Hypothesis",
+      "topic": "Tack Sequence",
+      "special_roles": [
+        "contradiction"
+      ]
+    },
+    {
+      "id": "K-000106",
+      "cluster": "A",
+      "domain": "Welding/Fabrication",
+      "knowledge_type": "FACT",
+      "granularity": "Finding",
+      "topic": "Interpass Temperature",
+      "special_roles": [
+        "historical_superseding"
+      ]
+    },
+    {
+      "id": "K-000107",
+      "cluster": "A",
+      "domain": "Welding/Fabrication",
+      "knowledge_type": "EXPERIENCE",
+      "granularity": "Principle",
+      "topic": "Material Preparation",
+      "special_roles": [
+        "relationship_chain",
+        "semantic_overlap"
+      ]
+    },
+    {
+      "id": "K-000108",
+      "cluster": "A",
+      "domain": "Welding/Fabrication",
+      "knowledge_type": "IDEA",
+      "granularity": "Pattern",
+      "topic": "Jigs and Fixtures",
+      "special_roles": [
+        "ambiguity",
+        "cross_domain"
+      ]
+    },
+    {
+      "id": "K-000109",
+      "cluster": "A",
+      "domain": "Welding/Fabrication",
+      "knowledge_type": "PLAN",
+      "granularity": "PlanItem",
+      "topic": "Site Troubleshooting",
+      "special_roles": [
+        "relationship_chain"
+      ]
+    },
+    {
+      "id": "K-000110",
+      "cluster": "A",
+      "domain": "Welding/Fabrication",
+      "knowledge_type": "ANALYSIS",
+      "granularity": "Recommendation",
+      "topic": "Fabrication Planning",
+      "special_roles": [
+        "semantic_overlap"
+      ]
+    },
+    {
+      "id": "K-000111",
+      "cluster": "B",
+      "domain": "Theology/Ministry",
+      "knowledge_type": "FACT",
+      "granularity": "Claim",
+      "topic": "Discipleship",
+      "special_roles": [
+        "semantic_overlap"
+      ]
+    },
+    {
+      "id": "K-000112",
+      "cluster": "B",
+      "domain": "Theology/Ministry",
+      "knowledge_type": "EXPERIENCE",
+      "granularity": "Observation",
+      "topic": "Missiology",
+      "special_roles": [
+        "ambiguity"
+      ]
+    },
+    {
+      "id": "K-000113",
+      "cluster": "B",
+      "domain": "Theology/Ministry",
+      "knowledge_type": "IDEA",
+      "granularity": "Heuristic",
+      "topic": "Church History",
+      "special_roles": [
+        "relationship_chain"
+      ]
+    },
+    {
+      "id": "K-000114",
+      "cluster": "B",
+      "domain": "Theology/Ministry",
+      "knowledge_type": "PLAN",
+      "granularity": "Procedure",
+      "topic": "Biblical Interpretation",
+      "special_roles": [
+        "semantic_overlap",
+        "cross_domain"
+      ]
+    },
+    {
+      "id": "K-000115",
+      "cluster": "B",
+      "domain": "Theology/Ministry",
+      "knowledge_type": "ANALYSIS",
+      "granularity": "Hypothesis",
+      "topic": "Christian Education",
+      "special_roles": [
+        "contradiction"
+      ]
+    },
+    {
+      "id": "K-000116",
+      "cluster": "B",
+      "domain": "Theology/Ministry",
+      "knowledge_type": "FACT",
+      "granularity": "Finding",
+      "topic": "Church Administration",
+      "special_roles": [
+        "relationship_chain"
+      ]
+    },
+    {
+      "id": "K-000117",
+      "cluster": "B",
+      "domain": "Theology/Ministry",
+      "knowledge_type": "EXPERIENCE",
+      "granularity": "Principle",
+      "topic": "Revivalism",
+      "special_roles": [
+        "ambiguity",
+        "semantic_overlap"
+      ]
+    },
+    {
+      "id": "K-000118",
+      "cluster": "B",
+      "domain": "Theology/Ministry",
+      "knowledge_type": "IDEA",
+      "granularity": "Pattern",
+      "topic": "Comparative Religion",
+      "special_roles": [
+        "cross_domain"
+      ]
+    },
+    {
+      "id": "K-000119",
+      "cluster": "B",
+      "domain": "Theology/Ministry",
+      "knowledge_type": "PLAN",
+      "granularity": "PlanItem",
+      "topic": "Ministry Leadership",
+      "special_roles": [
+        "relationship_chain"
+      ]
+    },
+    {
+      "id": "K-000120",
+      "cluster": "B",
+      "domain": "Theology/Ministry",
+      "knowledge_type": "ANALYSIS",
+      "granularity": "Recommendation",
+      "topic": "Theology and Practice",
+      "special_roles": [
+        "semantic_overlap"
+      ]
+    },
+    {
+      "id": "K-000121",
+      "cluster": "C",
+      "domain": "Technology/AM-PKO",
+      "knowledge_type": "FACT",
+      "granularity": "Claim",
+      "topic": "Knowledge Records",
+      "special_roles": [
+        "semantic_overlap"
+      ]
+    },
+    {
+      "id": "K-000122",
+      "cluster": "C",
+      "domain": "Technology/AM-PKO",
+      "knowledge_type": "EXPERIENCE",
+      "granularity": "Observation",
+      "topic": "Ontology",
+      "special_roles": [
+        "ambiguity",
+        "cross_domain"
+      ]
+    },
+    {
+      "id": "K-000123",
+      "cluster": "C",
+      "domain": "Technology/AM-PKO",
+      "knowledge_type": "IDEA",
+      "granularity": "Heuristic",
+      "topic": "Relationships",
+      "special_roles": [
+        "relationship_chain"
+      ]
+    },
+    {
+      "id": "K-000124",
+      "cluster": "C",
+      "domain": "Technology/AM-PKO",
+      "knowledge_type": "PLAN",
+      "granularity": "Procedure",
+      "topic": "Embeddings",
+      "special_roles": [
+        "semantic_overlap"
+      ]
+    },
+    {
+      "id": "K-000125",
+      "cluster": "C",
+      "domain": "Technology/AM-PKO",
+      "knowledge_type": "ANALYSIS",
+      "granularity": "Hypothesis",
+      "topic": "Retrieval",
+      "special_roles": [
+        "contradiction"
+      ]
+    },
+    {
+      "id": "K-000126",
+      "cluster": "C",
+      "domain": "Technology/AM-PKO",
+      "knowledge_type": "FACT",
+      "granularity": "Finding",
+      "topic": "Evaluation",
+      "special_roles": [
+        "historical_superseding",
+        "relationship_chain"
+      ]
+    },
+    {
+      "id": "K-000127",
+      "cluster": "C",
+      "domain": "Technology/AM-PKO",
+      "knowledge_type": "EXPERIENCE",
+      "granularity": "Principle",
+      "topic": "Evaluation",
+      "special_roles": [
+        "ambiguity",
+        "semantic_overlap"
+      ]
+    },
+    {
+      "id": "K-000128",
+      "cluster": "C",
+      "domain": "Technology/AM-PKO",
+      "knowledge_type": "IDEA",
+      "granularity": "Pattern",
+      "topic": "Human Control",
+      "special_roles": [
+        "cross_domain"
+      ]
+    },
+    {
+      "id": "K-000129",
+      "cluster": "C",
+      "domain": "Technology/AM-PKO",
+      "knowledge_type": "PLAN",
+      "granularity": "PlanItem",
+      "topic": "Context Assembly",
+      "special_roles": [
+        "relationship_chain",
+        "semantic_overlap"
+      ]
+    },
+    {
+      "id": "K-000130",
+      "cluster": "C",
+      "domain": "Technology/AM-PKO",
+      "knowledge_type": "ANALYSIS",
+      "granularity": "Recommendation",
+      "topic": "Personal Knowledge Systems",
+      "special_roles": [
+        "cross_domain"
+      ]
+    },
+    {
+      "id": "K-000131",
+      "cluster": "D",
+      "domain": "Heritage/Storytelling",
+      "knowledge_type": "FACT",
+      "granularity": "Claim",
+      "topic": "Life Stories",
+      "special_roles": [
+        "semantic_overlap"
+      ]
+    },
+    {
+      "id": "K-000132",
+      "cluster": "D",
+      "domain": "Heritage/Storytelling",
+      "knowledge_type": "EXPERIENCE",
+      "granularity": "Observation",
+      "topic": "Oral History",
+      "special_roles": [
+        "ambiguity"
+      ]
+    },
+    {
+      "id": "K-000133",
+      "cluster": "D",
+      "domain": "Heritage/Storytelling",
+      "knowledge_type": "IDEA",
+      "granularity": "Heuristic",
+      "topic": "Digital Heritage",
+      "special_roles": [
+        "relationship_chain",
+        "cross_domain"
+      ]
+    },
+    {
+      "id": "K-000134",
+      "cluster": "D",
+      "domain": "Heritage/Storytelling",
+      "knowledge_type": "PLAN",
+      "granularity": "Procedure",
+      "topic": "Community Memory",
+      "special_roles": [
+        "semantic_overlap"
+      ]
+    },
+    {
+      "id": "K-000135",
+      "cluster": "D",
+      "domain": "Heritage/Storytelling",
+      "knowledge_type": "ANALYSIS",
+      "granularity": "Hypothesis",
+      "topic": "Story Preservation",
+      "special_roles": [
+        "contradiction"
+      ]
+    },
+    {
+      "id": "K-000136",
+      "cluster": "D",
+      "domain": "Heritage/Storytelling",
+      "knowledge_type": "FACT",
+      "granularity": "Finding",
+      "topic": "Cultural Identity",
+      "special_roles": [
+        "relationship_chain"
+      ]
+    },
+    {
+      "id": "K-000137",
+      "cluster": "D",
+      "domain": "Heritage/Storytelling",
+      "knowledge_type": "EXPERIENCE",
+      "granularity": "Principle",
+      "topic": "Visual Heritage",
+      "special_roles": [
+        "ambiguity",
+        "semantic_overlap"
+      ]
+    },
+    {
+      "id": "K-000138",
+      "cluster": "D",
+      "domain": "Heritage/Storytelling",
+      "knowledge_type": "IDEA",
+      "granularity": "Pattern",
+      "topic": "Intergenerational Knowledge",
+      "special_roles": [
+        "cross_domain"
+      ]
+    },
+    {
+      "id": "K-000139",
+      "cluster": "D",
+      "domain": "Heritage/Storytelling",
+      "knowledge_type": "PLAN",
+      "granularity": "PlanItem",
+      "topic": "Legacy",
+      "special_roles": [
+        "relationship_chain",
+        "semantic_overlap"
+      ]
+    },
+    {
+      "id": "K-000140",
+      "cluster": "D",
+      "domain": "Heritage/Storytelling",
+      "knowledge_type": "ANALYSIS",
+      "granularity": "Recommendation",
+      "topic": "Heritage Documentation",
+      "special_roles": [
+        "cross_domain"
+      ]
+    },
+    {
+      "id": "K-000141",
+      "cluster": "E",
+      "domain": "Cross-domain / Contradiction",
+      "knowledge_type": "FACT",
+      "granularity": "Claim",
+      "topic": "Craft and Knowledge",
+      "special_roles": [
+        "contradiction",
+        "cross_domain"
+      ]
+    },
+    {
+      "id": "K-000142",
+      "cluster": "E",
+      "domain": "Cross-domain / Contradiction",
+      "knowledge_type": "EXPERIENCE",
+      "granularity": "Observation",
+      "topic": "Experience and Evidence",
+      "special_roles": [
+        "contradiction",
+        "semantic_overlap"
+      ]
+    },
+    {
+      "id": "K-000143",
+      "cluster": "E",
+      "domain": "Cross-domain / Contradiction",
+      "knowledge_type": "IDEA",
+      "granularity": "Heuristic",
+      "topic": "Memory and Retrieval",
+      "special_roles": [
+        "relationship_chain",
+        "cross_domain"
+      ]
+    },
+    {
+      "id": "K-000144",
+      "cluster": "E",
+      "domain": "Cross-domain / Contradiction",
+      "knowledge_type": "PLAN",
+      "granularity": "Procedure",
+      "topic": "Tradition and Technology",
+      "special_roles": [
+        "ambiguity",
+        "semantic_overlap"
+      ]
+    },
+    {
+      "id": "K-000145",
+      "cluster": "E",
+      "domain": "Cross-domain / Contradiction",
+      "knowledge_type": "ANALYSIS",
+      "granularity": "Hypothesis",
+      "topic": "Human Judgment",
+      "special_roles": [
+        "contradiction"
+      ]
+    },
+    {
+      "id": "K-000146",
+      "cluster": "E",
+      "domain": "Cross-domain / Contradiction",
+      "knowledge_type": "FACT",
+      "granularity": "Finding",
+      "topic": "Contradictory Knowledge",
+      "special_roles": [
+        "relationship_chain",
+        "cross_domain"
+      ]
+    },
+    {
+      "id": "K-000147",
+      "cluster": "E",
+      "domain": "Cross-domain / Contradiction",
+      "knowledge_type": "EXPERIENCE",
+      "granularity": "Principle",
+      "topic": "Historical Change",
+      "special_roles": [
+        "ambiguity",
+        "semantic_overlap"
+      ]
+    },
+    {
+      "id": "K-000148",
+      "cluster": "E",
+      "domain": "Cross-domain / Contradiction",
+      "knowledge_type": "IDEA",
+      "granularity": "Pattern",
+      "topic": "Cross-domain Reasoning",
+      "special_roles": [
+        "cross_domain",
+        "relationship_chain"
+      ]
+    },
+    {
+      "id": "K-000149",
+      "cluster": "E",
+      "domain": "Cross-domain / Contradiction",
+      "knowledge_type": "PLAN",
+      "granularity": "PlanItem",
+      "topic": "Provenance and Trust",
+      "special_roles": [
+        "semantic_overlap"
+      ]
+    },
+    {
+      "id": "K-000150",
+      "cluster": "E",
+      "domain": "Cross-domain / Contradiction",
+      "knowledge_type": "ANALYSIS",
+      "granularity": "Recommendation",
+      "topic": "Knowledge Application",
+      "special_roles": [
+        "relationship_chain",
+        "cross_domain"
+      ]
+    }
+  ]
+}
