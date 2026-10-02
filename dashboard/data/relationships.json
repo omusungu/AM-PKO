@@ -1,0 +1,26 @@
+[
+  {
+    "id": "R-001",
+    "source": "K-000001",
+    "target": "K-000002",
+    "type": "supports"
+  },
+  {
+    "id": "R-002",
+    "source": "K-000002",
+    "target": "K-000004",
+    "type": "supports"
+  },
+  {
+    "id": "R-003",
+    "source": "K-000003",
+    "target": "K-000004",
+    "type": "related_to"
+  },
+  {
+    "id": "R-004",
+    "source": "K-000005",
+    "target": "K-000001",
+    "type": "derived_from"
+  }
+]
