@@ -1,0 +1,31 @@
+[
+  {
+    "id": "EXP-4B4-001",
+    "name": "Embedding evaluation corpus",
+    "type": "quality_and_runtime",
+    "status": "completed",
+    "description": "25-record and 25-query evaluation corpus for candidate embedding models.",
+    "artifacts": [
+      "corpus.json",
+      "queries.json",
+      "judgments.json",
+      "models.json",
+      "results.json",
+      "README.md"
+    ]
+  },
+  {
+    "id": "EXP-4B5-001",
+    "name": "Embedding quality and runtime evaluation",
+    "type": "quality_and_runtime",
+    "status": "completed",
+    "description": "Evaluation of candidate embedding models across retrieval quality and embedding runtime."
+  },
+  {
+    "id": "EXP-4B5-002",
+    "name": "Retrieval latency benchmark",
+    "type": "latency",
+    "status": "completed",
+    "description": "Benchmark focused on retrieval latency for the AM-PKO embedding architecture."
+  }
+]
