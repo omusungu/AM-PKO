@@ -1,0 +1,51 @@
+[
+  {
+    "id": "M-001",
+    "name": "Knowledge Record",
+    "category": "knowledge",
+    "function": "Represent structured personal knowledge",
+    "interface": "KnowledgeRecord",
+    "heterogeneous": true
+  },
+  {
+    "id": "M-002",
+    "name": "Relationship Layer",
+    "category": "graph",
+    "function": "Represent semantic and structural relationships",
+    "interface": "Relationship",
+    "heterogeneous": true
+  },
+  {
+    "id": "M-003",
+    "name": "Embedding Model",
+    "category": "embedding",
+    "function": "Transform canonical embedding documents into vectors",
+    "interface": "EmbeddingModel",
+    "heterogeneous": true,
+    "substitutable": true
+  },
+  {
+    "id": "M-004",
+    "name": "Embedding Store",
+    "category": "storage",
+    "function": "Store and retrieve vector representations",
+    "interface": "EmbeddingStore",
+    "heterogeneous": true
+  },
+  {
+    "id": "M-005",
+    "name": "Retrieval Engine",
+    "category": "retrieval",
+    "function": "Rank knowledge candidates using vector similarity and relationships",
+    "interface": "Retriever",
+    "heterogeneous": true
+  },
+  {
+    "id": "M-006",
+    "name": "Reasoning/Application Layer",
+    "category": "application",
+    "function": "Use retrieved knowledge to support reasoning and application",
+    "interface": "Application",
+    "heterogeneous": true
+  }
+]
