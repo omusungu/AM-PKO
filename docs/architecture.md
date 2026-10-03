@@ -114,6 +114,47 @@ The architecture dashboard provides a visual representation of:
 
 The dashboard data is stored separately from the presentation layer so that the architecture can evolve toward more sophisticated visualization and interaction.
 
+## Compatibility Matrix
+
+Compatibility is the decision boundary between heterogeneous realization and conditional substitutability. A realization is not admissible merely because it appears to perform the same function or exposes similarly named operations.
+
+The AM-PKO compatibility decision follows:
+
+**Role → Contract → Compatibility Conditions → Validation Evidence → Decision**
+
+| Architectural role | Stable contract | Compatibility conditions | Required validation evidence | Decision |
+|---|---|---|---|---|
+| I-2 — EmbeddingDocumentGenerator | KnowledgeRecord → canonical EmbeddingDocument | Canonical document structure, required fields, deterministic generation requirements, source integrity | I-2 frozen/validated contract evidence and regression validation | Admit only when the contract and required validation evidence are satisfied |
+| I-3 — EmbeddingModel | EmbeddingModel request/response contract | Input handling, output structure, dimensional consistency, pooling/parser/separator behavior, source integrity, runtime-specific constraints | Interface compliance, compatibility checks, regression validation, retrieval evaluation, and applicable operational evidence | Candidate for substitution only when all applicable conditions are satisfied |
+| I-4 — EmbeddingStore | Vector storage and retrieval contract | Vector dimensional/specification compatibility, metadata/filtering semantics, exclusion handling, similarity-score semantics, deterministic ordering, top-k behavior | I-4 frozen/validated contract evidence and implementation validation | Admit only when the store satisfies the I-4 contract and applicable compatibility requirements |
+| I-5 — EmbeddingService | Canonical EmbeddingDocument → EmbeddingResponse | I-2/I-3 coordination, identity/version preservation, vector dimension and response structure, error behavior | I-5 frozen/validated contract evidence plus regression validation | Admit only when the service preserves the frozen boundary and required behavior |
+| I-6 — RetrievalService | QueryRequest → RankedResult[] | Query embedding capability, I-4 retrieval semantics, score transport, identity preservation, deterministic ordering, T-6 output contract | I-6/T-5/T-6 frozen/validated evidence plus retrieval regression validation | Admit only when orchestration preserves the frozen retrieval contract |
+
+### Decision Rule
+
+Compatibility does not establish equivalence or substitutability by itself.
+
+A proposed realization follows the sequence:
+
+1. **Role** — Does the realization occupy the intended architectural role?
+2. **Contract** — Does it satisfy the frozen interface and type contract?
+3. **Compatibility conditions** — Does it satisfy the contextual, dimensional, semantic, operational, and boundary constraints relevant to that role?
+4. **Validation evidence** — Is there sufficient evidence that the realization preserves required behavior?
+5. **Decision** — Only then may it be treated as an admissible candidate for conditional substitution.
+
+Therefore:
+
+**compatible ≠ equivalent**
+
+**compatible ≠ automatically substitutable**
+
+**substitutability = compatible realization + required validation in context**
+
+A missing validation condition is not evidence of compatibility. Where required evidence is absent, the architecture must remain undecided rather than infer substitutability from implementation similarity.
+
+This matrix is an architectural decision aid. It does not create a new runtime interface, module-slot abstraction, relationship type, or production-model selection mechanism.
+
+Relationship-type compatibility remains a separate concern of the Relationship Architecture and must not be conflated with module/interface compatibility.
 ## Architectural Goal
 
 The long-term goal is not merely document search.
