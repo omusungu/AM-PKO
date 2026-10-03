@@ -31,6 +31,36 @@ A module is substitutable when it can satisfy the relevant contract for the role
 
 This principle allows AM-PKO to evolve without coupling the architecture to one implementation.
 
+## Variable Modularity
+
+Variable Modularity is the controlled architectural capacity for heterogeneous module realizations to occupy a stable contract or capability role while satisfying applicable contextual constraints and required validation conditions.
+
+The governing pattern is:
+
+**Stable Contract + Variable Realization + Constraints + Validation**
+
+The stable part of a module role includes:
+- architectural role and capability
+- semantic contract
+- required inputs and outputs
+- relationship semantics and system invariants
+- validation requirements
+
+The variable part may include:
+- implementation and technology
+- algorithm and internal structure
+- composition and granularity
+- optimization and runtime characteristics
+- specialization
+
+Variation is therefore bounded rather than arbitrary. A realization is admissible only when it satisfies the relevant contract, contextual constraints, and validation requirements:
+
+**Admissible(M,R,C) ⇔ Contract(M,R) ∧ Constraints(M,R,C) ∧ Validation(M,R,C)**
+
+Variable Modularity is subordinate to heterogeneous modularity. It describes how heterogeneous realizations may occupy a stable role; it does not by itself establish equivalence or substitutability. Substitutability remains conditional on the applicable role, contract, compatibility constraints, context, and validation evidence.
+
+This is an architectural analysis principle, not a new runtime abstraction. It does not require a separate module-slot class, runtime interface, or implementation mechanism.
+
 ## Embedding Architecture
 
 Candidate embedding models are treated as replaceable implementations behind a stable embedding interface.
