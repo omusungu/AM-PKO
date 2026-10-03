@@ -68,35 +68,34 @@ Evaluation is therefore treated as an explicit architectural activity rather tha
 
 ## Core Interfaces
 
-The architecture defines stable interfaces corresponding to major responsibilities:
+The current frozen interface architecture defines stable boundaries
+corresponding to major responsibilities:
 
-- **I-1 — RecordStore**
 - **I-2 — EmbeddingDocumentGenerator**
 - **I-3 — EmbeddingModel**
 - **I-4 — EmbeddingStore**
-- **I-5 — Retriever**
-- **I-6 — RelationshipStore**
-- **I-7 — EvaluationRunner**
+- **I-5 — EmbeddingService**
+- **I-6 — RetrievalService**
 
-Each interface defines a responsibility rather than prescribing one implementation.
-
-## RecordStore
-
-`RecordStore` provides access to authoritative KnowledgeRecords.
-
-Its implementation may change without requiring changes to the embedding model or retrieval architecture.
+Each interface defines a responsibility rather than prescribing one
+implementation.
 
 ## EmbeddingDocumentGenerator
 
-`EmbeddingDocumentGenerator` transforms a KnowledgeRecord into the canonical EmbeddingDocument.
+`EmbeddingDocumentGenerator` transforms a KnowledgeRecord into the
+canonical EmbeddingDocument.
 
-This boundary protects the embedding layer from direct dependence on raw record storage.
+This boundary protects the embedding layer from direct dependence on
+raw record representation and keeps embedding-document generation
+independent of any particular embedding model.
 
 ## EmbeddingModel
 
-`EmbeddingModel` defines the contract that candidate embedding implementations must satisfy.
+`EmbeddingModel` defines the contract that candidate embedding
+implementations must satisfy.
 
-Different model families may implement the interface differently internally while remaining substitutable at the architectural boundary.
+Different model families may implement the interface differently
+internally while remaining candidates for the same architectural role.
 
 Examples include:
 
@@ -104,39 +103,74 @@ Examples include:
 - multilingual-e5-large
 - Qwen3-Embedding
 
+Candidate implementations remain subject to interface compliance,
+compatibility checks, regression validation, and evaluation before
+being treated as validated substitutes.
+
 ## EmbeddingStore
 
 `EmbeddingStore` stores and retrieves VectorRecords.
 
-The storage implementation is independent of the embedding model.
+The storage implementation is independent of the embedding model and
+embedding service.
 
-This permits changes in storage technology without changing the semantic contract of the embedding layer.
+The I-4 boundary owns vector compatibility validation, metadata
+filtering, exclusion handling, similarity computation, retrieval-score
+generation, deterministic ordering, and top-k selection.
 
-## Retriever
+## EmbeddingService
 
-`Retriever` converts a QueryRequest into RankedResults.
+`EmbeddingService` defines the I-5 production embedding-service
+boundary.
 
-It may use:
+It accepts an `EmbeddingRequest` containing exactly one canonical
+`EmbeddingDocument` and returns an `EmbeddingResponse` containing the
+record identity, versions, model identity, vector dimension, and
+embedding vector.
 
-- vector similarity
-- relationship structure
-- metadata
-- compatibility constraints
-- validation state
+Its primary operations are:
 
-The retrieval implementation must preserve the meaning of the returned ranking signals.
+- `embed(request)`
+- `health_check()`
 
-## RelationshipStore
+I-5 coordinates I-2, I-3, and I-4 without redefining their
+responsibilities.
 
-`RelationshipStore` provides access to explicit typed relationships between KnowledgeRecords.
+It does not generate EmbeddingDocuments, select a production model,
+implement model-specific runtime behavior, define persistent vector
+storage, perform vector retrieval, or alter canonical knowledge
+content.
 
-It must preserve relationship identity, direction, type, and relevant validation information.
+## RetrievalService
 
-## EvaluationRunner
+`RetrievalService` defines the I-6 retrieval-orchestration boundary.
 
-`EvaluationRunner` executes defined evaluation runs and records their inputs, candidate configurations, metrics, and results.
+It coordinates:
 
-This provides reproducibility for model and architecture evaluation.
+- T-5 `QueryRequest`
+- the separate `QueryEmbedder` capability
+- I-4 `EmbeddingStore` retrieval
+- T-6 `RankedResult` output
+
+Its primary operation is:
+
+- `retrieve(request)`
+
+I-6 obtains a query vector through `QueryEmbedder`, calls I-4
+`EmbeddingStore.search()`, consumes `VectorStoreMatch` values, and
+maps them to T-6 `RankedResult` values while preserving record
+identity, retrieval scores, and I-4 ordering.
+
+I-6 does not redefine I-3 model behavior, generate T-2
+EmbeddingDocuments, transform KnowledgeRecords, implement vector
+storage, compute similarity, independently rank or rescore results,
+traverse relationship graphs, perform graph/vector fusion, perform RAG
+synthesis, calculate evaluation metrics, or select production
+embedding or vector-database technology.
+
+The `QueryEmbedder` is a supporting capability consumed by I-6; it is
+not a separately numbered frozen interface in the current I-2–I-6
+contract family.
 
 ## Adapter Boundary
 
