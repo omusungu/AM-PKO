@@ -136,3 +136,43 @@ footer {
   font-weight: 700;
 }
 
+
+.relationship-graph {
+  margin: 16px 0 24px;
+  padding: 16px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.relationship-graph svg {
+  display: block;
+  width: 100%;
+  min-width: 600px;
+  height: auto;
+}
+
+.graph-edge {
+  stroke: var(--accent);
+  stroke-width: 2;
+  opacity: 0.7;
+}
+
+.graph-node {
+  fill: var(--surface);
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+
+.graph-label {
+  fill: var(--text);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.graph-edge-label {
+  fill: var(--muted);
+  font-size: 10px;
+  font-weight: 600;
+}

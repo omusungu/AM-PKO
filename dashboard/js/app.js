@@ -15,6 +15,11 @@ async function initDashboard() {
       document.getElementById("relationships-container")
     );
 
+    renderRelationshipGraph(
+      relationships,
+      document.getElementById("relationship-graph")
+    );
+
     renderModules(
       modules,
       document.getElementById("modules-container")
