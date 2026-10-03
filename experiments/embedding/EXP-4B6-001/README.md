@@ -1,7 +1,7 @@
 # EXP-4B6-001 — Human Utility & Retrieval Assay
 
-Status: DESIGN
-Experiment version: 0.1-design
+Status: EVALUATED / VALIDATED
+Experiment version: 0.1
 
 ## Objective
 
@@ -64,19 +64,22 @@ Whether conflicting records can be retrieved together without one being silently
 ### Human Utility
 Whether retrieved results can be inspected and reused by a human without losing their epistemic context.
 
-## Planned Metrics
+## Evaluation Metrics
+The T-7 evaluation has been completed for all three candidate models using the frozen corpus, queries, and judgments.
 
+Reported metrics:
 - Recall@1
 - Recall@3
 - Recall@5
 - MRR
+- nDCG@1
+- nDCG@3
 - nDCG@5
+- HighRelevanceRecall@1
+- HighRelevanceRecall@3
 - HighRelevanceRecall@5
-- identity preservation rate
-- provenance preservation rate
-- contradiction retrieval rate
-- semantic discrimination rate
-- human usefulness judgment
+
+The evaluation validation artifact independently recomputed the metrics with maximum difference `0.0`.
 
 ## Experimental Discipline
 
@@ -86,18 +89,37 @@ No automatic model winner will be produced.
 No production embedding model will be selected automatically.
 No frozen AM-PKO contract will be modified by this experiment.
 
-## Planned Artifacts
-
+## Artifacts
+The experiment currently contains:
 - README.md
 - corpus.json
 - queries.json
 - judgments.json
 - models.json
-- results.json
-- human_assessment.json
+- M-000001/2/3 corpus embeddings
+- M-000001/2/3 query embeddings
+- M-000001/2/3 retrieval outputs
+- M-000001/2/3 T-7 evaluation outputs
+- corpus, query, judgment, and evaluation validation artifacts
+- corpus, query, and judgment freeze manifests
+- generation, retrieval, and evaluation scripts
+
+`results.json` and `human_assessment.json` are not currently part of the generated artifact set.
 
 ## Current State
+The experiment has progressed from design through controlled corpus, query, and judgment freezing to completed T-7 evaluation.
 
-DESIGN ONLY.
+Current lifecycle:
+1. Corpus: FROZEN
+2. Queries: FROZEN
+3. Judgments: FROZEN
+4. Candidate embedding generation: COMPLETED
+5. Retrieval generation: COMPLETED
+6. T-7 evaluation: VALIDATED
+7. Production embedding-model selection: FROZEN_NOT_DECIDED
 
-No corpus, queries, judgments, vectors, or evaluation results have yet been generated.
+All three candidate-model evaluation artifacts are structurally valid and numerically independently reproducible.
+
+No production embedding model is selected by this experiment. The separate production-selection decision artifact remains intentionally `FROZEN_NOT_DECIDED`.
+
+The experiment does not modify or refreeze the frozen AM-PKO interfaces or types.
