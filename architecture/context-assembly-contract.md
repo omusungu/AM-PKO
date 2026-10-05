@@ -108,11 +108,11 @@ content/integrity state, lineage, and relevant validation state.
 Assembly MUST NOT sever provenance when packaging records.
 
 ## 9. Frozen Boundary Protection
-
 I-8/T-8 MUST preserve and consume existing authoritative upstream boundaries rather than redefine them:
 
-- the current T-5 QueryRequest design;
-- the current T-6 RankedResult design;
+- frozen validated T-5 QueryRequest v0.2;
+- frozen validated T-6 RankedResult v0.2;
+- frozen validated I-6 RetrievalService v0.2;
 - KnowledgeRecord;
 - frozen relationship semantics;
 - authority/admissibility semantics.
