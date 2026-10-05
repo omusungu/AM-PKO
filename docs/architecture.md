@@ -55,7 +55,64 @@ The variable part may include:
 
 Variation is therefore bounded rather than arbitrary. A realization is admissible only when it satisfies the relevant contract, contextual constraints, and validation requirements:
 
-**Admissible(M,R,C) ⇔ Contract(M,R) ∧ Constraints(M,R,C) ∧ Validation(M,R,C)**
+**Admissible(M,R,C) ∈ { ADMISSIBLE, INADMISSIBLE, UNDETERMINED }**
+
+Execution admissibility is defined as:
+
+**ExecutionAdmissible(M,R,C) ⇔ Admissible(M,R,C) = ADMISSIBLE**
+
+`UNDETERMINED` fails closed and MUST therefore be treated as `INADMISSIBLE`
+for module selection, execution, substitution, or promotion.
+
+The three components remain:
+
+- **Contract(M,R):** static compatibility with the frozen role/interface contract.
+- **Constraints(M,R,C):** a typed predicate evaluated against structured context `C`.
+
+For Variable Modularity, `C` is a structured architectural context composed only of
+declared constraint dimensions relevant to the role under evaluation. It is not a
+runtime interface, module-slot abstraction, or new frozen contract type.
+
+The initial canonical context dimensions are:
+
+- **device:** execution-device or hardware capability constraints.
+- **runtime:** execution-runtime and environment constraints.
+- **offline_requirement:** whether operation must remain available without network access.
+- **latency_budget:** the maximum permitted latency for the relevant operation.
+
+Each context dimension MUST have an explicit value or an explicit unknown state.
+Unknown context MUST NOT be silently interpreted as satisfying a constraint.
+
+Additional context dimensions may be introduced only when a concrete architectural
+decision requires them and their semantics are explicitly defined.
+
+- **Validation(M,R,C):** evidence bound to the exact module `M`, role `R`, and context `C`, including the content hash of `M`.
+
+A change to module content changes its content hash and therefore makes prior
+validation evidence stale unless new validation evidence is established.
+
+The admissibility outcomes are determined as follows:
+
+- **ADMISSIBLE:** `Contract(M,R)`, `Constraints(M,R,C)`, and required
+  `Validation(M,R,C)` all positively pass.
+- **INADMISSIBLE:** at least one required component positively fails.
+- **UNDETERMINED:** the available information or evidence is insufficient to
+  establish either a complete pass or a definitive failure.
+
+`UNDETERMINED` MUST NOT be interpreted as compatibility, validation,
+substitutability, or permission to execute.
+
+Evaluation proceeds in the following order:
+
+**Contract(M,R) → Constraints(M,R,C) → Validation(M,R,C) → Admissible(M,R,C)**
+
+A failed contract or constraint produces `INADMISSIBLE`. Missing,
+incomplete, stale, or otherwise insufficient validation evidence produces
+`UNDETERMINED` unless a definitive validation failure establishes
+`INADMISSIBLE`.
+
+No later evaluation stage may override a definitive failure established by
+an earlier required stage.
 
 Variable Modularity is subordinate to heterogeneous modularity. It describes how heterogeneous realizations may occupy a stable role; it does not by itself establish equivalence or substitutability. Substitutability remains conditional on the applicable role, contract, compatibility constraints, context, and validation evidence.
 
