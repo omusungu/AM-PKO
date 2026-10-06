@@ -5,6 +5,7 @@ from typing import Any, Mapping, Sequence
 from .admissibility import AdmissibilityState, AuthorityEvaluator
 from .context_assembly_interface import ContextAssembler
 from .context_package import ContextPackage
+from .knowledge_record_resolver import KnowledgeRecordResolver
 from .retrieval_interface import QueryRequest
 from .retrieval_result import RankedResult
 
@@ -26,6 +27,7 @@ class DeterministicContextAssembler(ContextAssembler):
         *,
         context: Mapping[str, Any],
         authority_evaluator: AuthorityEvaluator,
+        record_resolver: KnowledgeRecordResolver,
     ) -> ContextPackage:
         if not isinstance(candidates, Sequence) or isinstance(
             candidates, (str, bytes)
@@ -43,6 +45,11 @@ class DeterministicContextAssembler(ContextAssembler):
                 "authority_evaluator must be an AuthorityEvaluator"
             )
 
+        if not isinstance(record_resolver, KnowledgeRecordResolver):
+            raise TypeError(
+                "record_resolver must be a KnowledgeRecordResolver"
+            )
+
         compiled_records: list[Mapping[str, Any]] = []
         excluded: list[Mapping[str, Any]] = []
 
@@ -50,8 +57,15 @@ class DeterministicContextAssembler(ContextAssembler):
             if not isinstance(candidate, RankedResult):
                 raise TypeError("each candidate must be a RankedResult")
 
+            record = record_resolver.resolve(candidate.record_id)
+            if not isinstance(record, Mapping):
+                raise TypeError("resolved KnowledgeRecord must be a mapping")
+            if record.get("id") != candidate.record_id:
+                raise ValueError(
+                    "resolved KnowledgeRecord id does not match candidate record_id"
+                )
             evaluation = authority_evaluator.evaluate(
-                {"id": candidate.record_id},
+                record,
                 context=context,
             )
 
@@ -63,11 +77,7 @@ class DeterministicContextAssembler(ContextAssembler):
             }
 
             if evaluation.state is AdmissibilityState.ADMISSIBLE:
-                compiled_records.append(
-                    {
-                        "id": candidate.record_id,
-                    }
-                )
+                compiled_records.append(record)
             else:
                 excluded.append(entry)
 

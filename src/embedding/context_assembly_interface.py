@@ -5,6 +5,7 @@ from typing import Any, Mapping, Sequence
 
 from .admissibility import AuthorityEvaluator
 from .context_package import ContextPackage
+from .knowledge_record_resolver import KnowledgeRecordResolver
 from .retrieval_interface import QueryRequest
 from .retrieval_result import RankedResult
 
@@ -28,6 +29,7 @@ class ContextAssembler(ABC):
         *,
         context: Mapping[str, Any],
         authority_evaluator: AuthorityEvaluator,
+        record_resolver: KnowledgeRecordResolver,
     ) -> ContextPackage:
         """
         Compile eligible candidates and explicit structural context
