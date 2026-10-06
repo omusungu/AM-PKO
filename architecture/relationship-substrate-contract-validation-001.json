@@ -1,0 +1,42 @@
+{
+  "validation_id": "RELATIONSHIP_SUBSTRATE_CONTRACT_VALIDATION_001",
+  "artifact": "architecture/relationship-substrate-contract.md",
+  "contract_version": "0.1-design",
+  "status": "VALIDATED_DRAFT",
+  "freeze_status": "NOT_FROZEN",
+  "implementation_decision": "NOT_AUTHORIZED_BY_THIS_ARTIFACT",
+  "artifact_sha256": "dab39700ba60a306c7ebc613d3580de8a89fe4a9f68055caa1f98d45605fbd7d",
+  "checks_total": 24,
+  "checks_passed": 24,
+  "checks_failed": 0,
+  "validation_basis": {
+    "file_exists": true,
+    "status_and_version": true,
+    "relationship_vocabulary": true,
+    "minimal_representation": true,
+    "tuple_identity": true,
+    "directionality": true,
+    "resolution_requirements": true,
+    "similarity_inference_prohibited": true,
+    "contradiction_preservation": true,
+    "authority_separation": true,
+    "lifecycle_lineage_separation": true,
+    "knowledge_record_boundary": true,
+    "provenance_validation_boundary": true,
+    "duplicate_self_link_policy_explicitly_open": true,
+    "inverse_relationship_policy_explicitly_open": true,
+    "i8_boundary": true,
+    "frozen_boundary_protection": true,
+    "architectural_constraints": true,
+    "evidence_basis": true,
+    "open_design_questions": true,
+    "implementation_not_authorized": true,
+    "pending_validation_state": true
+  },
+  "decision": {
+    "result": "VALIDATED_DRAFT",
+    "freeze": "DEFERRED",
+    "implementation": "NOT_AUTHORIZED",
+    "next_gate": "EXPLICIT_REVIEW_OF_OPEN_DESIGN_QUESTIONS"
+  }
+}
