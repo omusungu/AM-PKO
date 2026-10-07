@@ -278,13 +278,12 @@ The following remain unresolved:
 2. Is an independent relationship identifier required?
 3. Must relationship provenance be stored at edge level?
 4. Must relationship validation state be stored at edge level?
-5. Are duplicate `(source,type,target)` edges permitted?
-6. Are self-links permitted?
-7. Should inverse relationships be materialized or derived?
-8. What additional normative endpoint compatibility rules, if any, are required
-   beyond the validated semantic definitions?
-9. What authority is responsible for creating, revising, validating, and
-   retracting relationships?
+5. What is the normative policy for duplicate `(source, type, target)` assertions?
+6. What is the normative policy for self-links?
+7. Should inverse relationships be materialized, derived at query time, or unnecessary?
+8. What authority governs relationship creation, revision, validation, and retraction?
+9. Are additional endpoint-compatibility constraints required beyond the
+   validated predicate semantics?
 
 No implementation decision is authorized by this draft.
 
