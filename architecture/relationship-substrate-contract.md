@@ -88,9 +88,24 @@ It MUST NOT infer a relationship merely because:
 
 Explicit semantic relationships remain distinct from retrieval relevance.
 
-This contract does not invent or finalize semantic definitions for the ten
-relationship types. Existing documented distinctions remain authoritative, and
-additional normative definitions require explicit validation.
+The normative semantic definitions for the exercised relationship types are
+established by the separately validated artifact:
+
+`architecture/relationship-semantics-design-001.md`
+
+Validation authority:
+`architecture/relationship-semantics-validation-001.json`
+
+That semantic artifact establishes validated candidate semantics for the
+exercised relationship types and explicitly preserves the unresolved status
+of the unexercised types.
+
+The substrate MUST consume relationship semantics only as established by that
+validated semantic artifact. It MUST NOT invent additional semantic meanings,
+endpoint rules, inverse relationships, or relationship assertions.
+
+This semantic validation does not by itself authorize implementation or freeze
+of this substrate contract.
 
 ## 8. Contradiction Preservation
 
@@ -266,8 +281,8 @@ The following remain unresolved:
 5. Are duplicate `(source,type,target)` edges permitted?
 6. Are self-links permitted?
 7. Should inverse relationships be materialized or derived?
-8. What normative semantic definitions and compatibility rules are required
-   for each relationship type?
+8. What additional normative endpoint compatibility rules, if any, are required
+   beyond the validated semantic definitions?
 9. What authority is responsible for creating, revising, validating, and
    retracting relationships?
 
@@ -275,10 +290,19 @@ No implementation decision is authorized by this draft.
 
 ## 20. Compatibility Decision
 
-**Status:** PENDING VALIDATION
+**Status:** VALIDATED_DRAFT
 
-This draft is intended to be compatible with the existing KnowledgeRecord,
-retrieval, authority/lineage, and Context Assembly boundaries.
+The relationship semantic definitions referenced by §7 have been separately
+validated by `RELATIONSHIP_SEMANTICS_VALIDATION_001`.
 
-Implementation and freeze decisions require explicit validation of this
-contract and resolution of any blocking open design questions.
+This does not constitute implementation authorization or freeze authorization
+for the relationship substrate.
+
+The remaining open design questions in §19 remain unresolved. In particular,
+no standalone RelationshipRecord requirement, independent relationship ID,
+edge-level provenance/validation schema, duplicate/self-link policy, inverse
+materialization policy, additional endpoint compatibility rules, or
+relationship governance authority is established by this contract.
+
+Implementation and freeze decisions require explicit review of the remaining
+open design questions and a subsequent validation decision for this contract.

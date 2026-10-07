@@ -1,0 +1,63 @@
+{
+  "validation_id": "RELATIONSHIP_SEMANTICS_VALIDATION_001",
+  "artifact": "architecture/relationship-semantics-design-001.md",
+  "contract_version": "0.1",
+  "status": "VALIDATED_DRAFT",
+  "freeze_status": "NOT_FROZEN",
+  "implementation_decision": "NOT_AUTHORIZED_BY_THIS_ARTIFACT",
+  "artifact_sha256": "558b81015c2eb6c2a5705cc24138c8c86f6f9e266b02688cb0959e0d3e627624",
+  "validation_basis": [
+    "docs/relationship-model.md",
+    "docs/architecture.md",
+    "docs/table-1-consistent-theme.md",
+    "architecture/authority-lineage-contract.md",
+    "architecture/relationship-substrate-contract.md",
+    "experiments/embedding/EXP-4B6-001/corpus.json",
+    "experiments/embedding/EXP-4B6-001/CORPUS_SCHEMA_PLAN_001.md",
+    "experiments/embedding/EXP-4B6-001/RECORD_AUTHORING_SPEC_001.md"
+  ],
+  "checks": {
+    "exercised_predicates_have_corpus_evidence": true,
+    "unexercised_predicates_remain_undefined": true,
+    "supports_semantics_distinguished_from_related_to": true,
+    "supports_semantics_distinguished_from_derived_from": true,
+    "depends_on_semantics_distinguished_from_requires": true,
+    "requires_not_assumed_to_imply_depends_on": true,
+    "derived_from_separated_from_lifecycle_supersession": true,
+    "contradicts_preserves_independent_records": true,
+    "contradicts_not_assumed_symmetric": true,
+    "supports_not_assumed_symmetric": true,
+    "related_to_not_used_as_retrieval_similarity": true,
+    "relationship_direction_preserved": true,
+    "knowledge_type_not_used_as_sole_endpoint_rule": true,
+    "relationship_assertion_requires_defensible_semantic_basis": true,
+    "authority_not_created_by_relationship": true,
+    "lifecycle_lineage_separated_from_semantic_relationships": true,
+    "i8_must_consume_only_validated_semantics": true
+  },
+  "corpus_evidence": {
+    "supports": 23,
+    "contradicts": 6,
+    "depends_on": 21,
+    "derived_from": 2,
+    "related_to": 72,
+    "requires": 1,
+    "unexercised": [
+      "part_of",
+      "caused_by",
+      "mitigates",
+      "validates"
+    ]
+  },
+  "directionality_findings": {
+    "contradicts_reverse_edges_observed": false,
+    "supports_reverse_edges_observed": true,
+    "reverse_edges_treated_as_independently_authored": true
+  },
+  "decision": {
+    "semantic_candidates_validated": true,
+    "implementation_authorized": false,
+    "freeze_authorized": false,
+    "next_gate": "EXPLICIT_REVIEW_AND_FREEZE_DECISION"
+  }
+}
