@@ -307,3 +307,48 @@ A high retrieval score MUST NOT compensate for:
 Likewise, an authoritative record MUST NOT be included solely because it is
 authoritative if it does not satisfy the active retrieval/task and assembly
 constraints.
+
+## 14. Relationship Addressability and Traversal
+
+I-8 MUST address explicit relationships using the relationship substrate's
+current relationship addressability tuple:
+
+`(source, type, target)`
+
+The source is the KnowledgeRecord identity from which the relationship is
+declared. The type is the canonical relationship predicate. The target is
+the referenced KnowledgeRecord identity.
+
+I-8 MUST preserve:
+
+- source identity;
+- target identity;
+- relationship type;
+- relationship direction.
+
+I-8 MUST NOT require an independent relationship identifier where one is not
+provided by the authoritative relationship substrate.
+
+I-8 MUST NOT synthesize an independent relationship identifier merely to
+perform traversal, subgraph construction, provenance assembly, or
+ContextPackage compilation.
+
+The absence of an independent relationship identifier MUST NOT be treated as
+relationship invalidity when the current `(source, type, target)` addressability
+tuple resolves successfully.
+
+Relationship traversal MUST operate only over explicit relationships present
+in the authoritative relationship substrate. Retrieval similarity,
+embedding proximity, lexical similarity, co-occurrence, or ContextPackage
+membership MUST NOT create traversal edges.
+
+This section does not resolve whether a standalone RelationshipRecord,
+independent relationship identifier, duplicate relationship policy,
+relationship-level provenance, relationship-level validation, self-link
+policy, inverse materialization, or relationship governance authority is
+required. Those questions remain governed by the relationship substrate's
+explicit open-design boundary.
+
+Where relationship-level provenance or validation structures are available,
+I-8 MUST preserve them. Where they are not available, I-8 MUST NOT fabricate
+them.
